@@ -24,7 +24,6 @@ VHubCoreScreen.Parent = game:GetService("CoreGui")
 DragScreen.Name = "DragScreen"
 DragScreen.Parent = VHubCoreScreen
 DragScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-DragScreen.DisplayOrder = 999999999
 DragScreen.ResetOnSpawn = false
 
 DragFrame.Name = "DragFrame"
