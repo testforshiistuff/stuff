@@ -372,7 +372,7 @@ Close.TextSize = 23.000
 Close.TextWrapped = true
 Close.MouseButton1Down:connect(function()
 
-game:GetService("CoreGui").DragScreen.DragFrame.Visible = false
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = false
 
 local VHubLogoOpen = Instance.new("ImageButton")
 local UICorner_17 = Instance.new("UICorner")
@@ -387,7 +387,7 @@ VHubLogoOpen.SizeConstraint = Enum.SizeConstraint.RelativeYY
 VHubLogoOpen.Image = "rbxassetid://9408318893"
 VHubLogoOpen.ImageTransparency = 0
 VHubLogoOpen.MouseButton1Down:connect(function()
-game:GetService("CoreGui").DragScreen.DragFrame.Visible = = true
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = = true
 VHubLogoOpen:Destroy()
 end)
 
