@@ -5,13 +5,6 @@
 
 local MainFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
-local InfoBar = Instance.new("Frame")
-local UICorner_10 = Instance.new("UICorner")
-local VHubImage = Instance.new("ImageLabel")
-local VHubAndSection = Instance.new("TextLabel")
-local Close = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
-local SimpleEditionText = Instance.new("TextLabel")
 local SectionsFrame = Instance.new("Frame")
 local Home = Instance.new("TextButton")
 local UICorner_2 = Instance.new("UICorner")
@@ -43,6 +36,13 @@ local CommandsText_2 = Instance.new("TextLabel")
 local DotImage = Instance.new("ImageLabel")
 local FPS = Instance.new("TextLabel")
 local UICorner_9 = Instance.new("UICorner")
+local InfoBar = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local VHubImage = Instance.new("ImageLabel")
+local VHubAndSection = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local SimpleEditionText = Instance.new("TextLabel")
 local Line1 = Instance.new("Frame")
 local Line2 = Instance.new("Frame")
 local PlayerInfoFrame = Instance.new("Frame")
@@ -72,83 +72,6 @@ MainFrame.Size = UDim2.new(0, 450, 0, 270)
 
 UICorner.CornerRadius = UDim.new(0, 20)
 UICorner.Parent = MainFrame
-
-InfoBar.Name = "InfoBar"
-InfoBar.Parent = MainFrame
-InfoBar.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
-InfoBar.Size = UDim2.new(0, 450, 0, 30)
-
-UICorner_10.Parent = InfoBar
-
-VHubImage.Name = "VHubImage"
-VHubImage.Parent = InfoBar
-VHubImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-VHubImage.BackgroundTransparency = 1.000
-VHubImage.Position = UDim2.new(0.00999999978, 0, 0, 0)
-VHubImage.Size = UDim2.new(0, 30, 0, 30)
-VHubImage.Image = "rbxassetid://9408318893"
-
-VHubAndSection.Name = "VHubAndSection"
-VHubAndSection.Parent = InfoBar
-VHubAndSection.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-VHubAndSection.BackgroundTransparency = 1.000
-VHubAndSection.Position = UDim2.new(0.0820000023, 0, 0, 0)
-VHubAndSection.Size = UDim2.new(0, 164, 0, 30)
-VHubAndSection.Font = Enum.Font.GothamBold
-VHubAndSection.Text = "VHub | Home"
-VHubAndSection.TextColor3 = Color3.fromRGB(255, 255, 255)
-VHubAndSection.TextSize = 14.000
-VHubAndSection.TextXAlignment = Enum.TextXAlignment.Left
-
-Close.Name = "Close"
-Close.Parent = InfoBar
-Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-Close.BackgroundTransparency = 1.000
-Close.Position = UDim2.new(0.933333337, 0, 3.17891448e-07, 0)
-Close.Size = UDim2.new(0, 30, 0, 30)
-Close.Font = Enum.Font.FredokaOne
-Close.Text = "X"
-Close.TextColor3 = Color3.fromRGB(255, 0, 0)
-Close.TextSize = 23.000
-Close.TextWrapped = true
-Close.MouseButton1Down:connect(function()
-
-game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = false
-
-local VHubLogoOpen = Instance.new("ImageButton")
-local UICorner_17 = Instance.new("UICorner")
-
-VHubLogoOpen.Name = "VHubLogoOpen"
-VHubLogoOpen.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen
-VHubLogoOpen.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-VHubLogoOpen.BackgroundTransparency = 0.5
-VHubLogoOpen.Position = UDim2.new(0.020, 0, 0.800, 0)
-VHubLogoOpen.Size = UDim2.new(0.165128335, 1, 0.16508539, 0)
-VHubLogoOpen.SizeConstraint = Enum.SizeConstraint.RelativeYY
-VHubLogoOpen.Image = "rbxassetid://9408318893"
-VHubLogoOpen.ImageTransparency = 0
-VHubLogoOpen.MouseButton1Down:connect(function()
-game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true
-VHubLogoOpen:Destroy()
-end)
-
-UICorner_17.Parent = VHubLogoOpen
-end)
-
-UICorner_11.Parent = Close
-
-SimpleEditionText.Name = "SimpleEditionText"
-SimpleEditionText.Parent = InfoBar
-SimpleEditionText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SimpleEditionText.BackgroundTransparency = 1.000
-SimpleEditionText.Position = UDim2.new(0.00809667632, 0, 0.690773785, 0)
-SimpleEditionText.Size = UDim2.new(0, 111, 0, 9)
-SimpleEditionText.Font = Enum.Font.Gotham
-SimpleEditionText.Text = "Simple Edition"
-SimpleEditionText.TextColor3 = Color3.fromRGB(255, 255, 255)
-SimpleEditionText.TextScaled = true
-SimpleEditionText.TextSize = 14.000
-SimpleEditionText.TextWrapped = true
 
 SectionsFrame.Name = "SectionsFrame"
 SectionsFrame.Parent = MainFrame
@@ -407,6 +330,83 @@ FPS.TextColor3 = Color3.fromRGB(255, 255, 255)
 FPS.TextSize = 10.000
 
 UICorner_9.Parent = FPS
+
+InfoBar.Name = "InfoBar"
+InfoBar.Parent = MainFrame
+InfoBar.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+InfoBar.Size = UDim2.new(0, 450, 0, 30)
+
+UICorner_10.Parent = InfoBar
+
+VHubImage.Name = "VHubImage"
+VHubImage.Parent = InfoBar
+VHubImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubImage.BackgroundTransparency = 1.000
+VHubImage.Position = UDim2.new(0.00999999978, 0, 0, 0)
+VHubImage.Size = UDim2.new(0, 30, 0, 30)
+VHubImage.Image = "rbxassetid://9408318893"
+
+VHubAndSection.Name = "VHubAndSection"
+VHubAndSection.Parent = InfoBar
+VHubAndSection.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubAndSection.BackgroundTransparency = 1.000
+VHubAndSection.Position = UDim2.new(0.0820000023, 0, 0, 0)
+VHubAndSection.Size = UDim2.new(0, 164, 0, 30)
+VHubAndSection.Font = Enum.Font.GothamBold
+VHubAndSection.Text = "VHub | Home"
+VHubAndSection.TextColor3 = Color3.fromRGB(255, 255, 255)
+VHubAndSection.TextSize = 14.000
+VHubAndSection.TextXAlignment = Enum.TextXAlignment.Left
+
+Close.Name = "Close"
+Close.Parent = InfoBar
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.933333337, 0, 3.17891448e-07, 0)
+Close.Size = UDim2.new(0, 30, 0, 30)
+Close.Font = Enum.Font.FredokaOne
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextSize = 23.000
+Close.TextWrapped = true
+Close.MouseButton1Down:connect(function()
+
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = false
+
+local VHubLogoOpen = Instance.new("ImageButton")
+local UICorner_17 = Instance.new("UICorner")
+
+VHubLogoOpen.Name = "VHubLogoOpen"
+VHubLogoOpen.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen
+VHubLogoOpen.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+VHubLogoOpen.BackgroundTransparency = 0.5
+VHubLogoOpen.Position = UDim2.new(0.020, 0, 0.800, 0)
+VHubLogoOpen.Size = UDim2.new(0.165128335, 1, 0.16508539, 0)
+VHubLogoOpen.SizeConstraint = Enum.SizeConstraint.RelativeYY
+VHubLogoOpen.Image = "rbxassetid://9408318893"
+VHubLogoOpen.ImageTransparency = 0
+VHubLogoOpen.MouseButton1Down:connect(function()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true
+VHubLogoOpen:Destroy()
+end)
+
+UICorner_17.Parent = VHubLogoOpen
+end)
+
+UICorner_11.Parent = Close
+
+SimpleEditionText.Name = "SimpleEditionText"
+SimpleEditionText.Parent = InfoBar
+SimpleEditionText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SimpleEditionText.BackgroundTransparency = 1.000
+SimpleEditionText.Position = UDim2.new(0.00809667632, 0, 0.690773785, 0)
+SimpleEditionText.Size = UDim2.new(0, 111, 0, 9)
+SimpleEditionText.Font = Enum.Font.Gotham
+SimpleEditionText.Text = "Simple Edition"
+SimpleEditionText.TextColor3 = Color3.fromRGB(255, 255, 255)
+SimpleEditionText.TextScaled = true
+SimpleEditionText.TextSize = 14.000
+SimpleEditionText.TextWrapped = true
 
 Line1.Name = "Line1"
 Line1.Parent = MainFrame
