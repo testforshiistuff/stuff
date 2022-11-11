@@ -3,7 +3,6 @@
 
 -- Instances:
 
-local ScreenGui = Instance.new("ScreenGui")
 local MainFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local SectionsFrame = Instance.new("Frame")
@@ -64,18 +63,13 @@ local plr = game:GetService("Players").LocalPlayer
 
 --Properties:
 
-ScreenGui.Parent = game:GetService("CoreGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.DisplayOrder = 999999999
-ScreenGui.ResetOnSpawn = false
-
 MainFrame.Name = "MainFrame"
-MainFrame.Parent = ScreenGui
+MainFrame.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame
 MainFrame.Active = true
 MainFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
 MainFrame.Draggable = true
 MainFrame.LayoutOrder = 999999999
-MainFrame.Position = UDim2.new(0.174855486, 0, 0.194284841, 0)
+MainFrame.Position = UDim2.new(0, 0, 0, 0)
 MainFrame.Size = UDim2.new(0, 450, 0, 270)
 
 UICorner.CornerRadius = UDim.new(0, 20)
@@ -385,7 +379,7 @@ local VHubLogoOpen = Instance.new("ImageButton")
 local UICorner_17 = Instance.new("UICorner")
 
 VHubLogoOpen.Name = "VHubLogoOpen"
-VHubLogoOpen.Parent = ScreenGui
+VHubLogoOpen.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen
 VHubLogoOpen.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 VHubLogoOpen.BackgroundTransparency = 0.5
 VHubLogoOpen.Position = UDim2.new(0.020, 0, 0.800, 0)
