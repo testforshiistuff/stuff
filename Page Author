@@ -1,0 +1,108 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local VHubCoreScreen = Instance.new("Folder")
+local DragScreen = Instance.new("ScreenGui")
+local DragFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local InfoBar = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local VHubImage = Instance.new("ImageLabel")
+local VHubAndSection = Instance.new("TextLabel")
+local Line1 = Instance.new("Frame")
+local VHubLogo = Instance.new("ImageLabel")
+local ErrorMessage = Instance.new("TextLabel")
+local TextLabel = Instance.new("TextLabel")
+
+--Properties:
+
+VHubCoreScreen.Name = "VHubCoreScreen"
+VHubCoreScreen.Parent = game:GetService("CoreGui")
+
+DragScreen.Name = "DragScreen"
+DragScreen.Parent = VHubCoreScreen
+DragScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+DragScreen.DisplayOrder = 999999999
+DragScreen.ResetOnSpawn = false
+
+DragFrame.Name = "DragFrame"
+DragFrame.Parent = DragScreen
+DragFrame.Active = true
+DragFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
+DragFrame.Draggable = true
+DragFrame.LayoutOrder = 999999999
+DragFrame.Position = UDim2.new(0.174855486, 0, 0.194284841, 0)
+DragFrame.Size = UDim2.new(0, 450, 0, 270)
+
+UICorner.CornerRadius = UDim.new(0, 20)
+UICorner.Parent = DragFrame
+
+InfoBar.Name = "InfoBar"
+InfoBar.Parent = DragFrame
+InfoBar.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+InfoBar.Size = UDim2.new(0, 450, 0, 30)
+
+UICorner_2.Parent = InfoBar
+
+VHubImage.Name = "VHubImage"
+VHubImage.Parent = InfoBar
+VHubImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubImage.BackgroundTransparency = 1.000
+VHubImage.Position = UDim2.new(0.00999999978, 0, 0, 0)
+VHubImage.Size = UDim2.new(0, 30, 0, 30)
+VHubImage.Image = "rbxassetid://9408318893"
+
+VHubAndSection.Name = "VHubAndSection"
+VHubAndSection.Parent = InfoBar
+VHubAndSection.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubAndSection.BackgroundTransparency = 1.000
+VHubAndSection.Position = UDim2.new(0.0820000023, 0, 0, 0)
+VHubAndSection.Size = UDim2.new(0, 164, 0, 30)
+VHubAndSection.Font = Enum.Font.GothamBold
+VHubAndSection.Text = "VHub | Page Error"
+VHubAndSection.TextColor3 = Color3.fromRGB(255, 255, 255)
+VHubAndSection.TextSize = 14.000
+VHubAndSection.TextXAlignment = Enum.TextXAlignment.Left
+
+Line1.Name = "Line1"
+Line1.Parent = DragFrame
+Line1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line1.BorderSizePixel = 0
+Line1.Position = UDim2.new(0, 0, 0.111111112, 0)
+Line1.Size = UDim2.new(0, 450, 0, 1)
+
+VHubLogo.Name = "VHubLogo"
+VHubLogo.Parent = DragFrame
+VHubLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubLogo.BackgroundTransparency = 1.000
+VHubLogo.Position = UDim2.new(0.388888896, 0, 0.185185194, 0)
+VHubLogo.Size = UDim2.new(0, 100, 0, 100)
+VHubLogo.Image = "rbxassetid://9408318893"
+
+ErrorMessage.Name = "ErrorMessage"
+ErrorMessage.Parent = DragFrame
+ErrorMessage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ErrorMessage.BackgroundTransparency = 1.000
+ErrorMessage.Position = UDim2.new(0.180000007, 0, 0.555555582, 0)
+ErrorMessage.Size = UDim2.new(0, 369, 0, 50)
+ErrorMessage.Font = Enum.Font.FredokaOne
+ErrorMessage.Text = "There Was A Problem Loading The Page Due To Some Errors. Please Try Again Later Or Join Our Discord Server To Report This Problem."
+ErrorMessage.TextColor3 = Color3.fromRGB(255, 255, 255)
+ErrorMessage.TextScaled = true
+ErrorMessage.TextSize = 20.000
+ErrorMessage.TextWrapped = true
+
+TextLabel.Name = "!"
+TextLabel.Parent = DragFrame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, 0.592592597, 0)
+TextLabel.Size = UDim2.new(0, 89, 0, 50)
+TextLabel.Font = Enum.Font.LuckiestGuy
+TextLabel.Text = "(!)"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextScaled = true
+TextLabel.TextSize = 20.000
+TextLabel.TextWrapped = true
