@@ -161,6 +161,10 @@ Scripts.Font = Enum.Font.GothamMedium
 Scripts.Text = ""
 Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
 Scripts.TextSize = 14.000
+Scripts.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Scripts%20Page%201'),true))()
+MainFrame:Destroy()
+end)
 
 UICorner_3.Parent = Scripts
 
@@ -195,6 +199,10 @@ RequiredAccessories.TextColor3 = Color3.fromRGB(255, 255, 255)
 RequiredAccessories.TextScaled = true
 RequiredAccessories.TextSize = 14.000
 RequiredAccessories.TextWrapped = true
+RequiredAccessories.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Req%20Acc%20Page%201'),true))()
+MainFrame:Destroy()
+end)
 
 UICorner_4.Parent = RequiredAccessories
 
@@ -263,6 +271,10 @@ Animations.Text = ""
 Animations.TextColor3 = Color3.fromRGB(255, 255, 255)
 Animations.TextSize = 14.000
 Animations.TextWrapped = true
+Animations.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Animations%20Page%201'),true))()
+MainFrame:Destroy()
+end)
 
 UICorner_6.Parent = Animations
 
@@ -298,6 +310,10 @@ Commands.Text = ""
 Commands.TextColor3 = Color3.fromRGB(255, 255, 255)
 Commands.TextSize = 14.000
 Commands.TextWrapped = true
+Commands.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Commands%20Page%201'),true))()
+MainFrame:Destroy()
+end)
 
 UICorner_7.Parent = Commands
 
