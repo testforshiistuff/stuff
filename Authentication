@@ -30,12 +30,14 @@ DragScreen.DisplayOrder = 2147483647
 DragFrame.Name = "DragFrame"
 DragFrame.Parent = DragScreen
 DragFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
-DragFrame.BackgroundTransparency = 1.000
+DragFrame.BackgroundTransparency = 0
 DragFrame.Position = UDim2.new(0.22, 0, 0.12, 0)
 DragFrame.Active = true
 DragFrame.Visible = false
 DragFrame.Size = UDim2.new(0.5425, 1, 0.74, 0)
 DragFrame.Image = "rbxassetid://9408318893"
+DragFrame.ImageTransparency = 1
+DragFrame.SizeConstraint = Enum.SizeConstraint.RelativeYY
 
 UICorner.Parent = DragFrame
 UICorner.CornerRadius = UDim.new(0, 20)
