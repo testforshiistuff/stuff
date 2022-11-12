@@ -496,10 +496,10 @@ PageDescription.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 PageDescription.BackgroundTransparency = 1.000
 PageDescription.Position = UDim2.new(0.0884523839, 0, 0, 0)
 PageDescription.Size = UDim2.new(0, 228, 0, 35)
-PageDescription.Font = Enum.Font.FredokaOne
+PageDescription.Font = Enum.Font.GothamMedium
 PageDescription.Text = "Animations | Page 1"
 PageDescription.TextColor3 = Color3.fromRGB(255, 255, 255)
-PageDescription.TextSize = 18.000
+PageDescription.TextSize = 17.000
 PageDescription.TextXAlignment = Enum.TextXAlignment.Left
 
 NextPage.Name = "NextPage"
