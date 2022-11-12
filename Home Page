@@ -332,6 +332,12 @@ FPS.Font = Enum.Font.Gotham
 FPS.Text = "Game FPS:"
 FPS.TextColor3 = Color3.fromRGB(255, 255, 255)
 FPS.TextSize = 10.000
+coroutine.wrap(function()
+	while wait() do
+	local fps = game.Workspace:GetRealPhysicsFPS()
+	FPS.Text = "Game FPS: "..math.floor(fps)
+	end
+end)()
 
 UICorner_9.Parent = FPS
 
