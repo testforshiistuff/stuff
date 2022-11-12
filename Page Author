@@ -30,7 +30,7 @@ DragFrame.Name = "DragFrame"
 DragFrame.Parent = DragScreen
 DragFrame.Active = true
 DragFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
-DragFrame.Visible = true
+DragFrame.Visible = false
 DragFrame.Position = UDim2.new(0.22, 1, 0.12, 0)
 DragFrame.Size = UDim2.new(0, 450, 0, 270)
 
