@@ -30,9 +30,8 @@ DragFrame.Name = "DragFrame"
 DragFrame.Parent = DragScreen
 DragFrame.Active = true
 DragFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
-DragFrame.Draggable = true
 DragFrame.Visible = false
-DragFrame.Position = UDim2.new(0.50, 1, 0.50, 0)
+DragFrame.Position = UDim2.new(0.50, 1, 0.30, 0)
 DragFrame.Size = UDim2.new(0, 450, 0, 270)
 
 UICorner.Parent = DragFrame
