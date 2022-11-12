@@ -123,6 +123,7 @@ Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
 Scripts.TextSize = 14.000
 Scripts.MouseButton1Down:connect(function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Scripts%20Page%201'),true))()
+MainFrame:Destroy()
 end)
 
 UICorner_3.Parent = Scripts
