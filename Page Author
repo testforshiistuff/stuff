@@ -25,7 +25,6 @@ DragScreen.Name = "DragScreen"
 DragScreen.Parent = VHubCoreScreen
 DragScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 DragScreen.ResetOnSpawn = false
-DragScreen.DisplayOrder = 2147483647
 
 DragFrame.Name = "DragFrame"
 DragFrame.Parent = DragScreen
