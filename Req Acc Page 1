@@ -499,7 +499,7 @@ PageDescription.Size = UDim2.new(0, 228, 0, 35)
 PageDescription.Font = Enum.Font.GothamMedium
 PageDescription.Text = "Required Accessories | Page 1"
 PageDescription.TextColor3 = Color3.fromRGB(255, 255, 255)
-PageDescription.TextSize = 18.000
+PageDescription.TextSize = 17.000
 PageDescription.TextXAlignment = Enum.TextXAlignment.Left
 
 NextPage.Name = "NextPage"
