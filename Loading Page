@@ -3,7 +3,6 @@
 
 -- Instances:
 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/Script/main/Set%20Spawn%20Point'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
 
 local ScreenGui = Instance.new("ScreenGui")
