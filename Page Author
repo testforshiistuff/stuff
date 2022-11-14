@@ -31,10 +31,50 @@ DragFrame.Name = "DragFrame"
 DragFrame.Parent = DragScreen
 DragFrame.Active = true
 DragFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
-DragFrame.Visible = false
 DragFrame.Position = UDim2.new(0.174855486, 0, 0.194284841, 0)
 DragFrame.Size = UDim2.new(0, 450, 0, 270)
 DragFrame.Draggable = true
+
+function dragGUI(gui)
+	task.spawn(function()
+		local dragging
+		local dragInput
+		local dragStart = Vector3.new(0,0,0)
+		local startPos
+		local function update(input)
+			local delta = input.Position - dragStart
+			local Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+			TweenService:Create(gui, TweenInfo.new(.20), {Position = Position}):Play()
+		end
+		gui.InputBegan:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+				dragging = true
+				dragStart = input.Position
+				startPos = gui.Position
+
+				input.Changed:Connect(function()
+					if input.UserInputState == Enum.UserInputState.End then
+						dragging = false
+					end
+				end)
+			end
+		end)
+		gui.InputChanged:Connect(function(input)
+			if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+				dragInput = input
+			end
+		end)
+		UserInputService.InputChanged:Connect(function(input)
+			if input == dragInput and dragging then
+				update(input)
+			end
+		end)
+	end)
+end
+
+DragGUI(gui.vhubicon)
+DragGUI(DragFrame)
+```
 
 UICorner.CornerRadius = UDim.new(0, 20)
 UICorner.Parent = DragFrame
