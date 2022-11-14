@@ -72,8 +72,7 @@ function dragGUI(gui)
 	end)
 end
 
-DragGUI(gui.vhubicon)
-DragGUI(mainFrame)
+DragGUI(DragFrame)
 
 UICorner.CornerRadius = UDim.new(0, 20)
 UICorner.Parent = DragFrame
