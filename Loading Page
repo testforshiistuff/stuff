@@ -208,5 +208,5 @@ end
 end)()
 
 wait(5)
-game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Home%20Page'),true))()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true
