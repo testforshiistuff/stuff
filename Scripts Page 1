@@ -96,6 +96,14 @@ local NameScript_8 = Instance.new("TextLabel")
 local UICorner_23 = Instance.new("UICorner")
 local ClickToExe_8 = Instance.new("TextLabel")
 
+--Functions:
+
+function R6()
+	if game:GetService("Players").LocalPlayer.Character:FindFirstChildOfClass("Humanoid").RigType == Enum.HumanoidRigType.R6 then
+		return true
+	end
+end
+
 --Properties:
 
 MainFrame.Name = "MainFrame"
@@ -575,7 +583,6 @@ NameScript.BackgroundTransparency = 1.000
 NameScript.Position = UDim2.new(0.100000001, 0, 0.392650038, 0)
 NameScript.Size = UDim2.new(0, 57, 0, 48)
 NameScript.Font = Enum.Font.Gotham
-NameScript.Text = "Name Of Script"
 NameScript.TextColor3 = Color3.fromRGB(255, 255, 255)
 NameScript.TextSize = 10.000
 NameScript.TextWrapped = true
@@ -623,7 +630,6 @@ NameScript_2.BackgroundTransparency = 1.000
 NameScript_2.Position = UDim2.new(0.100000001, 0, 0.392650038, 0)
 NameScript_2.Size = UDim2.new(0, 57, 0, 48)
 NameScript_2.Font = Enum.Font.Gotham
-NameScript_2.Text = "Name Of Script"
 NameScript_2.TextColor3 = Color3.fromRGB(255, 255, 255)
 NameScript_2.TextSize = 10.000
 NameScript_2.TextWrapped = true
@@ -671,7 +677,6 @@ NameScript_3.BackgroundTransparency = 1.000
 NameScript_3.Position = UDim2.new(0.100000001, 0, 0.392650038, 0)
 NameScript_3.Size = UDim2.new(0, 57, 0, 48)
 NameScript_3.Font = Enum.Font.Gotham
-NameScript_3.Text = "Name Of Script"
 NameScript_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 NameScript_3.TextSize = 10.000
 NameScript_3.TextWrapped = true
@@ -719,7 +724,6 @@ NameScript_4.BackgroundTransparency = 1.000
 NameScript_4.Position = UDim2.new(0.100000001, 0, 0.392650038, 0)
 NameScript_4.Size = UDim2.new(0, 57, 0, 48)
 NameScript_4.Font = Enum.Font.Gotham
-NameScript_4.Text = "Name Of Script"
 NameScript_4.TextColor3 = Color3.fromRGB(255, 255, 255)
 NameScript_4.TextSize = 10.000
 NameScript_4.TextWrapped = true
@@ -767,7 +771,6 @@ NameScript_5.BackgroundTransparency = 1.000
 NameScript_5.Position = UDim2.new(0.100000001, 0, 0.392650038, 0)
 NameScript_5.Size = UDim2.new(0, 57, 0, 48)
 NameScript_5.Font = Enum.Font.Gotham
-NameScript_5.Text = "Name Of Script"
 NameScript_5.TextColor3 = Color3.fromRGB(255, 255, 255)
 NameScript_5.TextSize = 10.000
 NameScript_5.TextWrapped = true
@@ -815,7 +818,6 @@ NameScript_6.BackgroundTransparency = 1.000
 NameScript_6.Position = UDim2.new(0.100000001, 0, 0.392650038, 0)
 NameScript_6.Size = UDim2.new(0, 57, 0, 48)
 NameScript_6.Font = Enum.Font.Gotham
-NameScript_6.Text = "Name Of Script"
 NameScript_6.TextColor3 = Color3.fromRGB(255, 255, 255)
 NameScript_6.TextSize = 10.000
 NameScript_6.TextWrapped = true
@@ -863,7 +865,6 @@ NameScript_7.BackgroundTransparency = 1.000
 NameScript_7.Position = UDim2.new(0.100000001, 0, 0.392650038, 0)
 NameScript_7.Size = UDim2.new(0, 57, 0, 48)
 NameScript_7.Font = Enum.Font.Gotham
-NameScript_7.Text = "Name Of Script"
 NameScript_7.TextColor3 = Color3.fromRGB(255, 255, 255)
 NameScript_7.TextSize = 10.000
 NameScript_7.TextWrapped = true
@@ -911,7 +912,6 @@ NameScript_8.BackgroundTransparency = 1.000
 NameScript_8.Position = UDim2.new(0.100000001, 0, 0.392650038, 0)
 NameScript_8.Size = UDim2.new(0, 57, 0, 48)
 NameScript_8.Font = Enum.Font.Gotham
-NameScript_8.Text = "Name Of Script"
 NameScript_8.TextColor3 = Color3.fromRGB(255, 255, 255)
 NameScript_8.TextSize = 10.000
 NameScript_8.TextWrapped = true
@@ -933,3 +933,132 @@ ClickToExe_8.TextScaled = true
 ClickToExe_8.TextSize = 10.000
 ClickToExe_8.TextWrapped = true
 ClickToExe_8.TextYAlignment = Enum.TextYAlignment.Bottom
+
+--Scripts Configuration:
+
+NameScript.Text = "Copy Chat Messages"
+Script1.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/NWMaSHhe'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Copy Chat Messages!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end)
+
+NameScript_2.Text = "Mega Hats"
+Script2.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/XSkZEkaV'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Mega Hats!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
+end)
+
+NameScript_3.Text = "Eat Accessories"
+Script3.MouseButton1Down:connect(function()
+if R6() then 
+loadstring(game:HttpGet(('https://pastebin.com/raw/Th4jbiVn'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Eat Accessories!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+
+elseif not R6() then 
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
+end)
+
+NameScript_4.Text = "Anti Kick (Supported On Some Games)"
+Script4.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/Yi2QRzTu'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Anti Kick!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end)
+
+NameScript_5.Text = "Mesh Accessories"
+Script5.MouseButton1Down:connect(function()
+if R6() then 
+loadstring(game:HttpGet(('https://pastebin.com/raw/KuxL7e2R'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Mesh Accessories!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+
+elseif not R6() then 
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
+end)
+
+NameScript_6.Text = "CloVR"
+Script6.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/kLzsQNRe'),true))()
+
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed CloVR!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+wait(5)
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Tip!";
+	Text = "If You Can't Reset, Execute Arosia UGI And Press GodMode!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
+end)
+
+NameScript_7.Text = "Kill Farm (Supported On Some Games)"
+Script7.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/a0jjaAyd'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Kill Farm!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end)
+
+NameScript_8.Text = "Spy On People's Private Chat"
+Script8.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/Scripts/main/Spy%20Peoples%20Private%20Chat'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Spy On People's Private Chat!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end)
