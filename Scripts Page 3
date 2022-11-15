@@ -540,6 +540,7 @@ PreviousPage.TextStrokeColor3 = Color3.fromRGB(150, 0, 0)
 PreviousPage.TextWrapped = true
 PreviousPage.MouseButton1Down:connect(function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Scripts%20Page%202'),true))()
+MainFrame:Destroy()
 end)
 
 UICorner_14.CornerRadius = UDim.new(0, 20)
