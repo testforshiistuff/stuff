@@ -538,6 +538,9 @@ PreviousPage.TextScaled = true
 PreviousPage.TextSize = 14.000
 PreviousPage.TextStrokeColor3 = Color3.fromRGB(150, 0, 0)
 PreviousPage.TextWrapped = true
+PreviousPage.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Scripts%20Page%201'),true))()
+end)
 
 UICorner_14.CornerRadius = UDim.new(0, 20)
 UICorner_14.Parent = PreviousPage
