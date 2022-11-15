@@ -524,6 +524,7 @@ NextPage.TextStrokeColor3 = Color3.fromRGB(0, 150, 0)
 NextPage.TextWrapped = true
 NextPage.MouseButton1Down:connect(function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Scripts%20Page%203'),true))()
+MainFrame:Destroy()
 end)
 
 UICorner_13.CornerRadius = UDim.new(0, 20)
@@ -543,6 +544,7 @@ PreviousPage.TextStrokeColor3 = Color3.fromRGB(150, 0, 0)
 PreviousPage.TextWrapped = true
 PreviousPage.MouseButton1Down:connect(function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Scripts%20Page%201'),true))()
+MainFrame:Destroy()
 end)
 
 UICorner_14.CornerRadius = UDim.new(0, 20)
