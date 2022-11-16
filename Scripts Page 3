@@ -1033,7 +1033,7 @@ Duration = 16;
 end
 end)
 
-NameScript_7.Text = ""
+NameScript_7.Text = "99% Fail ESP"
 Script7.MouseButton1Down:connect(function()
 if game.PlaceId == 7584496019 then
 loadstring(game:HttpGet(('https://pastebin.com/raw/r5BjpxR7'),true))()
