@@ -23,6 +23,7 @@ local Settings = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local SettingsText = Instance.new("TextLabel")
 local SettingImage = Instance.new("ImageLabel")
+local Line1 = Instance.new("Frame")
 
 --Properties:
 
@@ -176,3 +177,10 @@ SettingImage.BackgroundTransparency = 1.000
 SettingImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
 SettingImage.Size = UDim2.new(0, 25, 0, 25)
 SettingImage.Image = "http://www.roblox.com/asset/?id=11585547302"
+
+Line1.Name = "Line1"
+Line1.Parent = SectionsFrame
+Line1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line1.BorderSizePixel = 0
+Line1.Position = UDim2.new(0, 0, 0.218803406, 0)
+Line1.Size = UDim2.new(0, 140, 0, 1)
