@@ -312,6 +312,9 @@ OtherSections.TextColor3 = Color3.fromRGB(255, 255, 255)
 OtherSections.TextScaled = true
 OtherSections.TextSize = 14.000
 OtherSections.TextWrapped = true
+OtherSections.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Other%20Sections'),true))()
+end)
 
 UICorner_8.Parent = OtherSections
 
