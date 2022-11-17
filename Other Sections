@@ -1,0 +1,178 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local SectionsFrame = Instance.new("Frame")
+local OtherHubs = Instance.new("TextButton")
+local UICorner = Instance.new("UICorner")
+local OtherHubsText = Instance.new("TextLabel")
+local GuiWithDotsImage = Instance.new("ImageLabel")
+local UICorner_2 = Instance.new("UICorner")
+local GameScripts = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local GameScriptsText = Instance.new("TextLabel")
+local GameImage = Instance.new("ImageLabel")
+local InfoBar = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local VHubImage = Instance.new("ImageLabel")
+local VHubAndSection = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local Settings = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local SettingsText = Instance.new("TextLabel")
+local SettingImage = Instance.new("ImageLabel")
+
+--Properties:
+
+SectionsFrame.Name = "SectionsFrame"
+SectionsFrame.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.MainFrame
+SectionsFrame.BackgroundColor3 = Color3.fromRGB(31, 32, 34)
+SectionsFrame.BorderSizePixel = 0
+SectionsFrame.Position = UDim2.new(0.353333324, 0, 0.259259254, 0)
+SectionsFrame.Size = UDim2.new(0, 140, 0, 130)
+SectionsFrame.Active = true
+SectionsFrame.Draggable = true
+
+OtherHubs.Name = "OtherHubs"
+OtherHubs.Parent = SectionsFrame
+OtherHubs.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+OtherHubs.Position = UDim2.new(0.00700000022, 5, 0.25, 0)
+OtherHubs.Size = UDim2.new(0, 129, 0, 27)
+OtherHubs.Font = Enum.Font.GothamMedium
+OtherHubs.Text = ""
+OtherHubs.TextColor3 = Color3.fromRGB(255, 255, 255)
+OtherHubs.TextSize = 14.000
+
+UICorner.Parent = OtherHubs
+
+OtherHubsText.Name = "OtherHubsText"
+OtherHubsText.Parent = OtherHubs
+OtherHubsText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OtherHubsText.BackgroundTransparency = 1.000
+OtherHubsText.Position = UDim2.new(0.216020688, 0, 0.0370370373, 0)
+OtherHubsText.Size = UDim2.new(0, 101, 0, 25)
+OtherHubsText.Font = Enum.Font.GothamBold
+OtherHubsText.Text = "Other Hubs"
+OtherHubsText.TextColor3 = Color3.fromRGB(255, 255, 255)
+OtherHubsText.TextSize = 15.000
+OtherHubsText.TextXAlignment = Enum.TextXAlignment.Left
+
+GuiWithDotsImage.Name = "GuiWithDotsImage"
+GuiWithDotsImage.Parent = OtherHubs
+GuiWithDotsImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GuiWithDotsImage.BackgroundTransparency = 1.000
+GuiWithDotsImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
+GuiWithDotsImage.Size = UDim2.new(0, 25, 0, 25)
+GuiWithDotsImage.Image = "http://www.roblox.com/asset/?id=11585486644"
+
+UICorner_2.Parent = SectionsFrame
+
+GameScripts.Name = "GameScripts"
+GameScripts.Parent = SectionsFrame
+GameScripts.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+GameScripts.Position = UDim2.new(0.00700000022, 5, 0.5, 0)
+GameScripts.Size = UDim2.new(0, 129, 0, 27)
+GameScripts.Font = Enum.Font.GothamMedium
+GameScripts.Text = ""
+GameScripts.TextColor3 = Color3.fromRGB(255, 255, 255)
+GameScripts.TextSize = 14.000
+
+UICorner_3.Parent = GameScripts
+
+GameScriptsText.Name = "GameScriptsText"
+GameScriptsText.Parent = GameScripts
+GameScriptsText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameScriptsText.BackgroundTransparency = 1.000
+GameScriptsText.Position = UDim2.new(0.216020688, 0, 0.0370370373, 0)
+GameScriptsText.Size = UDim2.new(0, 101, 0, 25)
+GameScriptsText.Font = Enum.Font.GothamBold
+GameScriptsText.Text = "Game Scripts"
+GameScriptsText.TextColor3 = Color3.fromRGB(255, 255, 255)
+GameScriptsText.TextSize = 15.000
+GameScriptsText.TextXAlignment = Enum.TextXAlignment.Left
+
+GameImage.Name = "GameImage"
+GameImage.Parent = GameScripts
+GameImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameImage.BackgroundTransparency = 1.000
+GameImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
+GameImage.Size = UDim2.new(0, 25, 0, 25)
+GameImage.Image = "http://www.roblox.com/asset/?id=11585477126"
+
+InfoBar.Name = "InfoBar"
+InfoBar.Parent = SectionsFrame
+InfoBar.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+InfoBar.Size = UDim2.new(0, 140, 0, 30)
+
+UICorner_4.Parent = InfoBar
+
+VHubImage.Name = "VHubImage"
+VHubImage.Parent = InfoBar
+VHubImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubImage.BackgroundTransparency = 1.000
+VHubImage.Position = UDim2.new(0.00999999978, 0, 0, 0)
+VHubImage.Size = UDim2.new(0, 30, 0, 30)
+VHubImage.Image = "rbxassetid://9408318893"
+
+VHubAndSection.Name = "VHubAndSection"
+VHubAndSection.Parent = InfoBar
+VHubAndSection.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubAndSection.BackgroundTransparency = 1.000
+VHubAndSection.Position = UDim2.new(0.217714369, 0, 0, 0)
+VHubAndSection.Size = UDim2.new(0, 81, 0, 30)
+VHubAndSection.Font = Enum.Font.GothamBold
+VHubAndSection.Text = "VHub"
+VHubAndSection.TextColor3 = Color3.fromRGB(255, 255, 255)
+VHubAndSection.TextSize = 14.000
+VHubAndSection.TextXAlignment = Enum.TextXAlignment.Left
+
+Close.Name = "Close"
+Close.Parent = InfoBar
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.790476203, 0, 3.17891448e-07, 0)
+Close.Size = UDim2.new(0, 30, 0, 30)
+Close.Font = Enum.Font.FredokaOne
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextSize = 23.000
+Close.TextWrapped = true
+Close.MouseButton1Down:connect(function()
+SectionFrame:Destroy()
+end)
+
+UICorner_5.Parent = Close
+
+Settings.Name = "Settings"
+Settings.Parent = SectionsFrame
+Settings.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+Settings.Position = UDim2.new(0.00700000022, 5, 0.75, 0)
+Settings.Size = UDim2.new(0, 129, 0, 27)
+Settings.Font = Enum.Font.GothamMedium
+Settings.Text = ""
+Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
+Settings.TextSize = 14.000
+
+UICorner_6.Parent = Settings
+
+SettingsText.Name = "SettingsText"
+SettingsText.Parent = Settings
+SettingsText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingsText.BackgroundTransparency = 1.000
+SettingsText.Position = UDim2.new(0.216020688, 0, 0.0370370373, 0)
+SettingsText.Size = UDim2.new(0, 101, 0, 25)
+SettingsText.Font = Enum.Font.GothamBold
+SettingsText.Text = "Settings"
+SettingsText.TextColor3 = Color3.fromRGB(255, 255, 255)
+SettingsText.TextSize = 15.000
+SettingsText.TextXAlignment = Enum.TextXAlignment.Left
+
+SettingImage.Name = "SettingImage"
+SettingImage.Parent = Settings
+SettingImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SettingImage.BackgroundTransparency = 1.000
+SettingImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
+SettingImage.Size = UDim2.new(0, 25, 0, 25)
+SettingImage.Image = "http://www.roblox.com/asset/?id=11585547302"
