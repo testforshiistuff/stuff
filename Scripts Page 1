@@ -17,19 +17,19 @@ local PaperImage = Instance.new("ImageLabel")
 local RequiredAccessories = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local RequiredAccessoriesText = Instance.new("TextLabel")
-local TopHatImage = Instance.new("ImageLabel")
+local GlassesImage = Instance.new("ImageLabel")
 local GUIS = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
-local GuisImage = Instance.new("ImageLabel")
+local GuiImage = Instance.new("ImageLabel")
 local GuisText = Instance.new("TextLabel")
 local Animations = Instance.new("TextButton")
 local UICorner_6 = Instance.new("UICorner")
 local AnimationsText = Instance.new("TextLabel")
-local AnimationsImage = Instance.new("ImageLabel")
+local DotsGoingUpImage = Instance.new("ImageLabel")
 local Commands = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local CommandsText = Instance.new("TextLabel")
-local LineImage = Instance.new("ImageLabel")
+local CommandImage = Instance.new("ImageLabel")
 local OtherSections = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
 local OtherSectionsText = Instance.new("TextLabel")
@@ -144,7 +144,7 @@ HomeImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 HomeImage.BackgroundTransparency = 1.000
 HomeImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
 HomeImage.Size = UDim2.new(0, 25, 0, 25)
-HomeImage.Image = "http://www.roblox.com/asset/?id=11493380006"
+HomeImage.Image = "http://www.roblox.com/asset/?id=11592840951"
 
 HomeText.Name = "HomeText"
 HomeText.Parent = Home
@@ -188,7 +188,7 @@ PaperImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 PaperImage.BackgroundTransparency = 1.000
 PaperImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
 PaperImage.Size = UDim2.new(0, 25, 0, 25)
-PaperImage.Image = "http://www.roblox.com/asset/?id=11493381816"
+PaperImage.Image = "http://www.roblox.com/asset/?id=11592851654"
 
 RequiredAccessories.Name = "RequiredAccessories"
 RequiredAccessories.Parent = SectionsFrame
@@ -222,13 +222,13 @@ RequiredAccessoriesText.TextSize = 15.000
 RequiredAccessoriesText.TextWrapped = true
 RequiredAccessoriesText.TextXAlignment = Enum.TextXAlignment.Left
 
-TopHatImage.Name = "TopHatImage"
-TopHatImage.Parent = RequiredAccessories
-TopHatImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-TopHatImage.BackgroundTransparency = 1.000
-TopHatImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
-TopHatImage.Size = UDim2.new(0, 25, 0, 25)
-TopHatImage.Image = "http://www.roblox.com/asset/?id=11493459304"
+GlassesImage.Name = "GlassesImage"
+GlassesImage.Parent = RequiredAccessories
+GlassesImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GlassesImage.BackgroundTransparency = 1.000
+GlassesImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
+GlassesImage.Size = UDim2.new(0, 25, 0, 25)
+GlassesImage.Image = "http://www.roblox.com/asset/?id=11592824883"
 
 GUIS.Name = "GUIS"
 GUIS.Parent = SectionsFrame
@@ -247,13 +247,13 @@ end)
 
 UICorner_5.Parent = GUIS
 
-GuisImage.Name = "GuisImage"
-GuisImage.Parent = GUIS
-GuisImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GuisImage.BackgroundTransparency = 1.000
-GuisImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
-GuisImage.Size = UDim2.new(0, 25, 0, 25)
-GuisImage.Image = "http://www.roblox.com/asset/?id=11493384536"
+GuiImage.Name = "GuiImage"
+GuiImage.Parent = GUIS
+GuiImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GuiImage.BackgroundTransparency = 1.000
+GuiImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
+GuiImage.Size = UDim2.new(0, 25, 0, 25)
+GuiImage.Image = "http://www.roblox.com/asset/?id=11592848654"
 
 GuisText.Name = "GuisText"
 GuisText.Parent = GUIS
@@ -298,13 +298,13 @@ AnimationsText.TextSize = 15.000
 AnimationsText.TextWrapped = true
 AnimationsText.TextXAlignment = Enum.TextXAlignment.Left
 
-AnimationsImage.Name = "AnimationsImage"
-AnimationsImage.Parent = Animations
-AnimationsImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-AnimationsImage.BackgroundTransparency = 1.000
-AnimationsImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
-AnimationsImage.Size = UDim2.new(0, 25, 0, 25)
-AnimationsImage.Image = "http://www.roblox.com/asset/?id=11493385496"
+DotsGoingUpImage.Name = "DotsGoingUpImage"
+DotsGoingUpImage.Parent = Animations
+DotsGoingUpImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DotsGoingUpImage.BackgroundTransparency = 1.000
+DotsGoingUpImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
+DotsGoingUpImage.Size = UDim2.new(0, 25, 0, 25)
+DotsGoingUpImage.Image = "http://www.roblox.com/asset/?id=11592835705"
 
 Commands.Name = "Commands"
 Commands.Parent = SectionsFrame
@@ -337,13 +337,13 @@ CommandsText.TextSize = 15.000
 CommandsText.TextWrapped = true
 CommandsText.TextXAlignment = Enum.TextXAlignment.Left
 
-LineImage.Name = "LineImage"
-LineImage.Parent = Commands
-LineImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-LineImage.BackgroundTransparency = 1.000
-LineImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
-LineImage.Size = UDim2.new(0, 25, 0, 25)
-LineImage.Image = "http://www.roblox.com/asset/?id=11493526961"
+CommandImage.Name = "CommandImage"
+CommandImage.Parent = Commands
+CommandImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CommandImage.BackgroundTransparency = 1.000
+CommandImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
+CommandImage.Size = UDim2.new(0, 25, 0, 25)
+CommandImage.Image = "http://www.roblox.com/asset/?id=11592837927"
 
 OtherSections.Name = "Other Sections"
 OtherSections.Parent = SectionsFrame
