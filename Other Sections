@@ -7,12 +7,12 @@ local SectionsFrame = Instance.new("Frame")
 local OtherHubs = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
 local OtherHubsText = Instance.new("TextLabel")
-local GuiWithDotsImage = Instance.new("ImageLabel")
+local TwoGuiImage = Instance.new("ImageLabel")
 local UICorner_2 = Instance.new("UICorner")
 local GameScripts = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local GameScriptsText = Instance.new("TextLabel")
-local GameImage = Instance.new("ImageLabel")
+local ConsoleImage = Instance.new("ImageLabel")
 local InfoBar = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
 local VHubImage = Instance.new("ImageLabel")
@@ -33,8 +33,6 @@ SectionsFrame.BackgroundColor3 = Color3.fromRGB(31, 32, 34)
 SectionsFrame.BorderSizePixel = 0
 SectionsFrame.Position = UDim2.new(0.353333324, 0, 0.259259254, 0)
 SectionsFrame.Size = UDim2.new(0, 140, 0, 130)
-SectionsFrame.Active = true
-SectionsFrame.Draggable = true
 
 OtherHubs.Name = "OtherHubs"
 OtherHubs.Parent = SectionsFrame
@@ -60,13 +58,13 @@ OtherHubsText.TextColor3 = Color3.fromRGB(255, 255, 255)
 OtherHubsText.TextSize = 15.000
 OtherHubsText.TextXAlignment = Enum.TextXAlignment.Left
 
-GuiWithDotsImage.Name = "GuiWithDotsImage"
-GuiWithDotsImage.Parent = OtherHubs
-GuiWithDotsImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GuiWithDotsImage.BackgroundTransparency = 1.000
-GuiWithDotsImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
-GuiWithDotsImage.Size = UDim2.new(0, 25, 0, 25)
-GuiWithDotsImage.Image = "http://www.roblox.com/asset/?id=11585486644"
+TwoGuiImage.Name = "TwoGuiImage"
+TwoGuiImage.Parent = OtherHubs
+TwoGuiImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TwoGuiImage.BackgroundTransparency = 1.000
+TwoGuiImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
+TwoGuiImage.Size = UDim2.new(0, 25, 0, 25)
+TwoGuiImage.Image = "http://www.roblox.com/asset/?id=11592850267"
 
 UICorner_2.Parent = SectionsFrame
 
@@ -94,13 +92,13 @@ GameScriptsText.TextColor3 = Color3.fromRGB(255, 255, 255)
 GameScriptsText.TextSize = 15.000
 GameScriptsText.TextXAlignment = Enum.TextXAlignment.Left
 
-GameImage.Name = "GameImage"
-GameImage.Parent = GameScripts
-GameImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-GameImage.BackgroundTransparency = 1.000
-GameImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
-GameImage.Size = UDim2.new(0, 25, 0, 25)
-GameImage.Image = "http://www.roblox.com/asset/?id=11585477126"
+ConsoleImage.Name = "ConsoleImage"
+ConsoleImage.Parent = GameScripts
+ConsoleImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ConsoleImage.BackgroundTransparency = 1.000
+ConsoleImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
+ConsoleImage.Size = UDim2.new(0, 25, 0, 25)
+ConsoleImage.Image = "http://www.roblox.com/asset/?id=11592847277"
 
 InfoBar.Name = "InfoBar"
 InfoBar.Parent = SectionsFrame
@@ -176,7 +174,7 @@ SettingImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 SettingImage.BackgroundTransparency = 1.000
 SettingImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
 SettingImage.Size = UDim2.new(0, 25, 0, 25)
-SettingImage.Image = "http://www.roblox.com/asset/?id=11585547302"
+SettingImage.Image = "http://www.roblox.com/asset/?id=11592827868"
 
 Line1.Name = "Line1"
 Line1.Parent = SectionsFrame
