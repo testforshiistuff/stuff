@@ -61,6 +61,7 @@ local UpdateLog = Instance.new("TextButton")
 local UICorner_16 = Instance.new("UICorner")
 local Version = Instance.new("TextLabel")
 local UICorner_17 = Instance.new("UICorner")
+local plr = game:GetService("Players").LocalPlayer
 
 --Properties:
 
@@ -476,7 +477,7 @@ Hello.BackgroundTransparency = 1.000
 Hello.Position = UDim2.new(0.271903336, 0, 0.0669642836, 0)
 Hello.Size = UDim2.new(0, 241, 0, 50)
 Hello.Font = Enum.Font.FredokaOne
-Hello.Text = "Hello, itsyaboivincentt!"
+Hello.Text = "Hello, "..plr.Name.."!"
 Hello.TextColor3 = Color3.fromRGB(255, 255, 255)
 Hello.TextSize = 23.000
 Hello.TextStrokeTransparency = 0.000
