@@ -555,7 +555,7 @@ ScriptIcon.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 ScriptIcon.BackgroundTransparency = 1.000
 ScriptIcon.Position = UDim2.new(-0.000833330676, 0, 0.0571428575, 0)
 ScriptIcon.Size = UDim2.new(0, 30, 0, 30)
-ScriptIcon.Image = "http://www.roblox.com/asset/?id=11493381816"
+ScriptIcon.Image = "http://www.roblox.com/asset/?id=11592851654"
 
 _8Scripts.Name = "8Scripts"
 _8Scripts.Parent = MainFrame
