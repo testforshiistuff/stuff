@@ -3,14 +3,14 @@
 
 -- Instances:
 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
-
 local ScreenGui = Instance.new("ScreenGui")
-local MainFrame = Instance.new("Frame")
-local VHubImage = Instance.new("ImageLabel")
+local Resizer = Instance.new("Frame")
+local LaunchFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
 local VHubText = Instance.new("TextLabel")
-local SimpleEditionText = Instance.new("TextLabel")
-local LoadingImage = Instance.new("ImageLabel")
+local VHubImage = Instance.new("ImageLabel")
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
 
 --Properties:
 
@@ -18,195 +18,45 @@ ScreenGui.Parent = game:GetService("CoreGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 ScreenGui.DisplayOrder = 999999999
 ScreenGui.ResetOnSpawn = false
-ScreenGui.IgnoreGuiInset = true
 
-MainFrame.Name = "MainFrame"
-MainFrame.Parent = ScreenGui
-MainFrame.Active = true
-MainFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
-MainFrame.BackgroundTransparency = 1
-MainFrame.LayoutOrder = 999999999
-MainFrame.Position = UDim2.new(-0.000953257084, 0, -0.00183585286, 0)
-MainFrame.Size = UDim2.new(1, 0, 1, 0)
+Resizer.Name = "Resizer"
+Resizer.Parent = ScreenGui
+Resizer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Resizer.BackgroundTransparency = 1.000
+Resizer.Size = UDim2.new(1, 0, 1, 0)
 
-VHubImage.Name = "VHubImage"
-VHubImage.Parent = MainFrame
-VHubImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-VHubImage.BackgroundTransparency = 1.000
-VHubImage.Position = UDim2.new(0.287384003, 0, 0.106465541, 0)
-VHubImage.Size = UDim2.new(0, 150, 0, 150)
-VHubImage.Image = "rbxassetid://9408318893"
-VHubImage.ImageTransparency = 1
+LaunchFrame.Name = "LaunchFrame"
+LaunchFrame.Parent = Resizer
+LaunchFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
+LaunchFrame.BorderSizePixel = 0
+LaunchFrame.Position = UDim2.new(0.28873235, 0, 0.282608747, 0)
+LaunchFrame.Size = UDim2.new(0, 300, 0, 200)
+
+UICorner.Parent = LaunchFrame
 
 VHubText.Name = "VHubText"
-VHubText.Parent = MainFrame
+VHubText.Parent = LaunchFrame
 VHubText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VHubText.BackgroundTransparency = 1.000
-VHubText.Position = UDim2.new(0.49, 0, 0.21, 0)
-VHubText.Size = UDim2.new(0, 159, 0, 50)
+VHubText.BorderColor3 = Color3.fromRGB(27, 42, 53)
+VHubText.Position = UDim2.new(0.436666667, 0, 0.370000005, 0)
+VHubText.Size = UDim2.new(0, 168, 0, 50)
 VHubText.Font = Enum.Font.FredokaOne
 VHubText.Text = "VHub"
 VHubText.TextColor3 = Color3.fromRGB(255, 255, 255)
-VHubText.TextScaled = true
-VHubText.TextSize = 14.000
-VHubText.TextWrapped = true
+VHubText.TextSize = 50.000
 VHubText.TextXAlignment = Enum.TextXAlignment.Left
-VHubText.TextTransparency = 1
 
-SimpleEditionText.Name = "SimpleEditionText"
-SimpleEditionText.Parent = MainFrame
-SimpleEditionText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SimpleEditionText.BackgroundTransparency = 1.000
-SimpleEditionText.Position = UDim2.new(0.49, 0, 0.33, 0)
-SimpleEditionText.Size = UDim2.new(0, 159, 0, 20)
-SimpleEditionText.Font = Enum.Font.Gotham
-SimpleEditionText.Text = "Simple Edition"
-SimpleEditionText.TextColor3 = Color3.fromRGB(255, 255, 255)
-SimpleEditionText.TextScaled = true
-SimpleEditionText.TextSize = 14.000
-SimpleEditionText.TextWrapped = true
-SimpleEditionText.TextXAlignment = Enum.TextXAlignment.Left
-SimpleEditionText.TextTransparency = 1
+VHubImage.Name = "VHubImage"
+VHubImage.Parent = LaunchFrame
+VHubImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubImage.BackgroundTransparency = 1.000
+VHubImage.Position = UDim2.new(0.103333324, 0, 0.245000005, 0)
+VHubImage.Size = UDim2.new(0, 100, 0, 100)
+VHubImage.Image = "rbxassetid://9408318893"
 
-LoadingImage.Name = "LoadingImage"
-LoadingImage.Parent = MainFrame
-LoadingImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-LoadingImage.BackgroundTransparency = 1.000
-LoadingImage.BorderColor3 = Color3.fromRGB(27, 42, 53)
-LoadingImage.Position = UDim2.new(0.441631526, 0, 0.50431031, 0)
-LoadingImage.Size = UDim2.new(0, 80, 0, 80)
-LoadingImage.Image = "http://www.roblox.com/asset/?id=11526794476"
-LoadingImage.ImageTransparency = 1
-
--- Scripts:
-
-local function SEAHYP_fake_script() -- LoadingImage.LocalScript 
-	local script = Instance.new('LocalScript', LoadingImage)
-
-	while wait() do
-		script.Parent.Rotation = script.Parent.Rotation + -10
-	end
-end
-coroutine.wrap(SEAHYP_fake_script)()
-
-coroutine.wrap(function()
-while wait() do
-wait(0.1)
-MainFrame.BackgroundTransparency = 0.9
-LoadingImage.ImageTransparency = 0.9
-VHubImage.ImageTransparency = 0.9
-VHubText.TextTransparency = 0.9
-SimpleEditionText.TextTransparency = 0.9
-wait(0.1)
-MainFrame.BackgroundTransparency = 0.8
-LoadingImage.ImageTransparency = 0.8
-VHubImage.ImageTransparency = 0.8
-VHubText.TextTransparency = 0.8
-SimpleEditionText.TextTransparency = 0.8
-wait(0.1)
-MainFrame.BackgroundTransparency = 0.7
-LoadingImage.ImageTransparency = 0.7
-VHubImage.ImageTransparency = 0.7
-VHubText.TextTransparency = 0.7
-SimpleEditionText.TextTransparency = 0.7
-wait(0.1)
-MainFrame.BackgroundTransparency = 0.6
-LoadingImage.ImageTransparency = 0.6
-VHubImage.ImageTransparency = 0.6
-VHubText.TextTransparency = 0.6
-SimpleEditionText.TextTransparency = 0.6
-wait(0.1)
-MainFrame.BackgroundTransparency = 0.5
-LoadingImage.ImageTransparency = 0.5
-VHubImage.ImageTransparency = 0.5
-VHubText.TextTransparency = 0.5
-SimpleEditionText.TextTransparency = 0.5
-wait(0.1)
-LoadingImage.ImageTransparency = 0.4
-VHubImage.ImageTransparency = 0.4
-VHubText.TextTransparency = 0.4
-SimpleEditionText.TextTransparency = 0.4
-wait(0.1)
-LoadingImage.ImageTransparency = 0.3
-VHubImage.ImageTransparency = 0.3
-VHubText.TextTransparency = 0.3
-SimpleEditionText.TextTransparency = 0.3
-wait(0.1)
-LoadingImage.ImageTransparency = 0.2
-VHubImage.ImageTransparency = 0.2
-VHubText.TextTransparency = 0.2
-SimpleEditionText.TextTransparency = 0.2
-wait(0.1)
-LoadingImage.ImageTransparency = 0.1
-VHubImage.ImageTransparency = 0.1
-VHubText.TextTransparency = 0.1
-SimpleEditionText.TextTransparency = 0.1
-wait(0.1)
-LoadingImage.ImageTransparency = 0
-VHubImage.ImageTransparency = 0
-VHubText.TextTransparency = 0
-SimpleEditionText.TextTransparency = 0
 wait(3)
-LoadingImage.ImageTransparency = 0.1
-VHubImage.ImageTransparency = 0.1
-VHubText.TextTransparency = 0.1
-SimpleEditionText.TextTransparency = 0.1
-wait(0.1)
-LoadingImage.ImageTransparency = 0.2
-VHubImage.ImageTransparency = 0.2
-VHubText.TextTransparency = 0.2
-SimpleEditionText.TextTransparency = 0.2
-wait(0.1)
-LoadingImage.ImageTransparency = 0.3
-VHubImage.ImageTransparency = 0.3
-VHubText.TextTransparency = 0.3
-SimpleEditionText.TextTransparency = 0.3
-wait(0.1)
-LoadingImage.ImageTransparency = 0.4
-VHubImage.ImageTransparency = 0.4
-VHubText.TextTransparency = 0.4
-SimpleEditionText.TextTransparency = 0.4
-wait(0.1)
-MainFrame.BackgroundTransparency = 0.5
-LoadingImage.ImageTransparency = 0.5
-VHubImage.ImageTransparency = 0.5
-VHubText.TextTransparency = 0.5
-SimpleEditionText.TextTransparency = 0.5
-wait(0.1)
-MainFrame.BackgroundTransparency = 0.6
-LoadingImage.ImageTransparency = 0.6
-VHubImage.ImageTransparency = 0.6
-VHubText.TextTransparency = 0.6
-SimpleEditionText.TextTransparency = 0.6
-wait(0.1)
-MainFrame.BackgroundTransparency = 0.7
-LoadingImage.ImageTransparency = 0.7
-VHubImage.ImageTransparency = 0.7
-VHubText.TextTransparency = 0.7
-SimpleEditionText.TextTransparency = 0.7
-wait(0.1)
-MainFrame.BackgroundTransparency = 0.8
-LoadingImage.ImageTransparency = 0.8
-VHubImage.ImageTransparency = 0.8
-VHubText.TextTransparency = 0.8
-SimpleEditionText.TextTransparency = 0.8
-wait(0.1)
-MainFrame.BackgroundTransparency = 0.9
-LoadingImage.ImageTransparency = 0.9
-VHubImage.ImageTransparency = 0.9
-VHubText.TextTransparency = 0.9
-SimpleEditionText.TextTransparency = 0.9
-wait(0.1)
-MainFrame.BackgroundTransparency = 1
-LoadingImage.ImageTransparency = 1
-VHubImage.ImageTransparency = 1
-VHubText.TextTransparency = 1
-SimpleEditionText.TextTransparency = 1
-wait(0.1)
 ScreenGui:Destroy()
-end
-end)()
-
-wait(5)
+wait(1)
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Home%20Page'),true))()
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true
