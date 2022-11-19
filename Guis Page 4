@@ -943,34 +943,66 @@ ClickToExe_8.TextYAlignment = Enum.TextYAlignment.Bottom
 
 --Scripts Configuration:
 
-NameScript.Text = ""
+NameScript.Text = "Invisible Car Toggle Gui"
 Script1.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/XL50E7g4'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Invisible Car Toggle Gui!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
 end)
 
 NameScript_2.Text = ""
 Script2.MouseButton1Down:connect(function()
+if game.PlaceId == a 155615604 then
+loadstring(game:HttpGet(('https://pastebin.com/raw/QLtH2v8i'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Nihilize H4X GUI!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+else
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works In Prison Life!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
 end)
 
-NameScript_3.Text = ""
+NameScript_3.Text = "Arceus X Aimbot"
 Script3.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/1Gp9c57U'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Arceus X Aimbot!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
 end)
 
-NameScript_4.Text = ""
+NameScript_4.Text = "Peterating Underground"
 Script4.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://pastebin.com/raw/QKbzxzSj'))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Peterating Underground!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
 end)
 
-NameScript_5.Text = ""
+NameScript_5.Text = "Script Soon"
 Script5.MouseButton1Down:connect(function()
 end)
 
-NameScript_6.Text = ""
+NameScript_6.Text = "Script Soon"
 Script6.MouseButton1Down:connect(function()
 end)
 
-NameScript_7.Text = ""
+NameScript_7.Text = "Script Soon"
 Script7.MouseButton1Down:connect(function()
 end)
 
-NameScript_8.Text = ""
+NameScript_8.Text = "Script Soon"
 Script8.MouseButton1Down:connect(function()
 end)
