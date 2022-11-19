@@ -33,6 +33,8 @@ SectionsFrame.BackgroundColor3 = Color3.fromRGB(31, 32, 34)
 SectionsFrame.BorderSizePixel = 0
 SectionsFrame.Position = UDim2.new(0.353333324, 0, 0.259259254, 0)
 SectionsFrame.Size = UDim2.new(0, 140, 0, 130)
+SectionsFrame.Active = true
+SectionsFrame.Draggable = true
 
 OtherHubs.Name = "OtherHubs"
 OtherHubs.Parent = SectionsFrame
