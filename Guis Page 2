@@ -1022,7 +1022,7 @@ Script6.MouseButton1Down:connect(function()
 loadstring(game:HttpGet(('https://pastebin.com/raw/E9a7QmCZ'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
-	Text = "Successfully Shiftlock!";
+	Text = "Successfully Executed Shiftlock!";
 	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
 Duration = 16;
 end)
