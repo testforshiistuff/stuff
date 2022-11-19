@@ -962,7 +962,7 @@ loadstring(Game:GetObjects("rbxassetid://1255908305")[1].Source)()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Arosia!";
-	Icon = "rbxthumb://type=Asset&id=11601711518&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
 Duration = 16;
 end)
 
@@ -1013,8 +1013,8 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end)
 
-NameScript0.Text = "Warrior Robberr"
-Script0.MouseButton1Down:connect(function()
+NameScript_6.Text = "Meep Gui"
+Script6.MouseButton1Down:connect(function()
 if R6() then
 loadstring(game:HttpGet(('https://pastebin.com/raw/jt5u4DCf'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
@@ -1029,4 +1029,14 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
 Duration = 16;
 end
+end)
+
+NameScript_7.Text = "Warrior Roberr Gui"
+Script7.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/tK9Wb2zD'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Warrior Roberr Gui!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
 end)
