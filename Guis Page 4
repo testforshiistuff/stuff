@@ -508,7 +508,7 @@ PageDescription.BackgroundTransparency = 1.000
 PageDescription.Position = UDim2.new(0.0884523839, 0, 0, 0)
 PageDescription.Size = UDim2.new(0, 228, 0, 35)
 PageDescription.Font = Enum.Font.GothamMedium
-PageDescription.Text = "Guis | Page 1"
+PageDescription.Text = "Guis | Page 4"
 PageDescription.TextColor3 = Color3.fromRGB(255, 255, 255)
 PageDescription.TextSize = 17.000
 PageDescription.TextXAlignment = Enum.TextXAlignment.Left
@@ -525,6 +525,8 @@ NextPage.TextScaled = true
 NextPage.TextSize = 14.000
 NextPage.TextStrokeColor3 = Color3.fromRGB(0, 150, 0)
 NextPage.TextWrapped = true
+NextPage.MouseButton1Down:connect(function()
+end)
 
 UICorner_13.CornerRadius = UDim.new(0, 20)
 UICorner_13.Parent = NextPage
@@ -953,13 +955,13 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end)
 
-NameScript_2.Text = ""
+NameScript_2.Text = "Nihilize H4X Gui"
 Script2.MouseButton1Down:connect(function()
 if game.PlaceId == a 155615604 then
 loadstring(game:HttpGet(('https://pastebin.com/raw/QLtH2v8i'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
-	Text = "Successfully Executed Nihilize H4X GUI!";
+	Text = "Successfully Executed Nihilize H4X Gui!";
 	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
 Duration = 16;
 else
