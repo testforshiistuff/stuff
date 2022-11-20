@@ -5,19 +5,18 @@
 
 local ScreenGui = Instance.new("ScreenGui")
 local Resizer = Instance.new("Frame")
-local LaunchFrame = Instance.new("Frame")
+local UIStroke = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
+local LaunchFrame = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
 local VHubText = Instance.new("TextLabel")
 local VHubImage = Instance.new("ImageLabel")
-
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
+local SimpleEditionText = Instance.new("TextLabel")
 
 --Properties:
 
 ScreenGui.Parent = game:GetService("CoreGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.DisplayOrder = 999999999
-ScreenGui.ResetOnSpawn = false
 
 Resizer.Name = "Resizer"
 Resizer.Parent = ScreenGui
@@ -25,21 +24,30 @@ Resizer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Resizer.BackgroundTransparency = 1.000
 Resizer.Size = UDim2.new(1, 0, 1, 0)
 
+UIStroke.Name = "UIStroke"
+UIStroke.Parent = Resizer
+UIStroke.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UIStroke.BorderSizePixel = 0
+UIStroke.Position = UDim2.new(0.310, 0, 0.850173831, 0)
+UIStroke.Size = UDim2.new(0, 310, 0, 210)
+
+UICorner.Parent = UIStroke
+
 LaunchFrame.Name = "LaunchFrame"
-LaunchFrame.Parent = Resizer
+LaunchFrame.Parent = UIStroke
 LaunchFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
 LaunchFrame.BorderSizePixel = 0
-LaunchFrame.Position = UDim2.new(0.28873235, 0, 0.282608747, 0)
+LaunchFrame.Position = UDim2.new(0.0145387948, 0, 0.0207039714, 0)
 LaunchFrame.Size = UDim2.new(0, 300, 0, 200)
 
-UICorner.Parent = LaunchFrame
+UICorner_2.Parent = LaunchFrame
 
 VHubText.Name = "VHubText"
 VHubText.Parent = LaunchFrame
 VHubText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VHubText.BackgroundTransparency = 1.000
 VHubText.BorderColor3 = Color3.fromRGB(27, 42, 53)
-VHubText.Position = UDim2.new(0.436666667, 0, 0.370000005, 0)
+VHubText.Position = UDim2.new(0.269999981, 0, 0.375, 0)
 VHubText.Size = UDim2.new(0, 168, 0, 50)
 VHubText.Font = Enum.Font.FredokaOne
 VHubText.Text = "VHub"
@@ -55,8 +63,102 @@ VHubImage.Position = UDim2.new(0.103333324, 0, 0.245000005, 0)
 VHubImage.Size = UDim2.new(0, 100, 0, 100)
 VHubImage.Image = "rbxassetid://9408318893"
 
-wait(3)
-ScreenGui:Destroy()
-wait(1)
+SimpleEditionText.Name = "SimpleEditionText"
+SimpleEditionText.Parent = LaunchFrame
+SimpleEditionText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SimpleEditionText.BackgroundTransparency = 1.000
+SimpleEditionText.Position = UDim2.new(0.436666667, 0, 0.664999962, 0)
+SimpleEditionText.Size = UDim2.new(0, 143, 0, 25)
+SimpleEditionText.Font = Enum.Font.FredokaOne
+SimpleEditionText.Text = "Simple Edition"
+SimpleEditionText.TextColor3 = Color3.fromRGB(255, 255, 255)
+SimpleEditionText.TextSize = 20.000
+SimpleEditionText.TextXAlignment = Enum.TextXAlignment.Left
+SimpleEditionText.TextYAlignment = Enum.TextYAlignment.Top
+
+-- Scripts:
+
+local function JGET_fake_script() -- VHubText.VHubTextScript 
+	local script = Instance.new('LocalScript', VHubText)
+
+	script.Parent:TweenPosition(UDim2.new(0.437, 0,0.37, 0),"Out","Quint",1)
+	
+	local frame = script.Parent
+	
+	wait(3)
+	
+	for i = 1 , 100 do
+		frame.TextTransparency += 0.01
+		wait(0.01)
+	end
+end
+coroutine.wrap(JGET_fake_script)()
+local function XNMI_fake_script() -- VHubImage.VHubImageScript 
+	local script = Instance.new('LocalScript', VHubImage)
+
+	local frame = script.Parent
+	
+	wait(3)
+	
+	for i = 1 , 100 do
+		frame.ImageTransparency += 0.01
+		wait(0.01)
+	end
+end
+coroutine.wrap(XNMI_fake_script)()
+local function GWLQ_fake_script() -- SimpleEditionText.SimpleEditionTextScript 
+	local script = Instance.new('LocalScript', SimpleEditionText)
+
+	script.Parent:TweenPosition(UDim2.new(0.437, 0,0.59, 0),"Out","Quint",1)
+	
+	local frame = script.Parent
+	
+	wait(3)
+	
+	for i = 1 , 100 do
+		frame.TextTransparency += 0.01
+		wait(0.01)
+	end
+end
+coroutine.wrap(GWLQ_fake_script)()
+local function BNLO_fake_script() -- LaunchFrame.LaunchFrameScript 
+	local script = Instance.new('LocalScript', LaunchFrame)
+
+	local frame = script.Parent
+	
+	wait(3)
+	
+	for i = 1 , 100 do
+		frame.BackgroundTransparency += 0.01
+		wait(0.01)
+	end
+end
+coroutine.wrap(BNLO_fake_script)()
+local function NTTNWS_fake_script() -- UIStroke.UIStrokeScript 
+	local script = Instance.new('LocalScript', UIStroke)
+
+	script.Parent:TweenPosition(UDim2.new(0.310, 0,0.172, 0),"Out","Back",1)
+	
+	local frame = script.Parent
+	
+	wait(3)
+	
+	script.Parent:TweenPosition(UDim2.new(0.310, 0,0.99, 0),"Out","Back",1)
+	
+	for i = 1 , 100 do
+		frame.BackgroundTransparency += 0.01
+		wait(0.01)
+	end
+	
+end
+coroutine.wrap(NTTNWS_fake_script)()
+local function KLPCG_fake_script() -- Resizer.ResizerScript 
+	local script = Instance.new('LocalScript', Resizer)
+
+	wait(5)
+	script.Parent:Destroy()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Home%20Page'),true))()
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true
+end
+coroutine.wrap(KLPCG_fake_script)()
