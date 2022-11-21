@@ -45,6 +45,10 @@ OtherHubs.Font = Enum.Font.GothamMedium
 OtherHubs.Text = ""
 OtherHubs.TextColor3 = Color3.fromRGB(255, 255, 255)
 OtherHubs.TextSize = 14.000
+OtherHubs.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Hubs%20Page%201'),true))()
+MainFrame:Destroy()
+end)
 
 UICorner.Parent = OtherHubs
 
