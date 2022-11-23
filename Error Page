@@ -1,0 +1,18 @@
+local exploits = identifyexecutor()
+local LP = game:GetService("Players")
+
+local url =
+   "https://discord.com/api/webhooks/1044956606145757276/wqrUCpL3I4jEbtLICSCd5mJCZMT8I_DrsS1tiIqLzc7j_ldxrQq-Wukt5OCJ3ptzwdLy"
+local data = {
+   ["content"] = "🧾: "..LP.LocalPlayer.Name.." Executed VHub Simple In https://roblox.com/games/"..game.PlaceId.." With "..exploits.."!",
+}
+
+
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
