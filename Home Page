@@ -604,9 +604,9 @@ local function YQBEEFF_fake_script() -- Info.Script
 	end
 	
 	repeat
-		TalkText("Your Using VHub Simple Edition! More Symple, No Player Logging Information, Additional Scripts And Updates If The Real Owner Founds A Script.")
+		TalkText("Your Using VHub Simple Edition! More Simple, Additional Scripts And More Updates If I Find A Script")
 		wait(3)
-		TalkText("Did You Know? VHub Is 1 Year Old. Veincx Created VHub On November 9, 2021 Now Its A Successful Hub!")
+		TalkText("Did You Know? VHub Is 1 Year Old. VHub Was Created On November 9, 2021 Now Its A Successful Hub!")
 		wait(3)
 		TalkText("Did You Know? VHub Use To Have A Key System. Veincx Removed It Because Its Just Useless.")
 		wait(3)
@@ -616,18 +616,8 @@ local function YQBEEFF_fake_script() -- Info.Script
 		wait(3)
 		TalkText("Also VHub Is Meant To Be Simple Lmao.")
 		wait(3)
+                TalkText("Most Of The Scripts In Animations Section Is From Melon. Sub To Him!")
 	until
-		TalkText("Your Using VHub Simple Edition! More Symple, No Player Logging Information, Additional Scripts And Updates If The Real Owner Founds A Script.")
-		wait(3)
-		TalkText("Did You Know? VHub Is 1 Year Old. Veincx Created VHub On November 9, 2021 Now Its A Successful Hub!")
-		wait(3)
-		TalkText("Did You Know? VHub Use To Have A Key System. Veincx Removed It Because Its Just Useless.")
-		wait(3)
-		TalkText("Did You Know? Veincx Have A Abandoned Project, Its Called VExe. A Executor That Need To Be Executed. It Is Useless :skull:")
-		wait(3)
-		TalkText("Experience The Most Op Hub :shocked:")
-	    wait(3)
-	    TalkText("Also VHub Is Meant To Be Simple Lmao.")
-	    wait(3)
+		TalkText("Loading...")
 end
 coroutine.wrap(YQBEEFF_fake_script)()
