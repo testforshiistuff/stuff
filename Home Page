@@ -595,17 +595,18 @@ wait(3)
 for i = 1,100 do
 	Info.TextTransparency += 0.05
 	wait(0.01)
-end
+wait(0.1)
 for i = 1,100 do
 	Info.TextTransparency -= 0.05
 	wait(0.01)
-end
 
 Info.Text = "Your Using VHub Simple Edition! More Simple, Additional Scripts And More Updates If I Find A Script"
 wait(3)
 for i = 1,100 do
 	Info.TextTransparency += 0.05
 	wait(0.01)
+end
+end
 end
 end
 end)()
