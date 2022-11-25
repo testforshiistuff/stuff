@@ -588,6 +588,8 @@ local function BCXGDK_fake_script() -- ProfilePicture.LocalScript
 end
 coroutine.wrap(BCXGDK_fake_script)()
 local function YQBEEFF_fake_script() -- Info.Script 
+coroutine.wrap(function()
+while wait() do
 	local script = Instance.new('Script', Info)
 
 	local Frame = script.Parent.Parent
@@ -603,7 +605,6 @@ local function YQBEEFF_fake_script() -- Info.Script
 		end
 	end
 	
-	repeat
 		TalkText("Your Using VHub Simple Edition! More Simple, Additional Scripts And More Updates If I Find A Script")
 		wait(3)
 		TalkText("Did You Know? VHub Is 1 Year Old. VHub Was Created On November 9, 2021 Now Its A Successful Hub!")
@@ -617,7 +618,8 @@ local function YQBEEFF_fake_script() -- Info.Script
 		TalkText("Also VHub Is Meant To Be Simple Lmao.")
 		wait(3)
                 TalkText("Most Of The Scripts In Animations Section Is From Melon. Sub To Him!")
-	until
 		TalkText("Loading...")
+end
+end)()
 end
 coroutine.wrap(YQBEEFF_fake_script)()
