@@ -12,6 +12,7 @@ local UICorner_2 = Instance.new("UICorner")
 local VHubText = Instance.new("TextLabel")
 local VHubImage = Instance.new("ImageLabel")
 local SimpleEditionText = Instance.new("TextLabel")
+local LoadingText = Instance.new("TextLabel")
 
 --Properties:
 
@@ -28,7 +29,7 @@ UIStroke.Name = "UIStroke"
 UIStroke.Parent = Resizer
 UIStroke.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 UIStroke.BorderSizePixel = 0
-UIStroke.Position = UDim2.new(0.310, 0, 0.850173831, 0)
+UIStroke.Position = UDim2.new(0.200, 0, 0.99, 0)
 UIStroke.Size = UDim2.new(0, 310, 0, 210)
 
 UICorner.Parent = UIStroke
@@ -76,65 +77,66 @@ SimpleEditionText.TextSize = 20.000
 SimpleEditionText.TextXAlignment = Enum.TextXAlignment.Left
 SimpleEditionText.TextYAlignment = Enum.TextYAlignment.Top
 
+LoadingText.Name = "LoadingText"
+LoadingText.Parent = LaunchFrame
+LoadingText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoadingText.BackgroundTransparency = 1.000
+LoadingText.Position = UDim2.new(0.170000002, 0, 0.665000021, 0)
+LoadingText.Size = UDim2.new(0, 200, 0, 50)
+LoadingText.Font = Enum.Font.Gotham
+LoadingText.Text = "Loading Gui..."
+LoadingText.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoadingText.TextSize = 14.000
+LoadingText.TextTransparency = 1.000
+
 -- Scripts:
 
-local function JGET_fake_script() -- VHubText.VHubTextScript 
+local function SXYZLW_fake_script() -- VHubText.VHubTextScript 
 	local script = Instance.new('LocalScript', VHubText)
 
 	script.Parent:TweenPosition(UDim2.new(0.437, 0,0.37, 0),"Out","Quint",1)
 	
 	local frame = script.Parent
 	
-	wait(3)
-	
-	for i = 1 , 100 do
-		frame.TextTransparency += 0.01
-		wait(0.01)
-	end
 end
-coroutine.wrap(JGET_fake_script)()
-local function XNMI_fake_script() -- VHubImage.VHubImageScript 
+coroutine.wrap(SXYZLW_fake_script)()
+local function HXDAMH_fake_script() -- VHubImage.VHubImageScript 
 	local script = Instance.new('LocalScript', VHubImage)
 
 	local frame = script.Parent
 	
-	wait(3)
-	
-	for i = 1 , 100 do
-		frame.ImageTransparency += 0.01
-		wait(0.01)
-	end
 end
-coroutine.wrap(XNMI_fake_script)()
-local function GWLQ_fake_script() -- SimpleEditionText.SimpleEditionTextScript 
+coroutine.wrap(HXDAMH_fake_script)()
+local function LYXAJV_fake_script() -- SimpleEditionText.SimpleEditionTextScript 
 	local script = Instance.new('LocalScript', SimpleEditionText)
 
 	script.Parent:TweenPosition(UDim2.new(0.437, 0,0.59, 0),"Out","Quint",1)
 	
 	local frame = script.Parent
 	
-	wait(3)
-	
-	for i = 1 , 100 do
-		frame.TextTransparency += 0.01
-		wait(0.01)
-	end
 end
-coroutine.wrap(GWLQ_fake_script)()
-local function BNLO_fake_script() -- LaunchFrame.LaunchFrameScript 
+coroutine.wrap(LYXAJV_fake_script)()
+local function BZPU_fake_script() -- LaunchFrame.LaunchFrameScript 
 	local script = Instance.new('LocalScript', LaunchFrame)
 
 	local frame = script.Parent
 	
-	wait(3)
+end
+coroutine.wrap(BZPU_fake_script)()
+local function QGFYZH_fake_script() -- LoadingText.LoadingTextScript 
+	local script = Instance.new('LocalScript', LoadingText)
+
+	wait(1)
+	local frame = script.Parent
 	
 	for i = 1 , 100 do
-		frame.BackgroundTransparency += 0.01
+		frame.TextTransparency -= 0.05
 		wait(0.01)
 	end
+	
 end
-coroutine.wrap(BNLO_fake_script)()
-local function NTTNWS_fake_script() -- UIStroke.UIStrokeScript 
+coroutine.wrap(QGFYZH_fake_script)()
+local function RWPXMT_fake_script() -- UIStroke.UIStrokeScript 
 	local script = Instance.new('LocalScript', UIStroke)
 
 	script.Parent:TweenPosition(UDim2.new(0.310, 0,0.200, 0),"Out","Back",1)
@@ -145,14 +147,9 @@ local function NTTNWS_fake_script() -- UIStroke.UIStrokeScript
 	
 	script.Parent:TweenPosition(UDim2.new(0.310, 0,0.99, 0),"Out","Back",1)
 	
-	for i = 1 , 100 do
-		frame.BackgroundTransparency += 0.01
-		wait(0.01)
-	end
-	
 end
-coroutine.wrap(NTTNWS_fake_script)()
-local function KLPCG_fake_script() -- Resizer.ResizerScript 
+coroutine.wrap(RWPXMT_fake_script)()
+local function GXMEDQ_fake_script() -- Resizer.ResizerScript 
 	local script = Instance.new('LocalScript', Resizer)
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
 wait(0.1)
@@ -197,4 +194,4 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stu
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Home%20Page'),true))()
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true
 end
-coroutine.wrap(KLPCG_fake_script)()
+coroutine.wrap(GXMEDQ_fake_script)()
