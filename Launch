@@ -181,13 +181,9 @@ wait(0.1)
 game:GetService("CoreGui").VHubCoreScreen:Destroy()	
 	script.Parent:TweenPosition(UDim2.new(0.310, 0,0.99, 0),"Out","Back",1)
 	wait(1)
-	script.Parent:Destroy()
+	ScreenGui:Destroy()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Home%20Page'),true))()
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true	
 end
 coroutine.wrap(RWPXMT_fake_script)()
-local function GXMEDQ_fake_script() -- Resizer.ResizerScript 
-	local script = Instance.new('LocalScript', Resizer)
-print("Executed VHub!")
-coroutine.wrap(GXMEDQ_fake_script)()
