@@ -491,7 +491,7 @@ Info.BackgroundTransparency = 1.000
 Info.Position = UDim2.new(0.135951668, 0, 0.379464298, 0)
 Info.Size = UDim2.new(0, 241, 0, 90)
 Info.Font = Enum.Font.GothamBold
-Info.Text = "..."
+Info.Text = "Messages Not Available Right Now :("
 Info.TextColor3 = Color3.fromRGB(255, 255, 255)
 Info.TextSize = 14.000
 Info.TextWrapped = true
@@ -587,26 +587,3 @@ local function BCXGDK_fake_script() -- ProfilePicture.LocalScript
 	imageLabel.Image = content
 end
 coroutine.wrap(BCXGDK_fake_script)()
-
-coroutine.wrap(function()
-while wait() do
-Info.Text = "Your Using VHub Simple Edition! More Simple, Additional Scripts And More Updates If I Find A Script"
-wait(3)
-for i = 1,100 do
-	Info.TextTransparency += 0.05
-	wait(0.01)
-wait(0.1)
-for i = 1,100 do
-	Info.TextTransparency -= 0.05
-	wait(0.01)
-
-Info.Text = "Your Using VHub Simple Edition! More Simple, Additional Scripts And More Updates If I Find A Script"
-wait(3)
-for i = 1,100 do
-	Info.TextTransparency += 0.05
-	wait(0.01)
-end
-end
-end
-end
-end)()
