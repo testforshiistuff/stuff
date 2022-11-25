@@ -137,7 +137,7 @@ coroutine.wrap(BNLO_fake_script)()
 local function NTTNWS_fake_script() -- UIStroke.UIStrokeScript 
 	local script = Instance.new('LocalScript', UIStroke)
 
-	script.Parent:TweenPosition(UDim2.new(0.310, 0,0.172, 0),"Out","Back",1)
+	script.Parent:TweenPosition(UDim2.new(0.310, 0,0.200, 0),"Out","Back",1)
 	
 	local frame = script.Parent
 	
