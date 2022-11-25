@@ -591,6 +591,7 @@ coroutine.wrap(BCXGDK_fake_script)()
 coroutine.wrap(function()
 while wait() do
 Info.Text = "Your Using VHub Simple Edition! More Simple, Additional Scripts And More Updates If I Find A Script"
+wait(3)
 for i = 1,100 do
 	Info.TextTransparency += 0.01
 	wait(0.01)
