@@ -174,7 +174,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stu
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Scripts%20Page%204'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Scripts%20Page%205'),true))()
 game:GetService("CoreGui").VHubCoreScreen:Destroy()
-	wait(3)
+	wait(5)
 	script.Parent:Destroy()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Home%20Page'),true))()
