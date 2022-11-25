@@ -590,12 +590,12 @@ coroutine.wrap(BCXGDK_fake_script)()
 
 coroutine.wrap(function()
 while wait() do
-frame.Text == "Your Using VHub Simple Edition! More Simple, Additional Scripts And More Updates If I Find A Script"
+Info.Text = "Your Using VHub Simple Edition! More Simple, Additional Scripts And More Updates If I Find A Script"
 for i = 1,100 do
 	Info.TextTransparency += 0.01
 	wait(0.01)
 
-frame.Text == "Did You Know? VHub Is 1 Year Old. VHub Was Created On November 9, 2021 Now Its A Successful Hub!"
+Info.Text = "Did You Know? VHub Is 1 Year Old. VHub Was Created On November 9, 2021 Now Its A Successful Hub!"
 for i = 1,100 do
 	Info.TextTransparency -= 0.01
 	wait(0.01)
