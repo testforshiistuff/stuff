@@ -142,16 +142,7 @@ local function RWPXMT_fake_script() -- UIStroke.UIStrokeScript
 	script.Parent:TweenPosition(UDim2.new(0.310, 0,0.200, 0),"Out","Back",1)
 	
 	local frame = script.Parent
-	
-	wait(3)
-	
-	script.Parent:TweenPosition(UDim2.new(0.310, 0,0.99, 0),"Out","Back",1)
-	
-end
-coroutine.wrap(RWPXMT_fake_script)()
-local function GXMEDQ_fake_script() -- Resizer.ResizerScript 
-	local script = Instance.new('LocalScript', Resizer)
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
+        loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
 wait(0.1)
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Animations%20Page%201'),true))()
 wait(0.1)
@@ -187,11 +178,16 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stu
 wait(0.1)
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Scripts%20Page%205'),true))()
 wait(0.1)
-game:GetService("CoreGui").VHubCoreScreen:Destroy()
+game:GetService("CoreGui").VHubCoreScreen:Destroy()	
+	script.Parent:TweenPosition(UDim2.new(0.310, 0,0.99, 0),"Out","Back",1)
 	wait(1)
 	script.Parent:Destroy()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Home%20Page'),true))()
-game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true	
 end
+coroutine.wrap(RWPXMT_fake_script)()
+local function GXMEDQ_fake_script() -- Resizer.ResizerScript 
+	local script = Instance.new('LocalScript', Resizer)
+print("Executed VHub!")
 coroutine.wrap(GXMEDQ_fake_script)()
