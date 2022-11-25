@@ -594,6 +594,9 @@ Info.Text = "Your Using VHub Simple Edition! More Simple, Additional Scripts And
 for i = 1,100 do
 	Info.TextTransparency += 0.01
 	wait(0.01)
+end
+
+wait(3)
 
 Info.Text = "Did You Know? VHub Is 1 Year Old. VHub Was Created On November 9, 2021 Now Its A Successful Hub!"
 for i = 1,100 do
