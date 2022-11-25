@@ -29,7 +29,7 @@ UIStroke.Name = "UIStroke"
 UIStroke.Parent = Resizer
 UIStroke.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 UIStroke.BorderSizePixel = 0
-UIStroke.Position = UDim2.new(0.200, 0, 0.99, 0)
+UIStroke.Position = UDim2.new(0.310, 0, 0.99, 0)
 UIStroke.Size = UDim2.new(0, 310, 0, 210)
 
 UICorner.Parent = UIStroke
