@@ -588,9 +588,9 @@ local function BCXGDK_fake_script() -- ProfilePicture.LocalScript
 end
 coroutine.wrap(BCXGDK_fake_script)()
 local function YQBEEFF_fake_script() -- Info.Script 
+	local script = Instance.new('Script', Info)
 coroutine.wrap(function()
 while wait() do
-	local script = Instance.new('Script', Info)
 
 	local Frame = script.Parent.Parent
 	local TalkLabel = script.Parent
