@@ -492,7 +492,7 @@ Info.Position = UDim2.new(0.135951668, 0, 0.379464298, 0)
 Info.Size = UDim2.new(0, 241, 0, 90)
 Info.Font = Enum.Font.GothamBold
 Info.Text = "..."
-Info.TextColor3 = Color3.fromRGB(200, 200, 200)
+Info.TextColor3 = Color3.fromRGB(255, 255, 255)
 Info.TextSize = 14.000
 Info.TextWrapped = true
 Info.TextXAlignment = Enum.TextXAlignment.Left
@@ -587,23 +587,18 @@ local function BCXGDK_fake_script() -- ProfilePicture.LocalScript
 	imageLabel.Image = content
 end
 coroutine.wrap(BCXGDK_fake_script)()
-local function YQBEEFF_fake_script() -- Info.Script 
-	local script = Instance.new('Script', Info)
+
 coroutine.wrap(function()
 while wait() do
-local frame = script.Parent
 
 frame.Text = "Your Using VHub Simple Edition! More Simple, Additional Scripts And More Updates If I Find A Script"
 for i = 1,100 do
-	frame.TextTransparency += 0.01
+	Info.TextTransparency += 0.01
 	wait (0.01)
 
 frame.Text = "Did You Know? VHub Is 1 Year Old. VHub Was Created On November 9, 2021 Now Its A Successful Hub!"
 for i = 1,100 do
-	frame.TextTransparency -= 0.01
+	Info.TextTransparency -= 0.01
 	wait (0.01)
 end
-end
 end)()
-end
-coroutine.wrap(YQBEEFF_fake_script)()
