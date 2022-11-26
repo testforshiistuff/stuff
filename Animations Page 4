@@ -981,26 +981,122 @@ Duration = 16;
 end
 end)
 
-NameScript_3.Text = ""
+NameScript_3.Text = "Fighter Animation"
 Script3.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+loadstring(game:HttpGet("https://pastebin.com/raw/L1TiyD3x", true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Fighter Animation!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
 end)
 
-NameScript_4.Text = ""
+NameScript_4.Text = "Cyborg Animation"
 Script4.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+loadstring(game:HttpGet("https://pastebin.com/raw/RF7FUtTY", true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Cyborg Animation!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
 end)
 
-NameScript_5.Text = ""
+NameScript_5.Text = "Energize Animations Gui"
 Script5.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/B6iCgfqi'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Energize Animations Gui!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
 end)
 
-NameScript_6.Text = ""
+NameScript_6.Text = "Rick Roll Animation"
 Script6.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+loadstring(game:HttpGet(('https://pastebin.com/raw/TnhT6MTJ'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Rick Roll Animation!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
 end)
 
-NameScript_7.Text = ""
+NameScript_7.Text = "Dog Animation"
 Script7.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+loadstring(game:HttpGet(('https://pastebin.com/raw/nrrsD5K4'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Dog Animation!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
 end)
 
-NameScript_8.Text = ""
+NameScript_8.Text = "Spiderman Animation"
 Script8.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+loadstring(game:HttpGet(('https://pastebin.com/raw/ZAp2KfBa'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Spiderman Animation!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+wait(5)
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice!";
+	Text = "If You Can't Use Any Skills, You May Need A Keyboard And A Mouse!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
 end)
