@@ -998,9 +998,8 @@ end)
 NameScript_5.Text = "Ball"
 Script5.MouseButton1Down:connect(function()
 if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
 loadstring(game:HttpGet(('https://pastebin.com/raw/aH9LsCgu'),true))()
-
-loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
