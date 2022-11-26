@@ -962,30 +962,134 @@ Duration = 16;
 end
 end)
 
-NameScript_2.Text = ""
+NameScript_2.Text = "Condo Animations Gui"
 Script2.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet("https://pastebin.com/raw/kdvWXcGM", true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Condo Animations Gui!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
 end)
 
-NameScript_3.Text = ""
+NameScript_3.Text = "Snoopdog Animation"
 Script3.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+loadstring(game:HttpGet("https://pastebin.com/raw/bFDkP7xu", true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Snoopdog Animation!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
 end)
 
-NameScript_4.Text = ""
+NameScript_4.Text = "Carson Dance"
 Script4.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+loadstring(game:HttpGet("https://pastebin.com/raw/nPzqCWNX", true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Carson Dance!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
 end)
 
-NameScript_5.Text = ""
+NameScript_5.Text = "Torture Dance"
 Script5.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+loadstring(game:HttpGet("https://pastebin.com/raw/cjfkUjnf", true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Torture Dance!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
 end)
 
-NameScript_6.Text = ""
+NameScript_6.Text = "Laugh Hard Animation"
 Script6.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+loadstring(game:HttpGet("https://pastebin.com/raw/74tjtWFA", true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Laugh Hard Animation!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
 end)
 
-NameScript_7.Text = ""
+NameScript_7.Text = "Default Dance"
 Script7.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+loadstring(game:HttpGet("https://pastebin.com/raw/hHvUURwE", true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Default Dance!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
 end)
 
-NameScript_8.Text = ""
+NameScript_8.Text = "Reverse Dance"
 Script8.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+loadstring(game:HttpGet("https://pastebin.com/raw/vHqbkSJd", true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Reverse Dance!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
 end)
