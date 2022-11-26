@@ -956,14 +956,13 @@ end)
 NameScript_2.Text = "Mega Hats"
 Script2.MouseButton1Down:connect(function()
 if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
 loadstring(game:HttpGet(('https://pastebin.com/raw/XSkZEkaV'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Mega Hats!";
 	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
 Duration = 16;
-
-loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
 
 elseif not R6() then
 game:GetService("StarterGui"):SetCore("SendNotification", { 
@@ -1025,9 +1024,8 @@ end)
 NameScript_6.Text = "CloVR"
 Script6.MouseButton1Down:connect(function()
 if R6() then
-loadstring(game:HttpGet(('https://pastebin.com/raw/kLzsQNRe'),true))()
-
 loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+loadstring(game:HttpGet(('https://pastebin.com/raw/kLzsQNRe'),true))()
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
