@@ -180,6 +180,8 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stu
 wait(0.1)
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Scripts%20Page%205'),true))()
 wait(0.1)
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Update%20Log%20Page'),true))()
+wait(0.1)
 game:GetService("CoreGui").VHubCoreScreen:Destroy()	
 	script.Parent:TweenPosition(UDim2.new(0.310, 0,0.99, 0),"Out","Back",1)
 	wait(1)
