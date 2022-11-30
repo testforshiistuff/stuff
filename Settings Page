@@ -177,7 +177,7 @@ BigButton.Text = "Big"
 BigButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 BigButton.TextSize = 12.000
 BigButton.MouseButton1Down:connect(function()
-game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.UIScale.Scale = 1.3
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.UIScale.Scale = 1.2
 end)
 
 UICorner_6.Parent = BigButton
