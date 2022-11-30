@@ -552,6 +552,10 @@ UpdateLog.Font = Enum.Font.GothamMedium
 UpdateLog.Text = "Update Log"
 UpdateLog.TextColor3 = Color3.fromRGB(255, 255, 255)
 UpdateLog.TextSize = 14.000
+UpdateLog.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Update%20Log%20Page'),true))()
+MainFrame:Destroy()
+end)
 
 UICorner_16.Parent = UpdateLog
 
