@@ -540,6 +540,12 @@ ReloadGUI.Font = Enum.Font.GothamMedium
 ReloadGUI.Text = "Reload GUI"
 ReloadGUI.TextColor3 = Color3.fromRGB(255, 255, 255)
 ReloadGUI.TextSize = 14.000
+ReloadGUI.MouseButton1Down:connect(function()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame:TweenPosition(UDim2.new(0.310, 0,0.99, 0),"Out","Back",1)
+wait(1)
+game:GetService("CoreGui").VHubCoreScreen:Destroy()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Launch'),true))()
+end)
 
 UICorner_15.Parent = ReloadGUI
 
