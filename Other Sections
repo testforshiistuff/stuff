@@ -159,6 +159,9 @@ Settings.Font = Enum.Font.GothamMedium
 Settings.Text = ""
 Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
 Settings.TextSize = 14.000
+Settings.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Settings%20Page'),true))()
+end)
 
 UICorner_6.Parent = Settings
 
