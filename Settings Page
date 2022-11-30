@@ -1,0 +1,363 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local MainFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local InfoBar = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local VHubImage = Instance.new("ImageLabel")
+local VHubAndSection = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local SimpleEditionText = Instance.new("TextLabel")
+local Line1 = Instance.new("Frame")
+local Line2 = Instance.new("Frame")
+local GuiSettings = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local GuiSettings_2 = Instance.new("ImageLabel")
+local UIScaleFrame = Instance.new("Frame")
+local UICorner_5 = Instance.new("UICorner")
+local UIScaleText = Instance.new("TextLabel")
+local BigButton = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local SmallButton = Instance.new("TextButton")
+local UICorner_7 = Instance.new("UICorner")
+local ReloadGuiButton = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local CloseVHubButton = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local GuiSettingsText = Instance.new("TextLabel")
+local PlayerSettings = Instance.new("Frame")
+local UICorner_10 = Instance.new("UICorner")
+local PlayerImage = Instance.new("ImageLabel")
+local PlayerSettingsText = Instance.new("TextLabel")
+local NetlessButton = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local NoSpawnButton = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local AntiFlingButton = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local TeleportFrame = Instance.new("Frame")
+local UICorner_14 = Instance.new("UICorner")
+local TeleportButton = Instance.new("TextButton")
+local UICorner_15 = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_16 = Instance.new("UICorner")
+local RejoinButton = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+
+--Properties:
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen
+MainFrame.Active = true
+MainFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
+MainFrame.LayoutOrder = 999999999
+MainFrame.Position = UDim2.new(0.174855486, 0, 0.194284841, 0)
+MainFrame.Size = UDim2.new(0, 450, 0, 270)
+
+UICorner.CornerRadius = UDim.new(0, 20)
+UICorner.Parent = MainFrame
+
+InfoBar.Name = "InfoBar"
+InfoBar.Parent = MainFrame
+InfoBar.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+InfoBar.Size = UDim2.new(0, 450, 0, 30)
+
+UICorner_2.Parent = InfoBar
+
+VHubImage.Name = "VHubImage"
+VHubImage.Parent = InfoBar
+VHubImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubImage.BackgroundTransparency = 1.000
+VHubImage.Position = UDim2.new(0.00999999978, 0, 0, 0)
+VHubImage.Size = UDim2.new(0, 30, 0, 30)
+VHubImage.Image = "rbxassetid://9408318893"
+
+VHubAndSection.Name = "VHubAndSection"
+VHubAndSection.Parent = InfoBar
+VHubAndSection.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubAndSection.BackgroundTransparency = 1.000
+VHubAndSection.Position = UDim2.new(0.0820000023, 0, 0, 0)
+VHubAndSection.Size = UDim2.new(0, 164, 0, 30)
+VHubAndSection.Font = Enum.Font.GothamBold
+VHubAndSection.Text = "VHub | Settings"
+VHubAndSection.TextColor3 = Color3.fromRGB(255, 255, 255)
+VHubAndSection.TextSize = 14.000
+VHubAndSection.TextXAlignment = Enum.TextXAlignment.Left
+
+Close.Name = "Close"
+Close.Parent = InfoBar
+Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.933333337, 0, 3.17891448e-07, 0)
+Close.Size = UDim2.new(0, 30, 0, 30)
+Close.Font = Enum.Font.FredokaOne
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close.TextSize = 23.000
+Close.TextWrapped = true
+Close.MouseButton1Down:connect(function()
+MainFrame:Destroy()
+end)
+
+UICorner_3.Parent = Close
+
+SimpleEditionText.Name = "SimpleEditionText"
+SimpleEditionText.Parent = InfoBar
+SimpleEditionText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+SimpleEditionText.BackgroundTransparency = 1.000
+SimpleEditionText.Position = UDim2.new(0.00809667632, 0, 0.690773785, 0)
+SimpleEditionText.Size = UDim2.new(0, 111, 0, 9)
+SimpleEditionText.Font = Enum.Font.Gotham
+SimpleEditionText.Text = "Simple Edition"
+SimpleEditionText.TextColor3 = Color3.fromRGB(255, 255, 255)
+SimpleEditionText.TextScaled = true
+SimpleEditionText.TextSize = 14.000
+SimpleEditionText.TextWrapped = true
+
+Line1.Name = "Line1"
+Line1.Parent = MainFrame
+Line1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line1.BorderSizePixel = 0
+Line1.Position = UDim2.new(0, 0, 0.111111112, 0)
+Line1.Size = UDim2.new(0, 450, 0, 1)
+
+Line2.Name = "Line2"
+Line2.Parent = MainFrame
+Line2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line2.BorderSizePixel = 0
+Line2.Position = UDim2.new(0.49777779, 0, 0.114814818, 0)
+Line2.Size = UDim2.new(0, 1, 0, 239)
+
+GuiSettings.Name = "GuiSettings"
+GuiSettings.Parent = MainFrame
+GuiSettings.BackgroundColor3 = Color3.fromRGB(31, 32, 34)
+GuiSettings.Position = UDim2.new(0.0250000004, 0, 0.151999995, 0)
+GuiSettings.Size = UDim2.new(0, 204, 0, 219)
+
+UICorner_4.Parent = GuiSettings
+
+GuiSettings_2.Name = "GuiSettings"
+GuiSettings_2.Parent = GuiSettings
+GuiSettings_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GuiSettings_2.BackgroundTransparency = 1.000
+GuiSettings_2.Size = UDim2.new(0, 40, 0, 40)
+GuiSettings_2.Image = "http://www.roblox.com/asset/?id=11704880145"
+
+UIScaleFrame.Name = "UIScaleFrame"
+UIScaleFrame.Parent = GuiSettings
+UIScaleFrame.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+UIScaleFrame.Position = UDim2.new(0.0490196086, 0, 0.182648405, 0)
+UIScaleFrame.Size = UDim2.new(0, 184, 0, 25)
+
+UICorner_5.Parent = UIScaleFrame
+
+UIScaleText.Name = "UIScaleText"
+UIScaleText.Parent = UIScaleFrame
+UIScaleText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+UIScaleText.BackgroundTransparency = 1.000
+UIScaleText.Position = UDim2.new(0, 10, 0, 0)
+UIScaleText.Size = UDim2.new(0, 60, 0, 25)
+UIScaleText.Font = Enum.Font.Gotham
+UIScaleText.Text = "UIScale"
+UIScaleText.TextColor3 = Color3.fromRGB(255, 255, 255)
+UIScaleText.TextSize = 14.000
+UIScaleText.TextXAlignment = Enum.TextXAlignment.Left
+
+BigButton.Name = "BigButton"
+BigButton.Parent = UIScaleFrame
+BigButton.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
+BigButton.Position = UDim2.new(0.701086938, 0, 0.0799999982, 0)
+BigButton.Size = UDim2.new(0, 50, 0, 20)
+BigButton.Font = Enum.Font.Gotham
+BigButton.Text = "Big"
+BigButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+BigButton.TextSize = 12.000
+BigButton.MouseButton1Down:connect(function()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.UIScale.Scale = 1.3
+end)
+
+UICorner_6.Parent = BigButton
+
+SmallButton.Name = "SmallButton"
+SmallButton.Parent = UIScaleFrame
+SmallButton.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
+SmallButton.Position = UDim2.new(0.391304344, 0, 0.0799999982, 0)
+SmallButton.Size = UDim2.new(0, 50, 0, 20)
+SmallButton.Font = Enum.Font.Gotham
+SmallButton.Text = "Small"
+SmallButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+SmallButton.TextSize = 12.000
+SmallButton.MouseButton1Down:connect(function()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.UIScale.Scale = 1
+end)
+
+UICorner_7.Parent = SmallButton
+
+ReloadGuiButton.Name = "ReloadGuiButton"
+ReloadGuiButton.Parent = GuiSettings
+ReloadGuiButton.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+ReloadGuiButton.Position = UDim2.new(0.0489999987, 0, 0.310000002, 0)
+ReloadGuiButton.Size = UDim2.new(0, 184, 0, 25)
+ReloadGuiButton.Font = Enum.Font.Gotham
+ReloadGuiButton.Text = "Reload Gui"
+ReloadGuiButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+ReloadGuiButton.TextSize = 14.000
+ReloadGUIButton.MouseButton1Down:connect(function()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame:TweenPosition(UDim2.new(0.210, 0,0.99, 0),"Out","Back",1)
+wait(1)
+game:GetService("CoreGui").VHubCoreScreen:Destroy()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Launch'),true))()
+end)
+
+UICorner_8.Parent = ReloadGuiButton
+
+CloseVHubButton.Name = "CloseVHubButton"
+CloseVHubButton.Parent = GuiSettings
+CloseVHubButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+CloseVHubButton.Position = UDim2.new(0.0489999987, 0, 0.435000002, 0)
+CloseVHubButton.Size = UDim2.new(0, 184, 0, 25)
+CloseVHubButton.Font = Enum.Font.Gotham
+CloseVHubButton.Text = "Close VHub"
+CloseVHubButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseVHubButton.TextSize = 14.000
+CloseVHubButton.MouseButton1Down:connect(function()
+game:GetService("CoreGui").VHubCoreScreen:Destroy()
+end)
+
+UICorner_9.Parent = CloseVHubButton
+
+GuiSettingsText.Name = "GuiSettingsText"
+GuiSettingsText.Parent = GuiSettings
+GuiSettingsText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GuiSettingsText.BackgroundTransparency = 1.000
+GuiSettingsText.Position = UDim2.new(0.196078435, 0, 0.0273972601, 0)
+GuiSettingsText.Size = UDim2.new(0, 164, 0, 28)
+GuiSettingsText.Font = Enum.Font.GothamBold
+GuiSettingsText.Text = "Gui Settings"
+GuiSettingsText.TextColor3 = Color3.fromRGB(255, 255, 255)
+GuiSettingsText.TextSize = 16.000
+GuiSettingsText.TextXAlignment = Enum.TextXAlignment.Left
+
+PlayerSettings.Name = "PlayerSettings"
+PlayerSettings.Parent = MainFrame
+PlayerSettings.BackgroundColor3 = Color3.fromRGB(31, 32, 34)
+PlayerSettings.Position = UDim2.new(0.523000002, 0, 0.151999995, 0)
+PlayerSettings.Size = UDim2.new(0, 204, 0, 219)
+
+UICorner_10.Parent = PlayerSettings
+
+PlayerImage.Name = "PlayerImage"
+PlayerImage.Parent = PlayerSettings
+PlayerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerImage.BackgroundTransparency = 1.000
+PlayerImage.Size = UDim2.new(0, 40, 0, 40)
+PlayerImage.Image = "http://www.roblox.com/asset/?id=11704876885"
+
+PlayerSettingsText.Name = "PlayerSettingsText"
+PlayerSettingsText.Parent = PlayerSettings
+PlayerSettingsText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PlayerSettingsText.BackgroundTransparency = 1.000
+PlayerSettingsText.Position = UDim2.new(0.196078435, 0, 0.0273972601, 0)
+PlayerSettingsText.Size = UDim2.new(0, 164, 0, 28)
+PlayerSettingsText.Font = Enum.Font.GothamBold
+PlayerSettingsText.Text = "Player Settings"
+PlayerSettingsText.TextColor3 = Color3.fromRGB(255, 255, 255)
+PlayerSettingsText.TextSize = 16.000
+PlayerSettingsText.TextXAlignment = Enum.TextXAlignment.Left
+
+NetlessButton.Name = "NetlessButton"
+NetlessButton.Parent = PlayerSettings
+NetlessButton.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+NetlessButton.Position = UDim2.new(0.0489999987, 0, 0.182146117, 0)
+NetlessButton.Size = UDim2.new(0, 184, 0, 25)
+NetlessButton.Font = Enum.Font.Gotham
+NetlessButton.Text = "Execute Netless"
+NetlessButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+NetlessButton.TextSize = 14.000
+NetlessButton.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+end)
+
+UICorner_11.Parent = NetlessButton
+
+NoSpawnButton.Name = "NoSpawnButton"
+NoSpawnButton.Parent = PlayerSettings
+NoSpawnButton.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+NoSpawnButton.Position = UDim2.new(0.0489999987, 0, 0.310000002, 0)
+NoSpawnButton.Size = UDim2.new(0, 184, 0, 25)
+NoSpawnButton.Font = Enum.Font.Gotham
+NoSpawnButton.Text = "No Spawn"
+NoSpawnButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+NoSpawnButton.TextSize = 14.000
+NoSpawnButton.MouseButton1Down:connect(function()
+while wait() do
+loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\103\65\48\115\97\100\105\120\10"))()
+end
+end)
+
+UICorner_12.Parent = NoSpawnButton
+
+AntiFlingButton.Name = "AntiFlingButton"
+AntiFlingButton.Parent = PlayerSettings
+AntiFlingButton.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+AntiFlingButton.Position = UDim2.new(0.0489999987, 0, 0.43328768, 0)
+AntiFlingButton.Size = UDim2.new(0, 184, 0, 25)
+AntiFlingButton.Font = Enum.Font.Gotham
+AntiFlingButton.Text = "Anti Fling"
+AntiFlingButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+AntiFlingButton.TextSize = 14.000
+AntiFlingButton.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/Vk7jQ9Ft'),true))()
+end)
+
+UICorner_13.Parent = AntiFlingButton
+
+TeleportFrame.Name = "TeleportFrame"
+TeleportFrame.Parent = PlayerSettings
+TeleportFrame.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+TeleportFrame.Position = UDim2.new(0.0439999998, 0, 0.560000002, 0)
+TeleportFrame.Size = UDim2.new(0, 184, 0, 25)
+
+UICorner_14.Parent = TeleportFrame
+
+TeleportButton.Name = "TeleportButton"
+TeleportButton.Parent = TeleportFrame
+TeleportButton.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
+TeleportButton.Position = UDim2.new(0.646738946, 0, 0.0799999982, 0)
+TeleportButton.Size = UDim2.new(0, 60, 0, 20)
+TeleportButton.Font = Enum.Font.Gotham
+TeleportButton.Text = "Teleport"
+TeleportButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TeleportButton.TextSize = 12.000
+
+UICorner_15.Parent = TeleportButton
+
+TextBox.Parent = TeleportFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
+TextBox.Position = UDim2.new(0, 10, 0, 2)
+TextBox.Size = UDim2.new(0, 100, 0, 20)
+TextBox.ClearTextOnFocus = false
+TextBox.Font = Enum.Font.Gotham
+TextBox.PlaceholderText = "Type Target Username"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 10.000
+TextBox.TextWrapped = true
+
+UICorner_16.Parent = TextBox
+
+RejoinButton.Name = "RejoinButton"
+RejoinButton.Parent = PlayerSettings
+RejoinButton.BackgroundColor3 = Color3.fromRGB(200, 0, 0)
+RejoinButton.Position = UDim2.new(0.0439999998, 0, 0.689999998, 0)
+RejoinButton.Size = UDim2.new(0, 184, 0, 25)
+RejoinButton.Font = Enum.Font.Gotham
+RejoinButton.Text = "Rejoin Game"
+RejoinButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+RejoinButton.TextSize = 14.000
+
+UICorner_17.Parent = RejoinButton
