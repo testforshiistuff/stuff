@@ -54,7 +54,7 @@ MainFrame.Name = "MainFrame"
 MainFrame.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen
 MainFrame.Active = true
 MainFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
-MainFrame.LayoutOrder = 999999999
+MainFrame.Draggable = true
 MainFrame.Position = UDim2.new(0.174855486, 0, 0.194284841, 0)
 MainFrame.Size = UDim2.new(0, 450, 0, 270)
 
