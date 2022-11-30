@@ -6,6 +6,7 @@
 local VHubCoreScreen = Instance.new("Folder")
 local DragScreen = Instance.new("ScreenGui")
 local DragFrame = Instance.new("Frame")
+local UIScale = Instance.new("UIScale")
 local UICorner = Instance.new("UICorner")
 local InfoBar = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
@@ -38,6 +39,9 @@ DragFrame.Draggable = true
 
 UICorner.CornerRadius = UDim.new(0, 20)
 UICorner.Parent = DragFrame
+
+UIScale.Parent = DragFrame
+UIScale.Scale = 1
 
 InfoBar.Name = "InfoBar"
 InfoBar.Parent = DragFrame
