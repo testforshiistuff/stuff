@@ -333,6 +333,11 @@ TeleportButton.Font = Enum.Font.Gotham
 TeleportButton.Text = "Teleport"
 TeleportButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TeleportButton.TextSize = 12.000
+TeleportButton.MouseButton1Click:connect(function()
+	for i,v in pairs(GetPlayer(TextBox.Text))do
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[v.Name].Character.HumanoidRootPart.CFrame
+	end
+end)
 
 UICorner_15.Parent = TeleportButton
 
