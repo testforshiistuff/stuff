@@ -404,7 +404,7 @@ Close.MouseButton1Down:connect(function()
 for i = 1,100 do
 
 	game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.UIScale.Scale -= 0.01
-	wait (0.001)
+	wait (0.00001)
 end
 end)
 
