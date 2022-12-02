@@ -403,7 +403,7 @@ Close.TextWrapped = true
 Close.MouseButton1Down:connect(function()
 for i = 1,100 do
 
-	game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.UIScale.Scale -= 0.03
+	game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.UIScale.Scale -= 0.05
 	wait (0.00001)
 end
 end)
