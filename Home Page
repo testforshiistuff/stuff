@@ -402,7 +402,7 @@ Close.TextSize = 23.000
 Close.TextWrapped = true
 Close.MouseButton1Down:connect(function()
 
-MainFrame:TweenPosition(UDim2.new(0, 0,0, 0),"Out","Back",1)
+MainFrame:TweenSize(UDim2.new(0, 0,0, 0),"Out","Back")
 wait(1)
 
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = false
