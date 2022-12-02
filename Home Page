@@ -402,6 +402,9 @@ Close.TextSize = 23.000
 Close.TextWrapped = true
 Close.MouseButton1Down:connect(function()
 
+MainFrame:TweenPosition(UDim2.new(0, 0,0, 0),"Out","Back",1)
+wait(1)
+
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = false
 
 local VHubLogoOpen = Instance.new("ImageButton")
