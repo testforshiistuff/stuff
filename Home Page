@@ -32,8 +32,8 @@ local CommandsText = Instance.new("TextLabel")
 local CommandImage = Instance.new("ImageLabel")
 local OtherSections = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
-local CommandsText_2 = Instance.new("TextLabel")
-local DotsImage = Instance.new("ImageLabel")
+local OtherSectionsText = Instance.new("TextLabel")
+local DotImage = Instance.new("ImageLabel")
 local FPS = Instance.new("TextLabel")
 local UICorner_9 = Instance.new("UICorner")
 local InfoBar = Instance.new("Frame")
@@ -329,27 +329,27 @@ end)
 
 UICorner_8.Parent = OtherSections
 
-CommandsText_2.Name = "CommandsText"
-CommandsText_2.Parent = OtherSections
-CommandsText_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-CommandsText_2.BackgroundTransparency = 1.000
-CommandsText_2.Position = UDim2.new(0.354444385, 0, 0.0370370373, 0)
-CommandsText_2.Size = UDim2.new(0, 58, 0, 25)
-CommandsText_2.Font = Enum.Font.GothamBold
-CommandsText_2.Text = "Other Sections"
-CommandsText_2.TextColor3 = Color3.fromRGB(255, 255, 255)
-CommandsText_2.TextScaled = true
-CommandsText_2.TextSize = 15.000
-CommandsText_2.TextWrapped = true
-CommandsText_2.TextXAlignment = Enum.TextXAlignment.Left
+OtherSectionsText.Name = "OtherSectionsText"
+OtherSectionsText.Parent = OtherSections
+OtherSectionsText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OtherSectionsText.BackgroundTransparency = 1.000
+OtherSectionsText.Position = UDim2.new(0.354444385, 0, 0.0370370373, 0)
+OtherSectionsText.Size = UDim2.new(0, 58, 0, 25)
+OtherSectionsText.Font = Enum.Font.GothamBold
+OtherSectionsText.Text = "Other Sections"
+OtherSectionsText.TextColor3 = Color3.fromRGB(255, 255, 255)
+OtherSectionsText.TextScaled = true
+OtherSectionsText.TextSize = 15.000
+OtherSectionsText.TextWrapped = true
+OtherSectionsText.TextXAlignment = Enum.TextXAlignment.Left
 
-DotsImage.Name = "DotsImage"
-DotsImage.Parent = OtherSections
-DotsImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DotsImage.BackgroundTransparency = 1.000
-DotsImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
-DotsImage.Size = UDim2.new(0, 25, 0, 25)
-DotsImage.Image = "http://www.roblox.com/asset/?id=11493398062"
+DotImage.Name = "DotImage"
+DotImage.Parent = OtherSections
+DotImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DotImage.BackgroundTransparency = 1.000
+DotImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
+DotImage.Size = UDim2.new(0, 25, 0, 25)
+DotImage.Image = "http://www.roblox.com/asset/?id=11493398062"
 
 FPS.Name = "FPS"
 FPS.Parent = SectionsFrame
