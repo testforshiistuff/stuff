@@ -50,25 +50,33 @@ local UICorner_12 = Instance.new("UICorner")
 local ProfilePicture = Instance.new("ImageLabel")
 local UICorner_13 = Instance.new("UICorner")
 local Hello = Instance.new("TextLabel")
-local Info = Instance.new("TextLabel")
-local VHubImage_2 = Instance.new("ImageLabel")
-local dot = Instance.new("TextLabel")
 local JoinDiscord = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
 local ReloadGUI = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
-local UpdateLog = Instance.new("TextButton")
+local UpdateLog = Instance.new("Frame")
 local UICorner_16 = Instance.new("UICorner")
-local Version = Instance.new("TextLabel")
+local WhatsNewText = Instance.new("TextLabel")
+local Border = Instance.new("Frame")
+local NewUpdatesInfo = Instance.new("TextLabel")
+local GameInfoFrame = Instance.new("Frame")
 local UICorner_17 = Instance.new("UICorner")
+local InfoText = Instance.new("TextLabel")
+local Border_2 = Instance.new("Frame")
+local GameText = Instance.new("TextLabel")
+local JobIdText = Instance.new("TextLabel")
+local Border_3 = Instance.new("Frame")
+local AnnouncementText = Instance.new("TextLabel")
+local Announcement = Instance.new("TextLabel")
 local plr = game:GetService("Players").LocalPlayer
+local gamename = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 
 --Properties:
 
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame
 MainFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
-MainFrame.Position = UDim2.new(0, 0, 0, 0)
+MainFrame.Position = UDim2.new(0.174855486, 0, 0.194284841, 0)
 MainFrame.Size = UDim2.new(0, 450, 0, 270)
 
 UICorner.CornerRadius = UDim.new(0, 20)
@@ -359,7 +367,6 @@ coroutine.wrap(function()
 	end
 end)()
 
-
 UICorner_9.Parent = FPS
 
 InfoBar.Name = "InfoBar"
@@ -484,41 +491,6 @@ Hello.TextStrokeTransparency = 0.000
 Hello.TextWrapped = true
 Hello.TextXAlignment = Enum.TextXAlignment.Left
 
-Info.Name = "Info"
-Info.Parent = PlayerInfoFrame
-Info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Info.BackgroundTransparency = 1.000
-Info.Position = UDim2.new(0.135951668, 0, 0.379464298, 0)
-Info.Size = UDim2.new(0, 241, 0, 90)
-Info.Font = Enum.Font.GothamBold
-Info.Text = "Messages Not Available Right Now :("
-Info.TextColor3 = Color3.fromRGB(255, 255, 255)
-Info.TextSize = 14.000
-Info.TextWrapped = true
-Info.TextXAlignment = Enum.TextXAlignment.Left
-Info.TextYAlignment = Enum.TextYAlignment.Top
-
-VHubImage_2.Name = "VHubImage"
-VHubImage_2.Parent = PlayerInfoFrame
-VHubImage_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-VHubImage_2.BackgroundTransparency = 1.000
-VHubImage_2.Position = UDim2.new(0.028126888, 0, 0.361607134, 0)
-VHubImage_2.Size = UDim2.new(0, 30, 0, 30)
-VHubImage_2.Image = "rbxassetid://9408318893"
-
-dot.Name = "dot"
-dot.Parent = PlayerInfoFrame
-dot.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-dot.BackgroundTransparency = 1.000
-dot.Position = UDim2.new(0.0181268882, 0, 0.464285702, 0)
-dot.Size = UDim2.new(0, 39, 0, 16)
-dot.Font = Enum.Font.GothamBold
-dot.Text = "..."
-dot.TextColor3 = Color3.fromRGB(200, 200, 200)
-dot.TextSize = 14.000
-dot.TextWrapped = true
-dot.TextYAlignment = Enum.TextYAlignment.Top
-
 JoinDiscord.Name = "Join Discord"
 JoinDiscord.Parent = PlayerInfoFrame
 JoinDiscord.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
@@ -560,34 +532,133 @@ UICorner_15.Parent = ReloadGUI
 UpdateLog.Name = "UpdateLog"
 UpdateLog.Parent = PlayerInfoFrame
 UpdateLog.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
-UpdateLog.Position = UDim2.new(0.0785498321, 5, 0.846642852, 0)
-UpdateLog.Size = UDim2.new(0, 90, 0, 27)
-UpdateLog.Font = Enum.Font.GothamMedium
-UpdateLog.Text = "Update Log"
-UpdateLog.TextColor3 = Color3.fromRGB(255, 255, 255)
-UpdateLog.TextSize = 14.000
-UpdateLog.MouseButton1Down:connect(function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Update%20Log%20Page'),true))()
-MainFrame:Destroy()
-end)
+UpdateLog.Position = UDim2.new(0.0302114803, 0, 0.334821433, 0)
+UpdateLog.Size = UDim2.new(0, 118, 0, 142)
 
 UICorner_16.Parent = UpdateLog
 
-Version.Name = "Version"
-Version.Parent = UpdateLog
-Version.BackgroundColor3 = Color3.fromRGB(255, 0, 4)
-Version.Position = UDim2.new(0.644444466, 0, -0.407407403, 0)
-Version.Size = UDim2.new(0, 50, 0, 15)
-Version.Font = Enum.Font.FredokaOne
-Version.Text = "V1.24"
-Version.TextColor3 = Color3.fromRGB(255, 255, 255)
-Version.TextSize = 14.000
+WhatsNewText.Name = "WhatsNewText"
+WhatsNewText.Parent = UpdateLog
+WhatsNewText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+WhatsNewText.BackgroundTransparency = 1.000
+WhatsNewText.Size = UDim2.new(0, 118, 0, 22)
+WhatsNewText.Font = Enum.Font.GothamMedium
+WhatsNewText.Text = "Whats New?"
+WhatsNewText.TextColor3 = Color3.fromRGB(255, 255, 255)
+WhatsNewText.TextSize = 14.000
 
-UICorner_17.Parent = Version
+Border.Name = "Border"
+Border.Parent = UpdateLog
+Border.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Border.BorderSizePixel = 0
+Border.Position = UDim2.new(0, 0, 0.154929578, 0)
+Border.Size = UDim2.new(0, 118, 0, 1)
+
+NewUpdatesInfo.Name = "NewUpdatesInfo"
+NewUpdatesInfo.Parent = UpdateLog
+NewUpdatesInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NewUpdatesInfo.BackgroundTransparency = 1.000
+NewUpdatesInfo.Position = UDim2.new(0.0599998869, 0, 0.183098584, 0)
+NewUpdatesInfo.Size = UDim2.new(0, 104, 0, 107)
+NewUpdatesInfo.Font = Enum.Font.Gotham
+NewUpdatesInfo.Text = "[+] Text                                                       [+] text"
+NewUpdatesInfo.TextColor3 = Color3.fromRGB(200, 200, 200)
+NewUpdatesInfo.TextSize = 10.000
+NewUpdatesInfo.TextWrapped = true
+NewUpdatesInfo.TextXAlignment = Enum.TextXAlignment.Left
+NewUpdatesInfo.TextYAlignment = Enum.TextYAlignment.Top
+
+GameInfoFrame.Name = "GameInfoFrame"
+GameInfoFrame.Parent = PlayerInfoFrame
+GameInfoFrame.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+GameInfoFrame.Position = UDim2.new(0.401812702, 0, 0.334821433, 0)
+GameInfoFrame.Size = UDim2.new(0, 190, 0, 111)
+
+UICorner_17.Parent = GameInfoFrame
+
+InfoText.Name = "InfoText"
+InfoText.Parent = GameInfoFrame
+InfoText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+InfoText.BackgroundTransparency = 1.000
+InfoText.Size = UDim2.new(0, 188, 0, 22)
+InfoText.Font = Enum.Font.GothamMedium
+InfoText.Text = "Information"
+InfoText.TextColor3 = Color3.fromRGB(255, 255, 255)
+InfoText.TextSize = 14.000
+
+Border_2.Name = "Border"
+Border_2.Parent = GameInfoFrame
+Border_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Border_2.BorderSizePixel = 0
+Border_2.Position = UDim2.new(0, 0, 0.181956664, 0)
+Border_2.Size = UDim2.new(0, 190, 0, 1)
+
+GameText.Name = "GameText"
+GameText.Parent = GameInfoFrame
+GameText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GameText.BackgroundTransparency = 1.000
+GameText.Position = UDim2.new(0.0315789469, 0, 0.234234229, 0)
+GameText.Size = UDim2.new(0, 181, 0, 13)
+GameText.Font = Enum.Font.GothamMedium
+GameText.Text = "Game: "..gamename
+GameText.TextColor3 = Color3.fromRGB(255, 255, 255)
+GameText.TextSize = 10.000
+GameText.TextWrapped = true
+GameText.TextXAlignment = Enum.TextXAlignment.Left
+GameText.TextYAlignment = Enum.TextYAlignment.Top
+
+JobIdText.Name = "JobIdText"
+JobIdText.Parent = GameInfoFrame
+JobIdText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+JobIdText.BackgroundTransparency = 1.000
+JobIdText.Position = UDim2.new(0.0315789469, 0, 0.351351351, 0)
+JobIdText.Size = UDim2.new(0, 180, 0, 20)
+JobIdText.Font = Enum.Font.GothamMedium
+JobIdText.Text = "JobId: "game.gameId
+JobIdText.TextColor3 = Color3.fromRGB(255, 255, 255)
+JobIdText.TextSize = 10.000
+JobIdText.TextWrapped = true
+JobIdText.TextXAlignment = Enum.TextXAlignment.Left
+JobIdText.TextYAlignment = Enum.TextYAlignment.Top
+
+Border_3.Name = "Border"
+Border_3.Parent = GameInfoFrame
+Border_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Border_3.BorderSizePixel = 0
+Border_3.Position = UDim2.new(0.00499999989, 0, 0.54400003, 0)
+Border_3.Size = UDim2.new(0, 190, 0, 1)
+
+AnnouncementText.Name = "AnnouncementText"
+AnnouncementText.Parent = GameInfoFrame
+AnnouncementText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AnnouncementText.BackgroundTransparency = 1.000
+AnnouncementText.Position = UDim2.new(0.0319999307, 0, 0.580000043, 0)
+AnnouncementText.Size = UDim2.new(0, 180, 0, 10)
+AnnouncementText.Font = Enum.Font.GothamMedium
+AnnouncementText.Text = "Announcement:"
+AnnouncementText.TextColor3 = Color3.fromRGB(255, 50, 50)
+AnnouncementText.TextSize = 10.000
+AnnouncementText.TextWrapped = true
+AnnouncementText.TextXAlignment = Enum.TextXAlignment.Left
+AnnouncementText.TextYAlignment = Enum.TextYAlignment.Top
+
+Announcement.Name = "Announcement"
+Announcement.Parent = GameInfoFrame
+Announcement.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Announcement.BackgroundTransparency = 1.000
+Announcement.Position = UDim2.new(0.0319999307, 0, 0.670090139, 0)
+Announcement.Size = UDim2.new(0, 180, 0, 29)
+Announcement.Font = Enum.Font.GothamMedium
+Announcement.Text = "VHub Simple Is Not Done Yet So You'll Experience Some Bugs And Etc."
+Announcement.TextColor3 = Color3.fromRGB(255, 255, 255)
+Announcement.TextSize = 10.000
+Announcement.TextWrapped = true
+Announcement.TextXAlignment = Enum.TextXAlignment.Left
+Announcement.TextYAlignment = Enum.TextYAlignment.Top
 
 -- Scripts:
 
-local function BCXGDK_fake_script() -- ProfilePicture.LocalScript 
+local function WLCIXM_fake_script() -- ProfilePicture.LocalScript 
 	local script = Instance.new('LocalScript', ProfilePicture)
 
 	local Players = game:GetService("Players")
@@ -604,4 +675,4 @@ local function BCXGDK_fake_script() -- ProfilePicture.LocalScript
 	local imageLabel = script.Parent
 	imageLabel.Image = content
 end
-coroutine.wrap(BCXGDK_fake_script)()
+coroutine.wrap(WLCIXM_fake_script)()
