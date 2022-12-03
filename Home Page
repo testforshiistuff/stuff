@@ -76,7 +76,7 @@ local gamename = game:GetService("MarketplaceService"):GetProductInfo(game.Place
 MainFrame.Name = "MainFrame"
 MainFrame.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame
 MainFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
-MainFrame.Position = UDim2.new(0.174855486, 0, 0.194284841, 0)
+MainFrame.Position = UDim2.new(0, 0, 0, 0)
 MainFrame.Size = UDim2.new(0, 450, 0, 270)
 
 UICorner.CornerRadius = UDim.new(0, 20)
@@ -614,7 +614,7 @@ JobIdText.BackgroundTransparency = 1.000
 JobIdText.Position = UDim2.new(0.0315789469, 0, 0.351351351, 0)
 JobIdText.Size = UDim2.new(0, 180, 0, 20)
 JobIdText.Font = Enum.Font.GothamMedium
-JobIdText.Text = "JobId: "..game.gameId
+JobIdText.Text = "JobId: "..game.JobId
 JobIdText.TextColor3 = Color3.fromRGB(255, 255, 255)
 JobIdText.TextSize = 10.000
 JobIdText.TextWrapped = true
