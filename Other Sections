@@ -12,7 +12,7 @@ local UICorner_2 = Instance.new("UICorner")
 local GameScripts = Instance.new("TextButton")
 local UICorner_3 = Instance.new("UICorner")
 local GameScriptsText = Instance.new("TextLabel")
-local ConsoleImage = Instance.new("ImageLabel")
+local ControllerImage = Instance.new("ImageLabel")
 local InfoBar = Instance.new("Frame")
 local UICorner_4 = Instance.new("UICorner")
 local VHubImage = Instance.new("ImageLabel")
@@ -98,13 +98,13 @@ GameScriptsText.TextColor3 = Color3.fromRGB(255, 255, 255)
 GameScriptsText.TextSize = 15.000
 GameScriptsText.TextXAlignment = Enum.TextXAlignment.Left
 
-ConsoleImage.Name = "ConsoleImage"
-ConsoleImage.Parent = GameScripts
-ConsoleImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ConsoleImage.BackgroundTransparency = 1.000
-ConsoleImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
-ConsoleImage.Size = UDim2.new(0, 25, 0, 25)
-ConsoleImage.Image = "http://www.roblox.com/asset/?id=11592847277"
+ControllerImage.Name = "ConsoleImage"
+ControllerImage.Parent = GameScripts
+ControllerImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ControllerImage.BackgroundTransparency = 1.000
+ControllerImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
+ControllerImage.Size = UDim2.new(0, 25, 0, 25)
+ControllerImage.Image = "http://www.roblox.com/asset/?id=11738451231"
 
 InfoBar.Name = "InfoBar"
 InfoBar.Parent = SectionsFrame
