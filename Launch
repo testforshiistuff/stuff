@@ -189,7 +189,6 @@ game:GetService("CoreGui").VHubCoreScreen:Destroy()
 	wait(1)
 	ScreenGui:Destroy()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Home%20Page'),true))()
-game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true	
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Open%20Button'),true))()
 end
 coroutine.wrap(RWPXMT_fake_script)()
