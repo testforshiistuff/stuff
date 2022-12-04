@@ -186,7 +186,6 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stu
 wait(0.1)
 game:GetService("CoreGui").VHubCoreScreen:Destroy()	
 	script.Parent:TweenPosition(UDim2.new(0.310, 0,0.99, 0),"Out","Back",1)
-	wait(1)
 	ScreenGui:Destroy()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Open%20Button'),true))()
