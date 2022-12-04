@@ -45,22 +45,20 @@ local UICorner_11 = Instance.new("UICorner")
 local SimpleEditionText = Instance.new("TextLabel")
 local Line1 = Instance.new("Frame")
 local Line2 = Instance.new("Frame")
-local PlayerInfoFrame = Instance.new("Frame")
+local InfoFrame = Instance.new("Frame")
 local UICorner_12 = Instance.new("UICorner")
-local ProfilePicture = Instance.new("ImageLabel")
-local UICorner_13 = Instance.new("UICorner")
-local Hello = Instance.new("TextLabel")
 local JoinDiscord = Instance.new("TextButton")
-local UICorner_14 = Instance.new("UICorner")
+local UICorner_13 = Instance.new("UICorner")
 local ReloadGUI = Instance.new("TextButton")
-local UICorner_15 = Instance.new("UICorner")
+local UICorner_14 = Instance.new("UICorner")
 local UpdateLog = Instance.new("Frame")
-local UICorner_16 = Instance.new("UICorner")
+local UICorner_15 = Instance.new("UICorner")
 local WhatsNewText = Instance.new("TextLabel")
 local Border = Instance.new("Frame")
 local NewUpdatesInfo = Instance.new("TextLabel")
+local PaperWithPenImage = Instance.new("ImageLabel")
 local GameInfoFrame = Instance.new("Frame")
-local UICorner_17 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
 local InfoText = Instance.new("TextLabel")
 local Border_2 = Instance.new("Frame")
 local GameText = Instance.new("TextLabel")
@@ -68,6 +66,12 @@ local JobIdText = Instance.new("TextLabel")
 local Border_3 = Instance.new("Frame")
 local AnnouncementText = Instance.new("TextLabel")
 local Announcement = Instance.new("TextLabel")
+local PaperWithPenImage_2 = Instance.new("ImageLabel")
+local PlayerWelcomeFrame = Instance.new("Frame")
+local Hello = Instance.new("TextLabel")
+local ProfilePicture = Instance.new("ImageLabel")
+local UICorner_17 = Instance.new("UICorner")
+local UICorner_18 = Instance.new("UICorner")
 local plr = game:GetService("Players").LocalPlayer
 local gamename = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name
 
@@ -460,39 +464,16 @@ Line2.BorderSizePixel = 0
 Line2.Position = UDim2.new(0.222222224, 0, 0.114814818, 0)
 Line2.Size = UDim2.new(0, 1, 0, 239)
 
-PlayerInfoFrame.Name = "PlayerInfoFrame"
-PlayerInfoFrame.Parent = MainFrame
-PlayerInfoFrame.BackgroundColor3 = Color3.fromRGB(31, 32, 34)
-PlayerInfoFrame.Position = UDim2.new(0.244777769, 0, 0.140933335, 0)
-PlayerInfoFrame.Size = UDim2.new(0, 331, 0, 224)
+InfoFrame.Name = "InfoFrame"
+InfoFrame.Parent = MainFrame
+InfoFrame.BackgroundColor3 = Color3.fromRGB(31, 32, 34)
+InfoFrame.Position = UDim2.new(0.244777769, 0, 0.140933335, 0)
+InfoFrame.Size = UDim2.new(0, 331, 0, 224)
 
-UICorner_12.Parent = PlayerInfoFrame
-
-ProfilePicture.Name = "ProfilePicture"
-ProfilePicture.Parent = PlayerInfoFrame
-ProfilePicture.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ProfilePicture.Position = UDim2.new(0, 10, 0, 10)
-ProfilePicture.Size = UDim2.new(0, 60, 0, 60)
-ProfilePicture.Image = "http://www.roblox.com/asset/?id=133035324"
-
-UICorner_13.Parent = ProfilePicture
-
-Hello.Name = "Hello"
-Hello.Parent = PlayerInfoFrame
-Hello.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Hello.BackgroundTransparency = 1.000
-Hello.Position = UDim2.new(0.271903336, 0, 0.0669642836, 0)
-Hello.Size = UDim2.new(0, 241, 0, 50)
-Hello.Font = Enum.Font.FredokaOne
-Hello.Text = "Hello, "..plr.Name.."!"
-Hello.TextColor3 = Color3.fromRGB(255, 255, 255)
-Hello.TextSize = 23.000
-Hello.TextStrokeTransparency = 0.000
-Hello.TextWrapped = true
-Hello.TextXAlignment = Enum.TextXAlignment.Left
+UICorner_12.Parent = InfoFrame
 
 JoinDiscord.Name = "Join Discord"
-JoinDiscord.Parent = PlayerInfoFrame
+JoinDiscord.Parent = InfoFrame
 JoinDiscord.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
 JoinDiscord.Position = UDim2.new(0.691842914, 5, 0.846642852, 0)
 JoinDiscord.Size = UDim2.new(0, 90, 0, 27)
@@ -509,10 +490,10 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end)
 
-UICorner_14.Parent = JoinDiscord
+UICorner_13.Parent = JoinDiscord
 
 ReloadGUI.Name = "ReloadGUI"
-ReloadGUI.Parent = PlayerInfoFrame
+ReloadGUI.Parent = InfoFrame
 ReloadGUI.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
 ReloadGUI.Position = UDim2.new(0.386706948, 5, 0.846642852, 0)
 ReloadGUI.Size = UDim2.new(0, 90, 0, 27)
@@ -527,25 +508,27 @@ game:GetService("CoreGui").VHubCoreScreen:Destroy()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Launch'),true))()
 end)
 
-UICorner_15.Parent = ReloadGUI
+UICorner_14.Parent = ReloadGUI
 
 UpdateLog.Name = "UpdateLog"
-UpdateLog.Parent = PlayerInfoFrame
+UpdateLog.Parent = InfoFrame
 UpdateLog.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
 UpdateLog.Position = UDim2.new(0.0302114803, 0, 0.334821433, 0)
 UpdateLog.Size = UDim2.new(0, 118, 0, 142)
 
-UICorner_16.Parent = UpdateLog
+UICorner_15.Parent = UpdateLog
 
 WhatsNewText.Name = "WhatsNewText"
 WhatsNewText.Parent = UpdateLog
 WhatsNewText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 WhatsNewText.BackgroundTransparency = 1.000
-WhatsNewText.Size = UDim2.new(0, 118, 0, 22)
+WhatsNewText.Position = UDim2.new(0.220338985, 0, 0, 0)
+WhatsNewText.Size = UDim2.new(0, 92, 0, 22)
 WhatsNewText.Font = Enum.Font.GothamMedium
 WhatsNewText.Text = "Whats New?"
 WhatsNewText.TextColor3 = Color3.fromRGB(255, 255, 255)
 WhatsNewText.TextSize = 14.000
+WhatsNewText.TextXAlignment = Enum.TextXAlignment.Left
 
 Border.Name = "Border"
 Border.Parent = UpdateLog
@@ -568,30 +551,40 @@ NewUpdatesInfo.TextWrapped = true
 NewUpdatesInfo.TextXAlignment = Enum.TextXAlignment.Left
 NewUpdatesInfo.TextYAlignment = Enum.TextYAlignment.Top
 
+PaperWithPenImage.Name = "PaperWithPenImage"
+PaperWithPenImage.Parent = UpdateLog
+PaperWithPenImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PaperWithPenImage.BackgroundTransparency = 1.000
+PaperWithPenImage.Position = UDim2.new(0, 4, 0, 0)
+PaperWithPenImage.Size = UDim2.new(0, 22, 0, 22)
+PaperWithPenImage.Image = "http://www.roblox.com/asset/?id=11606523464"
+
 GameInfoFrame.Name = "GameInfoFrame"
-GameInfoFrame.Parent = PlayerInfoFrame
+GameInfoFrame.Parent = InfoFrame
 GameInfoFrame.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
 GameInfoFrame.Position = UDim2.new(0.401812702, 0, 0.334821433, 0)
 GameInfoFrame.Size = UDim2.new(0, 190, 0, 111)
 
-UICorner_17.Parent = GameInfoFrame
+UICorner_16.Parent = GameInfoFrame
 
 InfoText.Name = "InfoText"
 InfoText.Parent = GameInfoFrame
 InfoText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 InfoText.BackgroundTransparency = 1.000
-InfoText.Size = UDim2.new(0, 188, 0, 22)
+InfoText.Position = UDim2.new(0.32631579, 0, 0, 0)
+InfoText.Size = UDim2.new(0, 124, 0, 22)
 InfoText.Font = Enum.Font.GothamMedium
 InfoText.Text = "Information"
 InfoText.TextColor3 = Color3.fromRGB(255, 255, 255)
 InfoText.TextSize = 14.000
+InfoText.TextXAlignment = Enum.TextXAlignment.Left
 
 Border_2.Name = "Border"
 Border_2.Parent = GameInfoFrame
 Border_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Border_2.BorderSizePixel = 0
-Border_2.Position = UDim2.new(0, 0, 0.181956664, 0)
-Border_2.Size = UDim2.new(0, 190, 0, 1)
+Border_2.Position = UDim2.new(0, 0, 0.199974686, 0)
+Border_2.Size = UDim2.new(0, 189, 0, 1)
 
 GameText.Name = "GameText"
 GameText.Parent = GameInfoFrame
@@ -656,9 +649,48 @@ Announcement.TextWrapped = true
 Announcement.TextXAlignment = Enum.TextXAlignment.Left
 Announcement.TextYAlignment = Enum.TextYAlignment.Top
 
+PaperWithPenImage_2.Name = "PaperWithPenImage"
+PaperWithPenImage_2.Parent = GameInfoFrame
+PaperWithPenImage_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PaperWithPenImage_2.BackgroundTransparency = 1.000
+PaperWithPenImage_2.Position = UDim2.new(0, 40, 0, 0)
+PaperWithPenImage_2.Size = UDim2.new(0, 22, 0, 22)
+PaperWithPenImage_2.Image = "http://www.roblox.com/asset/?id=11738116961"
+
+PlayerWelcomeFrame.Name = "PlayerWelcomeFrame"
+PlayerWelcomeFrame.Parent = InfoFrame
+PlayerWelcomeFrame.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+PlayerWelcomeFrame.Position = UDim2.new(0.0302114803, 0, 0.0267857146, 0)
+PlayerWelcomeFrame.Size = UDim2.new(0, 313, 0, 64)
+
+Hello.Name = "Hello"
+Hello.Parent = PlayerWelcomeFrame
+Hello.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Hello.BackgroundTransparency = 1.000
+Hello.Position = UDim2.new(0.244713053, 0, 0.0669643879, 0)
+Hello.Size = UDim2.new(0, 234, 0, 50)
+Hello.Font = Enum.Font.GothamBold
+Hello.Text = "Hello, "..plr.Name"!"
+Hello.TextColor3 = Color3.fromRGB(255, 255, 255)
+Hello.TextSize = 23.000
+Hello.TextStrokeTransparency = 0.000
+Hello.TextWrapped = true
+Hello.TextXAlignment = Enum.TextXAlignment.Left
+
+ProfilePicture.Name = "ProfilePicture"
+ProfilePicture.Parent = PlayerWelcomeFrame
+ProfilePicture.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ProfilePicture.Position = UDim2.new(0, 7, 0, 4)
+ProfilePicture.Size = UDim2.new(0, 55, 0, 55)
+ProfilePicture.Image = "http://www.roblox.com/asset/?id=133035324"
+
+UICorner_17.Parent = ProfilePicture
+
+UICorner_18.Parent = PlayerWelcomeFrame
+
 -- Scripts:
 
-local function WLCIXM_fake_script() -- ProfilePicture.LocalScript 
+local function ZERAT_fake_script() -- ProfilePicture.LocalScript 
 	local script = Instance.new('LocalScript', ProfilePicture)
 
 	local Players = game:GetService("Players")
@@ -675,4 +707,4 @@ local function WLCIXM_fake_script() -- ProfilePicture.LocalScript
 	local imageLabel = script.Parent
 	imageLabel.Image = content
 end
-coroutine.wrap(WLCIXM_fake_script)()
+coroutine.wrap(ZERAT_fake_script)()
