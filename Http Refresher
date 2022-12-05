@@ -7,13 +7,15 @@ pcall(function() getgenv().Refresher_LOADED = true end)
 
 coroutine.wrap(function()
 while wait() do
-wait(300)
+wait(10)
 
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.Enabled = false
+wait(0.1)
 game:GetService("CoreGui").VHubCoreScreen.Name = "MainCore"
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Hey!";
-	Text = "VHub Is Gonna Refresh Https To Function VHub Properly! Might Lag A Bit.";
+	Text = "VHub Is Gonna Refresh Https To Function VHub Properly! Might Lag A Bit. (DO NOT ";
 	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
 Duration = 16;
 
@@ -43,6 +45,8 @@ wait(0.1)
 game:GetService("CoreGui").VHubCoreScreen:Destroy()
 wait(0.1)
 game:GetService("CoreGui").MainCore.Name = "VHubCoreScreen"
+wait(0.1)
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.Enabled = true
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Https Refreshed!";
