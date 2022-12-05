@@ -7,7 +7,7 @@ pcall(function() getgenv().Refresher_LOADED = true end)
 
 coroutine.wrap(function()
 while wait() do
-wait(30)
+wait(300)
 
 game:GetService("CoreGui").VHubCoreScreen.Name = "MainCore"
 
