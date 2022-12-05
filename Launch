@@ -169,5 +169,12 @@ wait(1)
 	ScreenGui:Destroy()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Open%20Button'),true))()
+game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.ScreenshotOverlay.ImageLabel.Image = "rbxassetid://11749355682"
+
+game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.ScreenshotOverlay.ExperienceName.TextStrokeTransparency = 0
+
+game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.ScreenshotOverlay.ExperienceName.Font = Enum.Font.GothamBold
+
+game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.Visible = true
 end
 coroutine.wrap(RWPXMT_fake_script)()
