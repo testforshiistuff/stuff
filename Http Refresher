@@ -7,7 +7,7 @@ pcall(function() getgenv().Refresher_LOADED = true end)
 
 coroutine.wrap(function()
 while wait() do
-wait(10)
+wait(300)
 
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.Enabled = false
 wait(0.1)
