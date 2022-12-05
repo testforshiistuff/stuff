@@ -1,9 +1,9 @@
-if IY_LOADED and not _G.IY_DEBUG == true then
+if Refresher_LOADED and not _G.Refresher_DEBUG == true then
 	print("Loader Already Loaded") 
 	return
 end
 
-pcall(function() getgenv().IY_LOADED = true end)
+pcall(function() getgenv().Refresher_LOADED = true end)
 
 coroutine.wrap(function()
 while wait() do
