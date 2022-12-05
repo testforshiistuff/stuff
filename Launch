@@ -171,6 +171,8 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stu
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Open%20Button'),true))()
 game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.ScreenshotOverlay.ImageLabel.Image = "rbxassetid://11749355682"
 
+game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.ScreenshotOverlay.ImageLabel.Size = UDim2.new(0, 163 , 0, 28)
+
 game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.ScreenshotOverlay.ExperienceName.TextStrokeTransparency = 0
 
 game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.ScreenshotOverlay.ExperienceName.Font = Enum.Font.GothamBold
