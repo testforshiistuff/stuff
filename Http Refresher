@@ -9,6 +9,8 @@ coroutine.wrap(function()
 while wait() do
 wait(300)
 
+game:GetService("CoreGui").VHubCoreScreen.Name = "VHubCoreScree"
+
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Hey!";
 	Text = "VHub Is Gonna Refresh Https To Function VHub Properly! Might Lag A Bit.";
@@ -36,6 +38,10 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stu
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Scripts%20Page%203'),false))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Scripts%20Page%204'),false))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Scripts%20Page%205'),false))()
+
+game:GetService("CoreGui").VHubCoreScreen:Destroy()
+wait(0.1)
+game:GetService("CoreGui").VHubCoreScree.Name = "VHubCoreScreen"
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Https Refreshed!";
