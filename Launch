@@ -181,5 +181,13 @@ game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.ScreenshotOverlay.Experi
 game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.ScreenshotOverlay.ExperienceName.Font = Enum.Font.GothamBold
 
 game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.Visible = true
+if ExecuteOnes_LOADED and not _G.ExecuteOnes_DEBUG == true then
+	print("Scripts Already Loaded") 
+	return
+end
+
+pcall(function() getgenv().ExecuteOnes_LOADED = true end)
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Settings%20Page'),true))()
+
 end
 coroutine.wrap(RWPXMT_fake_script)()
