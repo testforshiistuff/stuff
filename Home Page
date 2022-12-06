@@ -493,7 +493,7 @@ end)
 UICorner_13.Parent = JoinDiscord
 
 ReportAProblem.Name = "ReportAProblem"
-ReportAProblem.Parent = game.StarterGui.ScreenGui.MainFrame.InfoFrame
+ReportAProblem.Parent = InfoFrame
 ReportAProblem.BackgroundColor3 = Color3.fromRGB(200, 0, 0)
 ReportAProblem.Position = UDim2.new(0.386706948, 5, 0.846642852, 0)
 ReportAProblem.Size = UDim2.new(0, 90, 0, 27)
