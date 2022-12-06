@@ -61,6 +61,7 @@ SettingsFrame.Position = UDim2.new(0.174855486, 0, 0.194284841, 0)
 SettingsFrame.Size = UDim2.new(0, 450, 0, 270)
 SettingsFrame.Active = true
 SettingsFrame.Draggable = true
+SettingsFrame.Visible = false
 
 UICorner.CornerRadius = UDim.new(0, 20)
 UICorner.Parent = SettingsFrame
