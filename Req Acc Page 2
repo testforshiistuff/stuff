@@ -967,3 +967,16 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end
 end)
+
+
+NameScript_3.Text = "Script Soon"
+
+NameScript_4.Text = "Script Soon"
+
+NameScript_5.Text = "Script Soon"
+
+NameScript_6.Text = "Script Soon"
+
+NameScript_7.Text = "Script Soon"
+
+NameScript_8.Text = "Script Soon"
