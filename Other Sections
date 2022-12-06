@@ -161,7 +161,7 @@ Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
 Settings.TextSize = 14.000
 Settings.MouseButton1Down:connect(function()
 SectionsFrame:Destroy()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Settings%20Page'),true))()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.SettingsFrame.Visible = true
 end)
 
 UICorner_6.Parent = Settings
