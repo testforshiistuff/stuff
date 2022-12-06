@@ -954,3 +954,16 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end
 end)
+
+NameScript_2.Text = "Smile"
+Script2.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/Accessories/main/Smile'),true))()
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
+end)
