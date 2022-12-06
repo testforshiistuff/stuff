@@ -269,6 +269,15 @@ RemoveNotificationsButton.Font = Enum.Font.Gotham
 RemoveNotificationsButton.Text = "Remove Notifications: No"
 RemoveNotificationsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 RemoveNotificationsButton.TextSize = 14.000
+RemoveNotificationsButton.MouseButton1Down:connect(function()
+if RemoveNotificationsButton.Text == "Remove Notifications: No" then
+game:GetService("CoreGui").RobloxGui.NotificationFrame.Visible = false
+RemoveNotificationsButton.Text = "Remove Notifications: Yes"
+elseif RemoveNotificationsButton.Text == "Remove Notifications: Yes" then
+game:GetService("CoreGui").RobloxGui.NotificationFrame.Visible = true
+RemoveNotificationsButton.Text = "Remove Notifications: No"
+end
+end)
 
 UICorner_10.Parent = RemoveNotificationsButton
 
