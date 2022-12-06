@@ -503,6 +503,10 @@ ReportAProblem.TextColor3 = Color3.fromRGB(255, 255, 255)
 ReportAProblem.TextScaled = true
 ReportAProblem.TextSize = 14.000
 ReportAProblem.TextWrapped = true
+ReportAProblem.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Support%20Page'),true))()
+MainFrame:Destroy()
+end)
 
 UICorner_14.Parent = ReportAProblem
 
