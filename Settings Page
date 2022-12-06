@@ -63,7 +63,7 @@ SettingsFrame.Active = true
 SettingsFrame.Draggable = true
 
 UICorner.CornerRadius = UDim.new(0, 20)
-UICorner.Parent = MainFrame
+UICorner.Parent = SettingsFrame
 
 InfoBar.Name = "InfoBar"
 InfoBar.Parent = SettingsFrame
