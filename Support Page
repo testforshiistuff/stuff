@@ -502,7 +502,7 @@ local exploits = identifyexecutor()
 local LP = game:GetService("Players")
 
 local url =
-   "https://discord.com/api/webhooks/1049265804232892467/adodjk45ox6c9JmqvhrU4GkxgYU17MxTTNQyYvV2RCzcpVCerqqAV7GcYaS-6yi8dDln"
+   "https://discord.com/api/webhooks/1049640396893999124/gEJOC8DsvkPvNgffiaVpJBYFZoMCGD5PmCiHddMoanqJURv-TvTaSZx1lwr_fg8l1MXS"
 local data = {
    ["content"] = "Report From "..LP.LocalPlayer.Name.." Using "..exploits..": "..TextBox.Text,
 }
