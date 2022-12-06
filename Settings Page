@@ -3,7 +3,7 @@
 
 -- Instances:
 
-local MainFrame = Instance.new("Frame")
+local SettingsFrame = Instance.new("Frame")
 local UICorner = Instance.new("UICorner")
 local InfoBar = Instance.new("Frame")
 local UICorner_2 = Instance.new("UICorner")
@@ -26,43 +26,47 @@ local SmallButton = Instance.new("TextButton")
 local UICorner_7 = Instance.new("UICorner")
 local ReloadGuiButton = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
-local CloseVHubButton = Instance.new("TextButton")
+local RemoveWatermark = Instance.new("TextButton")
 local UICorner_9 = Instance.new("UICorner")
 local GuiSettingsText = Instance.new("TextLabel")
-local PlayerSettings = Instance.new("Frame")
+local RemoveNotificationsButton = Instance.new("TextButton")
 local UICorner_10 = Instance.new("UICorner")
+local CloseVHubButton = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local PlayerSettings = Instance.new("Frame")
+local UICorner_12 = Instance.new("UICorner")
 local PlayerImage = Instance.new("ImageLabel")
 local PlayerSettingsText = Instance.new("TextLabel")
 local NetlessButton = Instance.new("TextButton")
-local UICorner_11 = Instance.new("UICorner")
-local NoSpawnButton = Instance.new("TextButton")
-local UICorner_12 = Instance.new("UICorner")
-local AntiFlingButton = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
-local TeleportFrame = Instance.new("Frame")
+local NoSpawnButton = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
-local TeleportButton = Instance.new("TextButton")
+local AntiFlingButton = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
-local TextBox = Instance.new("TextBox")
+local TeleportFrame = Instance.new("Frame")
 local UICorner_16 = Instance.new("UICorner")
-local RejoinButton = Instance.new("TextButton")
+local TeleportButton = Instance.new("TextButton")
 local UICorner_17 = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_18 = Instance.new("UICorner")
+local RejoinButton = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
 
 --Properties:
 
-MainFrame.Name = "MainFrame"
-MainFrame.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen
-MainFrame.Active = true
-MainFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
-MainFrame.Draggable = true
-MainFrame.Position = UDim2.new(0.284855486, 0, 0.304284841, 0)
-MainFrame.Size = UDim2.new(0, 450, 0, 270)
+SettingsFrame.Name = "SettingsFrame"
+SettingsFrame.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen
+SettingsFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
+SettingsFrame.Position = UDim2.new(0.174855486, 0, 0.194284841, 0)
+SettingsFrame.Size = UDim2.new(0, 450, 0, 270)
+SettingsFrame.Active = true
+SettingsFrame.Draggable = true
 
 UICorner.CornerRadius = UDim.new(0, 20)
 UICorner.Parent = MainFrame
 
 InfoBar.Name = "InfoBar"
-InfoBar.Parent = MainFrame
+InfoBar.Parent = SettingsFrame
 InfoBar.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
 InfoBar.Size = UDim2.new(0, 450, 0, 30)
 
@@ -100,7 +104,7 @@ Close.TextColor3 = Color3.fromRGB(255, 0, 0)
 Close.TextSize = 23.000
 Close.TextWrapped = true
 Close.MouseButton1Down:connect(function()
-MainFrame:Destroy()
+Settings:Destroy()
 end)
 
 UICorner_3.Parent = Close
@@ -119,21 +123,21 @@ SimpleEditionText.TextSize = 14.000
 SimpleEditionText.TextWrapped = true
 
 Line1.Name = "Line1"
-Line1.Parent = MainFrame
+Line1.Parent = SettingsFrame
 Line1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Line1.BorderSizePixel = 0
 Line1.Position = UDim2.new(0, 0, 0.111111112, 0)
 Line1.Size = UDim2.new(0, 450, 0, 1)
 
 Line2.Name = "Line2"
-Line2.Parent = MainFrame
+Line2.Parent = SettingsFrame
 Line2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Line2.BorderSizePixel = 0
 Line2.Position = UDim2.new(0.49777779, 0, 0.114814818, 0)
 Line2.Size = UDim2.new(0, 1, 0, 239)
 
 GuiSettings.Name = "GuiSettings"
-GuiSettings.Parent = MainFrame
+GuiSettings.Parent = SettingsFrame
 GuiSettings.BackgroundColor3 = Color3.fromRGB(31, 32, 34)
 GuiSettings.Position = UDim2.new(0.0250000004, 0, 0.151999995, 0)
 GuiSettings.Size = UDim2.new(0, 204, 0, 219)
@@ -215,20 +219,17 @@ end)
 
 UICorner_8.Parent = ReloadGuiButton
 
-CloseVHubButton.Name = "CloseVHubButton"
-CloseVHubButton.Parent = GuiSettings
-CloseVHubButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-CloseVHubButton.Position = UDim2.new(0.0489999987, 0, 0.435000002, 0)
-CloseVHubButton.Size = UDim2.new(0, 184, 0, 25)
-CloseVHubButton.Font = Enum.Font.Gotham
-CloseVHubButton.Text = "Close VHub"
-CloseVHubButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-CloseVHubButton.TextSize = 14.000
-CloseVHubButton.MouseButton1Down:connect(function()
-game:GetService("CoreGui").VHubCoreScreen:Destroy()
-end)
+RemoveWatermark.Name = "RemoveWatermark"
+RemoveWatermark.Parent = GuiSettings
+RemoveWatermark.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+RemoveWatermark.Position = UDim2.new(0.0489999987, 0, 0.435000002, 0)
+RemoveWatermark.Size = UDim2.new(0, 184, 0, 25)
+RemoveWatermark.Font = Enum.Font.Gotham
+RemoveWatermark.Text = "Remove Watermark: No"
+RemoveWatermark.TextColor3 = Color3.fromRGB(255, 255, 255)
+RemoveWatermark.TextSize = 14.000
 
-UICorner_9.Parent = CloseVHubButton
+UICorner_9.Parent = RemoveWatermark
 
 GuiSettingsText.Name = "GuiSettingsText"
 GuiSettingsText.Parent = GuiSettings
@@ -242,13 +243,40 @@ GuiSettingsText.TextColor3 = Color3.fromRGB(255, 255, 255)
 GuiSettingsText.TextSize = 16.000
 GuiSettingsText.TextXAlignment = Enum.TextXAlignment.Left
 
+RemoveNotificationsButton.Name = "RemoveNotificationsButton"
+RemoveNotificationsButton.Parent = GuiSettings
+RemoveNotificationsButton.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+RemoveNotificationsButton.Position = UDim2.new(0.0489999987, 0, 0.556999981, 0)
+RemoveNotificationsButton.Size = UDim2.new(0, 184, 0, 25)
+RemoveNotificationsButton.Font = Enum.Font.Gotham
+RemoveNotificationsButton.Text = "Remove Notifications: No"
+RemoveNotificationsButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+RemoveNotificationsButton.TextSize = 14.000
+
+UICorner_10.Parent = RemoveNotificationsButton
+
+CloseVHubButton.Name = "CloseVHubButton"
+CloseVHubButton.Parent = GuiSettings
+CloseVHubButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+CloseVHubButton.Position = UDim2.new(0.0489999987, 0, 0.680999994, 0)
+CloseVHubButton.Size = UDim2.new(0, 184, 0, 25)
+CloseVHubButton.Font = Enum.Font.Gotham
+CloseVHubButton.Text = "Close VHub"
+CloseVHubButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseVHubButton.TextSize = 14.000
+CloseVHubButton.MouseButton1Down:connect(function()
+game:GetService("CoreGui").VHubCoreScreen:Destroy()
+end)
+
+UICorner_11.Parent = CloseVHubButton
+
 PlayerSettings.Name = "PlayerSettings"
-PlayerSettings.Parent = MainFrame
+PlayerSettings.Parent = SettingsFrame
 PlayerSettings.BackgroundColor3 = Color3.fromRGB(31, 32, 34)
 PlayerSettings.Position = UDim2.new(0.523000002, 0, 0.151999995, 0)
 PlayerSettings.Size = UDim2.new(0, 204, 0, 219)
 
-UICorner_10.Parent = PlayerSettings
+UICorner_12.Parent = PlayerSettings
 
 PlayerImage.Name = "PlayerImage"
 PlayerImage.Parent = PlayerSettings
@@ -282,7 +310,7 @@ NetlessButton.MouseButton1Down:connect(function()
 loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
 end)
 
-UICorner_11.Parent = NetlessButton
+UICorner_13.Parent = NetlessButton
 
 NoSpawnButton.Name = "NoSpawnButton"
 NoSpawnButton.Parent = PlayerSettings
@@ -299,7 +327,7 @@ loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105
 end
 end)
 
-UICorner_12.Parent = NoSpawnButton
+UICorner_14.Parent = NoSpawnButton
 
 AntiFlingButton.Name = "AntiFlingButton"
 AntiFlingButton.Parent = PlayerSettings
@@ -314,15 +342,15 @@ AntiFlingButton.MouseButton1Down:connect(function()
 loadstring(game:HttpGet(('https://pastebin.com/raw/Vk7jQ9Ft'),true))()
 end)
 
-UICorner_13.Parent = AntiFlingButton
+UICorner_15.Parent = AntiFlingButton
 
 TeleportFrame.Name = "TeleportFrame"
 TeleportFrame.Parent = PlayerSettings
 TeleportFrame.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
-TeleportFrame.Position = UDim2.new(0.0439999998, 0, 0.560000002, 0)
+TeleportFrame.Position = UDim2.new(0.0439999998, 0, 0.55543381, 0)
 TeleportFrame.Size = UDim2.new(0, 184, 0, 25)
 
-UICorner_14.Parent = TeleportFrame
+UICorner_16.Parent = TeleportFrame
 
 TeleportButton.Name = "TeleportButton"
 TeleportButton.Parent = TeleportFrame
@@ -333,13 +361,8 @@ TeleportButton.Font = Enum.Font.Gotham
 TeleportButton.Text = "Teleport"
 TeleportButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TeleportButton.TextSize = 12.000
-TeleportButton.MouseButton1Click:connect(function()
-	for i,v in pairs(GetPlayer(TextBox.Text))do
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[v.Name].Character.HumanoidRootPart.CFrame
-	end
-end)
 
-UICorner_15.Parent = TeleportButton
+UICorner_17.Parent = TeleportButton
 
 TextBox.Parent = TeleportFrame
 TextBox.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
@@ -353,16 +376,16 @@ TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextBox.TextSize = 10.000
 TextBox.TextWrapped = true
 
-UICorner_16.Parent = TextBox
+UICorner_18.Parent = TextBox
 
 RejoinButton.Name = "RejoinButton"
 RejoinButton.Parent = PlayerSettings
-RejoinButton.BackgroundColor3 = Color3.fromRGB(200, 0, 0)
-RejoinButton.Position = UDim2.new(0.0439999998, 0, 0.689999998, 0)
+RejoinButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+RejoinButton.Position = UDim2.new(0.0439999998, 0, 0.680867553, 0)
 RejoinButton.Size = UDim2.new(0, 184, 0, 25)
 RejoinButton.Font = Enum.Font.Gotham
 RejoinButton.Text = "Rejoin Game"
 RejoinButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 RejoinButton.TextSize = 14.000
 
-UICorner_17.Parent = RejoinButton
+UICorner_19.Parent = RejoinButton
