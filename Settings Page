@@ -240,9 +240,7 @@ RemoveWatermark.MouseButton1Down:connect(function()
 if RemoveWatermark.Text == "Remove Watermark: No" then
 game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.Visible = false
 RemoveWatermark.Text = "Remove Watermark: Yes"
-end
-
-if RemoveWatermark.Text == "Remove Watermark: Yes" then
+elseif RemoveWatermark.Text == "Remove Watermark: Yes" then
 game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.Visible = true
 RemoveWatermark.Text = "Remove Watermark: No"
 end
