@@ -180,6 +180,8 @@ game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.ScreenshotOverlay.Experi
 
 game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.ScreenshotOverlay.ExperienceName.Font = Enum.Font.GothamBold
 
+game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.Visible = true
+
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Settings%20Page'),true))()
 end
 coroutine.wrap(RWPXMT_fake_script)()
