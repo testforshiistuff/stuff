@@ -1,3 +1,10 @@
+if Settings_LOADED and not _G.Settings_DEBUG == true then
+	print("Settings Already Loaded") 
+	return
+end
+
+pcall(function() getgenv().Settings_LOADED = true end)
+
 -- Gui to Lua
 -- Version: 3.2
 
@@ -105,7 +112,7 @@ Close.TextColor3 = Color3.fromRGB(255, 0, 0)
 Close.TextSize = 23.000
 Close.TextWrapped = true
 Close.MouseButton1Down:connect(function()
-Settings:Destroy()
+SettingsFrame:Destroy()
 end)
 
 UICorner_3.Parent = Close
