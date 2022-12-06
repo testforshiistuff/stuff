@@ -112,7 +112,7 @@ Close.TextColor3 = Color3.fromRGB(255, 0, 0)
 Close.TextSize = 23.000
 Close.TextWrapped = true
 Close.MouseButton1Down:connect(function()
-SettingsFrame:Destroy()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.SettingsFrame.Visible = false
 end)
 
 UICorner_3.Parent = Close
