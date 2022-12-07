@@ -413,5 +413,8 @@ RejoinButton.Font = Enum.Font.Gotham
 RejoinButton.Text = "Rejoin Game"
 RejoinButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 RejoinButton.TextSize = 14.000
+RejoinButton.MouseButton1Down:connect(function()
+game:GetService("TeleportService"):Teleport(game.PlaceId)
+end)
 
 UICorner_19.Parent = RejoinButton
