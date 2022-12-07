@@ -59,6 +59,32 @@ local UICorner_18 = Instance.new("UICorner")
 local RejoinButton = Instance.new("TextButton")
 local UICorner_19 = Instance.new("UICorner")
 
+
+--Functions:
+
+function GetPlayer(String)
+    local Found = {}
+    local strl = String:lower()
+    if strl == "all" then
+        for i,v in pairs(game.Players:GetPlayers()) do
+            table.insert(Found,v)
+        end
+    elseif strl == "others" then
+        for i,v in pairs(game.Players:GetPlayers()) do
+            if v.Name ~= game.Players.LocalPlayer.Name then
+                table.insert(Found,v)
+            end
+        end    
+    else
+        for i,v in pairs(game.Players:GetPlayers()) do
+            if v.Name:lower():sub(1, #String) == String:lower() then
+                table.insert(Found,v)
+            end
+        end    
+    end
+    return Found    
+end
+
 --Properties:
 
 SettingsFrame.Name = "SettingsFrame"
@@ -387,6 +413,10 @@ TeleportButton.Font = Enum.Font.Gotham
 TeleportButton.Text = "Teleport"
 TeleportButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 TeleportButton.TextSize = 12.000
+TeleportButton.MouseButton1Down:connect(function()
+for i,v in pairs(GetPlayer(TextBox.Text))do
+		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[v.Name].Character.HumanoidRootPart.CFrame
+end)
 
 UICorner_17.Parent = TeleportButton
 
