@@ -50,40 +50,8 @@ local NoSpawnButton = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
 local AntiFlingButton = Instance.new("TextButton")
 local UICorner_15 = Instance.new("UICorner")
-local TeleportFrame = Instance.new("Frame")
-local UICorner_16 = Instance.new("UICorner")
-local TeleportButton = Instance.new("TextButton")
-local UICorner_17 = Instance.new("UICorner")
-local TextBox = Instance.new("TextBox")
-local UICorner_18 = Instance.new("UICorner")
 local RejoinButton = Instance.new("TextButton")
-local UICorner_19 = Instance.new("UICorner")
-
-
---Functions:
-
-function GetPlayer(String)
-    local Found = {}
-    local strl = String:lower()
-    if strl == "all" then
-        for i,v in pairs(game.Players:GetPlayers()) do
-            table.insert(Found,v)
-        end
-    elseif strl == "others" then
-        for i,v in pairs(game.Players:GetPlayers()) do
-            if v.Name ~= game.Players.LocalPlayer.Name then
-                table.insert(Found,v)
-            end
-        end    
-    else
-        for i,v in pairs(game.Players:GetPlayers()) do
-            if v.Name:lower():sub(1, #String) == String:lower() then
-                table.insert(Found,v)
-            end
-        end    
-    end
-    return Found    
-end
+local UICorner_16 = Instance.new("UICorner")
 
 --Properties:
 
@@ -396,48 +364,10 @@ end)
 
 UICorner_15.Parent = AntiFlingButton
 
-TeleportFrame.Name = "TeleportFrame"
-TeleportFrame.Parent = PlayerSettings
-TeleportFrame.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
-TeleportFrame.Position = UDim2.new(0.0439999998, 0, 0.55543381, 0)
-TeleportFrame.Size = UDim2.new(0, 184, 0, 25)
-
-UICorner_16.Parent = TeleportFrame
-
-TeleportButton.Name = "TeleportButton"
-TeleportButton.Parent = TeleportFrame
-TeleportButton.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
-TeleportButton.Position = UDim2.new(0.646738946, 0, 0.0799999982, 0)
-TeleportButton.Size = UDim2.new(0, 60, 0, 20)
-TeleportButton.Font = Enum.Font.Gotham
-TeleportButton.Text = "Teleport"
-TeleportButton.TextColor3 = Color3.fromRGB(255, 255, 255)
-TeleportButton.TextSize = 12.000
-TeleportButton.MouseButton1Down:connect(function()
-for i,v in pairs(GetPlayer(TextBox.Text))do
-		game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = game.Players[v.Name].Character.HumanoidRootPart.CFrame
-end)
-
-UICorner_17.Parent = TeleportButton
-
-TextBox.Parent = TeleportFrame
-TextBox.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
-TextBox.Position = UDim2.new(0, 10, 0, 2)
-TextBox.Size = UDim2.new(0, 100, 0, 20)
-TextBox.ClearTextOnFocus = false
-TextBox.Font = Enum.Font.Gotham
-TextBox.PlaceholderText = "Type Target Username"
-TextBox.Text = ""
-TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.TextSize = 10.000
-TextBox.TextWrapped = true
-
-UICorner_18.Parent = TextBox
-
 RejoinButton.Name = "RejoinButton"
 RejoinButton.Parent = PlayerSettings
 RejoinButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-RejoinButton.Position = UDim2.new(0.0439999998, 0, 0.680867553, 0)
+RejoinButton.Position = UDim2.new(0.0439999998, 0, 0.55543381, 0)
 RejoinButton.Size = UDim2.new(0, 184, 0, 25)
 RejoinButton.Font = Enum.Font.Gotham
 RejoinButton.Text = "Rejoin Game"
@@ -447,4 +377,4 @@ RejoinButton.MouseButton1Down:connect(function()
 game:GetService("TeleportService"):Teleport(game.PlaceId)
 end)
 
-UICorner_19.Parent = RejoinButton
+UICorner_16.Parent = RejoinButton
