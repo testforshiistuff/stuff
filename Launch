@@ -77,14 +77,14 @@ SimpleEditionText.TextSize = 20.000
 SimpleEditionText.TextXAlignment = Enum.TextXAlignment.Left
 SimpleEditionText.TextYAlignment = Enum.TextYAlignment.Top
 
-LoadingText.Name = "GettingGuiText"
+LoadingText.Name = "LoadingText"
 LoadingText.Parent = LaunchFrame
 LoadingText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 LoadingText.BackgroundTransparency = 1.000
 LoadingText.Position = UDim2.new(0.170000002, 0, 0.665000021, 0)
 LoadingText.Size = UDim2.new(0, 200, 0, 50)
 LoadingText.Font = Enum.Font.Gotham
-LoadingText.Text = "Getting Gui..."
+LoadingText.Text = "Loading Gui..."
 LoadingText.TextColor3 = Color3.fromRGB(255, 255, 255)
 LoadingText.TextSize = 14.000
 LoadingText.TextTransparency = 1.000
