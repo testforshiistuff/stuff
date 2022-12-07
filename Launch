@@ -77,14 +77,14 @@ SimpleEditionText.TextSize = 20.000
 SimpleEditionText.TextXAlignment = Enum.TextXAlignment.Left
 SimpleEditionText.TextYAlignment = Enum.TextYAlignment.Top
 
-LoadingText.Name = "LoadingText"
+LoadingText.Name = "GettingGuiText"
 LoadingText.Parent = LaunchFrame
 LoadingText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 LoadingText.BackgroundTransparency = 1.000
 LoadingText.Position = UDim2.new(0.170000002, 0, 0.665000021, 0)
 LoadingText.Size = UDim2.new(0, 200, 0, 50)
 LoadingText.Font = Enum.Font.Gotham
-LoadingText.Text = "Loading Gui..."
+LoadingText.Text = "Getting Gui..."
 LoadingText.TextColor3 = Color3.fromRGB(255, 255, 255)
 LoadingText.TextSize = 14.000
 LoadingText.TextTransparency = 1.000
@@ -172,7 +172,7 @@ wait(1)
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Open%20Button'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Error%20Page'),true))()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Http%20Refresher'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Https%20Updater'),true))()
 game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.ScreenshotOverlay.ImageLabel.Image = "rbxassetid://11749355682"
 
 game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.ScreenshotOverlay.ImageLabel.Size = UDim2.new(0, 163 , 0, 28)
