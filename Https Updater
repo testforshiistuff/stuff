@@ -34,6 +34,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stu
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Guis%20Page%202'),false))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Guis%20Page%203'),false))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Guis%20Page%204'),false))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Home%20Page'),false))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Hubs%20Page%201'),false))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Req%20Acc%20Page%201'),false))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Req%20Acc%20Page%202'),false))()
