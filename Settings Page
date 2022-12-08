@@ -311,7 +311,7 @@ CloseItButton.Font = Enum.Font.Gotham
 CloseItButton.Text = "Close It"
 CloseItButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 CloseItButton.TextSize = 14.000
-Page.MouseButton1Down:connect(function()
+CloseItButton.MouseButton1Down:connect(function()
 game:GetService("CoreGui").VHubCoreScreen:Destroy()
 end)
 
