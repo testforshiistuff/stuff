@@ -287,12 +287,12 @@ CloseVHubButton.TextSize = 14.000
 CloseVHubButton.MouseButton1Down:connect(function()
 
 local AreYouSureFrame = Instance.new("Frame")
-local UICorner = Instance.new("UICorner")
+local UICorner_17 = Instance.new("UICorner")
 local CloseItButton = Instance.new("TextButton")
-local UICorner_2 = Instance.new("UICorner")
+local UICorner_18 = Instance.new("UICorner")
 local CloseVHubText = Instance.new("TextLabel")
 local NahButton = Instance.new("TextButton")
-local UICorner_3 = Instance.new("UICorner")
+local UICorner_19 = Instance.new("UICorner")
 
 AreYouSureFrame.Name = "AreYouSureFrame"
 AreYouSureFrame.Parent = SettingsFrame
@@ -300,7 +300,7 @@ AreYouSureFrame.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
 AreYouSureFrame.Position = UDim2.new(0.333333343, 0, 0.314814806, 0)
 AreYouSureFrame.Size = UDim2.new(0, 150, 0, 100)
 
-UICorner.Parent = AreYouSureFrame
+UICorner_17.Parent = AreYouSureFrame
 
 CloseItButton.Name = "CloseItButton"
 CloseItButton.Parent = AreYouSureFrame
@@ -315,7 +315,7 @@ Page.MouseButton1Down:connect(function()
 game:GetService("CoreGui").VHubCoreScreen:Destroy()
 end)
 
-UICorner_2.Parent = CloseItButton
+UICorner_18.Parent = CloseItButton
 
 CloseVHubText.Name = "CloseVHubText"
 CloseVHubText.Parent = AreYouSureFrame
@@ -341,7 +341,7 @@ NahButton.MouseButton1Down:connect(function()
 AreYouSureFrame:Destroy()
 end)
 
-UICorner_3.Parent = NahButton
+UICorner_19.Parent = NahButton
 end)
 
 UICorner_11.Parent = CloseVHubButton
