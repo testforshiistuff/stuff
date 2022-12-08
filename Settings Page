@@ -285,7 +285,63 @@ CloseVHubButton.Text = "Close VHub"
 CloseVHubButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 CloseVHubButton.TextSize = 14.000
 CloseVHubButton.MouseButton1Down:connect(function()
+
+local AreYouSureFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local CloseItButton = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local CloseVHubText = Instance.new("TextLabel")
+local NahButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+
+AreYouSureFrame.Name = "AreYouSureFrame"
+AreYouSureFrame.Parent = SettingsFrame
+AreYouSureFrame.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+AreYouSureFrame.Position = UDim2.new(0.333333343, 0, 0.314814806, 0)
+AreYouSureFrame.Size = UDim2.new(0, 150, 0, 100)
+
+UICorner.Parent = AreYouSureFrame
+
+CloseItButton.Name = "CloseItButton"
+CloseItButton.Parent = AreYouSureFrame
+CloseItButton.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+CloseItButton.Position = UDim2.new(0.166666672, 0, 0.74000001, 0)
+CloseItButton.Size = UDim2.new(0, 100, 0, 20)
+CloseItButton.Font = Enum.Font.Gotham
+CloseItButton.Text = "Close It"
+CloseItButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseItButton.TextSize = 14.000
+Page.MouseButton1Down:connect(function()
 game:GetService("CoreGui").VHubCoreScreen:Destroy()
+end)
+
+UICorner_2.Parent = CloseItButton
+
+CloseVHubText.Name = "CloseVHubText"
+CloseVHubText.Parent = AreYouSureFrame
+CloseVHubText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CloseVHubText.BackgroundTransparency = 1.000
+CloseVHubText.Size = UDim2.new(0, 150, 0, 50)
+CloseVHubText.Font = Enum.Font.Gotham
+CloseVHubText.Text = "Are You Sure You Want To Close VHub?"
+CloseVHubText.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseVHubText.TextSize = 14.000
+CloseVHubText.TextWrapped = true
+
+NahButton.Name = "NahButton"
+NahButton.Parent = AreYouSureFrame
+NahButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NahButton.Position = UDim2.new(0.166666672, 0, 0.5, 0)
+NahButton.Size = UDim2.new(0, 100, 0, 20)
+NahButton.Font = Enum.Font.Gotham
+NahButton.Text = "Nah"
+NahButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+NahButton.TextSize = 14.000
+NahButton.MouseButton1Down:connect(function()
+AreYouSureFrame:Destroy()
+end)
+
+UICorner_3.Parent = NahButton
 end)
 
 UICorner_11.Parent = CloseVHubButton
