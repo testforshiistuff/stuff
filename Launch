@@ -1,3 +1,14 @@
+if VHub_LOADED and not _G.VHub_DEBUG == true then
+	game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "VHub Is Already Loaded!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16; 
+	return
+end
+
+pcall(function() getgenv().VHub_LOADED = true end)
+
 -- Gui to Lua
 -- Version: 3.2
 
