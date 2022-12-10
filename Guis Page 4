@@ -1003,7 +1003,7 @@ end)
 
 NameScript_6.Text = "Break In Gui"
 Script6.MouseButton1Down:connect(function()
-if game.PlaceId == 3851622790 then
+if game.PlaceId == 3851622790 or 4620170611 then
 loadstring(game:HttpGet("https://pastebin.com/raw/Wg8pEW3Z", true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
