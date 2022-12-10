@@ -49,10 +49,12 @@ local SupportFrame = Instance.new("Frame")
 local UICorner_12 = Instance.new("UICorner")
 local VHubSupportText = Instance.new("TextLabel")
 local VHubImage_2 = Instance.new("ImageLabel")
-local SendReportButton = Instance.new("TextButton")
+local OpenSettingsButton = Instance.new("TextButton")
 local UICorner_13 = Instance.new("UICorner")
-local TextBoxFrame = Instance.new("Frame")
+local SendReportButton = Instance.new("TextButton")
 local UICorner_14 = Instance.new("UICorner")
+local TextBoxFrame = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
 local TextBox = Instance.new("TextBox")
 
 --Properties:
@@ -477,11 +479,26 @@ VHubImage_2.Position = UDim2.new(0.0209999997, 0, 0.0170000009, 0)
 VHubImage_2.Size = UDim2.new(0, 35, 0, 35)
 VHubImage_2.Image = "rbxassetid://9408318893"
 
+OpenSettingsButton.Name = "OpenSettingsButton"
+OpenSettingsButton.Parent = game.StarterGui.ScreenGui.MainFrame.SupportFrame
+OpenSettingsButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OpenSettingsButton.Position = UDim2.new(0.0210882854, 0, 0.874000013, 0)
+OpenSettingsButton.Size = UDim2.new(0, 113, 0, 20)
+OpenSettingsButton.Font = Enum.Font.GothamMedium
+OpenSettingsButton.Text = "Open Settings"
+OpenSettingsButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+OpenSettingsButton.TextSize = 14.000
+OpenSettingsButton.MouseButton1Down:connect(function()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.SettingsFrame.Visible = true
+end)
+
+UICorner_13.Parent = OpenSettingsButton
+
 SendReportButton.Name = "SendReportButton"
 SendReportButton.Parent = SupportFrame
 SendReportButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SendReportButton.Position = UDim2.new(0.0210882854, 0, 0.874000013, 0)
-SendReportButton.Size = UDim2.new(0, 321, 0, 20)
+SendReportButton.Position = UDim2.new(0.383363724, 0, 0.874000013, 0)
+SendReportButton.Size = UDim2.new(0, 200, 0, 20)
 SendReportButton.Font = Enum.Font.GothamMedium
 SendReportButton.Text = "Send Report"
 SendReportButton.TextColor3 = Color3.fromRGB(0, 0, 0)
@@ -524,7 +541,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end)
 
-UICorner_13.Parent = SendReportButton
+UICorner_14.Parent = SendReportButton
 
 TextBoxFrame.Name = "TextBoxFrame"
 TextBoxFrame.Parent = SupportFrame
@@ -532,7 +549,7 @@ TextBoxFrame.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
 TextBoxFrame.Position = UDim2.new(0.0209999997, 0, 0.170000002, 0)
 TextBoxFrame.Size = UDim2.new(0, 321, 0, 150)
 
-UICorner_14.Parent = TextBoxFrame
+UICorner_15.Parent = TextBoxFrame
 
 TextBox.Parent = TextBoxFrame
 TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
