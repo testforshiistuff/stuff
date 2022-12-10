@@ -20,6 +20,7 @@ local OKButton = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
 local DiscordButton = Instance.new("TextButton")
 local UICorner_5 = Instance.new("UICorner")
+local LP = game:GetService("Players")
 
 --Properties:
 
@@ -30,6 +31,7 @@ MessageReportFrame.Draggable = true
 MessageReportFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
 MessageReportFrame.Position = UDim2.new(0.252539098, 0, 0.205154419, 0)
 MessageReportFrame.Size = UDim2.new(0, 350, 0, 270)
+MessageReportFrame.Visible = false
 
 UICorner.CornerRadius = UDim.new(0, 20)
 UICorner.Parent = MessageReportFrame
@@ -114,7 +116,7 @@ Message.BackgroundTransparency = 1.000
 Message.Position = UDim2.new(0.013666084, 0, 0.0394828804, 0)
 Message.Size = UDim2.new(0, 322, 0, 110)
 Message.Font = Enum.Font.Gotham
-Message.Text = "Hello Diner2310, Very Sorry For Inconvenience But We Suggest You To Slow Down Changing A Page Or A Section. Going Too Fast Changing Pages Is Bugging The Gui."
+Message.Text = "Loading Message"
 Message.TextColor3 = Color3.fromRGB(255, 255, 255)
 Message.TextSize = 14.000
 Message.TextWrapped = true
@@ -132,6 +134,22 @@ OKButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 OKButton.TextSize = 14.000
 OKButton.MouseButton1Down:connect(function()
 MessageReportFrame:Destroy()
+
+local url =
+   "https://discord.com/api/webhooks/1051137032417706044/dladmYOJmvfbpF1KipZSbO4R9k7OJoeuN-JWOUHQj5Ux0hVFo1yEoT2oQlBkMEXc1Pr4"
+local data = {
+   ["content"] = LP.LocalPlayer.Name.." Read The Message",
+}
+
+
+local newdata = game:GetService("HttpService"):JSONEncode(data)
+
+local headers = {
+   ["content-type"] = "application/json"
+}
+request = http_request or request or HttpPost or syn.request
+local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
+request(abcdef)
 end)
 
 UICorner_4.Parent = OKButton
@@ -155,3 +173,8 @@ Duration = 16;
 end)
 
 UICorner_5.Parent = DiscordButton
+
+if LP.Name == itsyaboivincentt then
+MessageReportFrame.Visible = true
+Message.Text = "Hello Diner2310, Very Sorry For Inconvenience But We Suggest You To Slow Down Changing A Page Or A Section. Going Too Fast Changing Pages Is Bugging The Gui."
+end
