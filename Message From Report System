@@ -108,7 +108,7 @@ MessageFrame.Size = UDim2.new(0, 332, 0, 120)
 UICorner_3.Parent = MessageFrame
 
 Message.Name = "Message"
-Message.Parent = MessageReportFrame
+Message.Parent = MessageFrame
 Message.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
 Message.BackgroundTransparency = 1.000
 Message.Position = UDim2.new(0.013666084, 0, 0.0394828804, 0)
