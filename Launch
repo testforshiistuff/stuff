@@ -185,6 +185,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stu
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Open%20Button'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Error%20Page'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Https%20Updater'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Message%20From%20Report%20System'),true))()
 game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.ScreenshotOverlay.ImageLabel.Image = "rbxassetid://11749355682"
 
 game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.ScreenshotOverlay.ImageLabel.Size = UDim2.new(0, 163 , 0, 28)
@@ -213,7 +214,7 @@ wait(3)
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Latest Version";
-	Text = "You're Using The Latest Version Of VHub (V1.25)";
+	Text = "You're Using The Latest Version Of VHub (V1.26)";
 	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
 Duration = 16;
 wait(3)
