@@ -1022,6 +1022,12 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Text = "This Script Only Works In The Lobby!";
 	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
 Duration = 16;
+else
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works In Break In!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
 end
 end)
 
