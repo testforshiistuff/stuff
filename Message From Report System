@@ -1,0 +1,157 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local MessageReportFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local InfoBar = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local VHubImage = Instance.new("ImageLabel")
+local VHubAndSection = Instance.new("TextLabel")
+local Line1 = Instance.new("Frame")
+local VHubImage_2 = Instance.new("ImageLabel")
+local VHubText = Instance.new("TextLabel")
+local ReceivedMessage = Instance.new("TextLabel")
+local MessageFrame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local Message = Instance.new("TextLabel")
+local OKButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local DiscordButton = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+
+--Properties:
+
+MessageReportFrame.Name = "MessageReportFrame"
+MessageReportFrame.Parent = game.StarterGui.ScreenGui
+MessageReportFrame.Active = true
+MessageReportFrame.Draggable = true
+MessageReportFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
+MessageReportFrame.Position = UDim2.new(0.252539098, 0, 0.205154419, 0)
+MessageReportFrame.Size = UDim2.new(0, 350, 0, 270)
+
+UICorner.CornerRadius = UDim.new(0, 20)
+UICorner.Parent = MessageReportFrame
+
+InfoBar.Name = "InfoBar"
+InfoBar.Parent = MessageReportFrame
+InfoBar.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+InfoBar.Size = UDim2.new(0, 350, 0, 30)
+
+UICorner_2.Parent = InfoBar
+
+VHubImage.Name = "VHubImage"
+VHubImage.Parent = InfoBar
+VHubImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubImage.BackgroundTransparency = 1.000
+VHubImage.Position = UDim2.new(0.00999999978, 0, 0, 0)
+VHubImage.Size = UDim2.new(0, 30, 0, 30)
+VHubImage.Image = "rbxassetid://9408318893"
+
+VHubAndSection.Name = "VHubAndSection"
+VHubAndSection.Parent = InfoBar
+VHubAndSection.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubAndSection.BackgroundTransparency = 1.000
+VHubAndSection.Position = UDim2.new(0.0934286043, 0, 0.0333333351, 0)
+VHubAndSection.Size = UDim2.new(0, 213, 0, 30)
+VHubAndSection.Font = Enum.Font.GothamBold
+VHubAndSection.Text = "VHub | Message From Report"
+VHubAndSection.TextColor3 = Color3.fromRGB(255, 255, 255)
+VHubAndSection.TextSize = 14.000
+VHubAndSection.TextXAlignment = Enum.TextXAlignment.Left
+
+Line1.Name = "Line1"
+Line1.Parent = MessageReportFrame
+Line1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line1.BorderSizePixel = 0
+Line1.Position = UDim2.new(0, 0, 0.111111112, 0)
+Line1.Size = UDim2.new(0, 350, 0, 1)
+
+VHubImage_2.Name = "VHubImage"
+VHubImage_2.Parent = MessageReportFrame
+VHubImage_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubImage_2.BackgroundTransparency = 1.000
+VHubImage_2.Position = UDim2.new(0.231428578, 5, 0.122592591, 0)
+VHubImage_2.Size = UDim2.new(0, 70, 0, 70)
+VHubImage_2.Image = "rbxassetid://9408318893"
+
+VHubText.Name = "VHubText"
+VHubText.Parent = MessageReportFrame
+VHubText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubText.BackgroundTransparency = 1.000
+VHubText.Position = UDim2.new(0.445714295, 0, 0.162962943, 0)
+VHubText.Size = UDim2.new(0, 119, 0, 50)
+VHubText.Font = Enum.Font.GothamBold
+VHubText.Text = "VHub"
+VHubText.TextColor3 = Color3.fromRGB(255, 255, 255)
+VHubText.TextSize = 30.000
+VHubText.TextXAlignment = Enum.TextXAlignment.Left
+
+ReceivedMessage.Name = "ReceivedMessage"
+ReceivedMessage.Parent = MessageReportFrame
+ReceivedMessage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ReceivedMessage.BackgroundTransparency = 1.000
+ReceivedMessage.Position = UDim2.new(0, 0, 0.348148137, 0)
+ReceivedMessage.Size = UDim2.new(0, 350, 0, 9)
+ReceivedMessage.Font = Enum.Font.Gotham
+ReceivedMessage.Text = "Thank You For Reporting A Problem! I Received Your Message!"
+ReceivedMessage.TextColor3 = Color3.fromRGB(255, 255, 255)
+ReceivedMessage.TextSize = 11.000
+
+MessageFrame.Name = "MessageFrame"
+MessageFrame.Parent = MessageReportFrame
+MessageFrame.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+MessageFrame.Position = UDim2.new(0.0257142857, 0, 0.407407403, 0)
+MessageFrame.Size = UDim2.new(0, 332, 0, 120)
+
+UICorner_3.Parent = MessageFrame
+
+Message.Name = "Message"
+Message.Parent = MessageReportFrame
+Message.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+Message.BackgroundTransparency = 1.000
+Message.Position = UDim2.new(0.013666084, 0, 0.0394828804, 0)
+Message.Size = UDim2.new(0, 322, 0, 110)
+Message.Font = Enum.Font.Gotham
+Message.Text = "Hello Diner2310, Very Sorry For Inconvenience But We Suggest You To Slow Down Changing A Page Or A Section. Going Too Fast Changing Pages Is Bugging The Gui."
+Message.TextColor3 = Color3.fromRGB(255, 255, 255)
+Message.TextSize = 14.000
+Message.TextWrapped = true
+Message.TextXAlignment = Enum.TextXAlignment.Left
+Message.TextYAlignment = Enum.TextYAlignment.Top
+
+OKButton.Name = "OKButton"
+OKButton.Parent = MessageReportFrame
+OKButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OKButton.Position = UDim2.new(0.688571453, 0, 0.888888896, 0)
+OKButton.Size = UDim2.new(0, 100, 0, 20)
+OKButton.Font = Enum.Font.GothamMedium
+OKButton.Text = "OK"
+OKButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+OKButton.TextSize = 14.000
+OKButton.MouseButton1Down:connect(function()
+MessageReportFrame:Destroy()
+end)
+
+UICorner_4.Parent = OKButton
+
+DiscordButton.Name = "DiscordButton"
+DiscordButton.Parent = MessageReportFrame
+DiscordButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DiscordButton.Position = UDim2.new(0.385714322, 0, 0.888888896, 0)
+DiscordButton.Size = UDim2.new(0, 100, 0, 20)
+DiscordButton.Font = Enum.Font.GothamMedium
+DiscordButton.Text = "Join Discord"
+DiscordButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+DiscordButton.TextSize = 14.000
+DiscordButton.MouseButton1Down:connect(function()
+setclipboard("discord.gg/3NN5zTW7h2")
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "Copied Discord Link!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end)
+
+UICorner_5.Parent = DiscordButton
