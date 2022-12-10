@@ -24,7 +24,7 @@ local UICorner_5 = Instance.new("UICorner")
 --Properties:
 
 MessageReportFrame.Name = "MessageReportFrame"
-MessageReportFrame.Parent = game.StarterGui.ScreenGui
+MessageReportFrame.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen
 MessageReportFrame.Active = true
 MessageReportFrame.Draggable = true
 MessageReportFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
