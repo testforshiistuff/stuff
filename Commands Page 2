@@ -988,8 +988,14 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end)
 
-NameScript_4.Text = "Script Soon"
+NameScript_4.Text = "Fates Admin"
 Script4.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/main/main.lua"))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Fates Admin!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
 end)
 
 NameScript_5.Text = "Script Soon"
