@@ -213,7 +213,7 @@ wait(3)
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Latest Version";
-	Text = "You're Using The Latest Version Of VHub (V1.24)";
+	Text = "You're Using The Latest Version Of VHub (V1.25)";
 	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
 Duration = 16;
 wait(3)
