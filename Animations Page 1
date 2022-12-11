@@ -357,7 +357,7 @@ OtherSections.TextScaled = true
 OtherSections.TextSize = 14.000
 OtherSections.TextWrapped = true
 OtherSections.MouseButton1Down:connect(function()
-SectionsFrame.Visible = true
+SectionsFrame_2.Visible = true
 end)
 
 UICorner_8.Parent = OtherSections
