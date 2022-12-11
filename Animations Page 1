@@ -1014,7 +1014,7 @@ TwoGuiImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
 TwoGuiImage.Size = UDim2.new(0, 25, 0, 25)
 TwoGuiImage.Image = "http://www.roblox.com/asset/?id=11592850267"
 
-UICorner_26.Parent = SectionsFrame
+UICorner_26.Parent = SectionsFrame_2
 
 GameScripts.Name = "GameScripts"
 GameScripts.Parent = SectionsFrame_2
