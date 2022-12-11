@@ -213,6 +213,7 @@ ReloadGuiButton.Text = "Reload Gui"
 ReloadGuiButton.TextColor3 = Color3.fromRGB(255, 255, 255)
 ReloadGuiButton.TextSize = 14.000
 ReloadGuiButton.MouseButton1Down:connect(function()
+pcall(function() getgenv().Settings_LOADED = false end)
 pcall(function() getgenv().VHub_LOADED = false end)
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame:TweenPosition(UDim2.new(0.210, 0,0.99, 0),"Out","Back",1)
 wait(1)
