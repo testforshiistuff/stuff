@@ -83,8 +83,14 @@ GameScripts.Font = Enum.Font.GothamMedium
 GameScripts.Text = ""
 GameScripts.TextColor3 = Color3.fromRGB(255, 255, 255)
 GameScripts.TextSize = 14.000
-Close.MouseButton1Down:connect(function()
+GameScripts.MouseButton1Down:connect(function()
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/testforshiistuff/in/game/"..game.PlaceId),true))()
+else
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Sorry";
+	Text = "VHub Doesn't Have Scripts In This Game.";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
 end)
 
 UICorner_3.Parent = GameScripts
