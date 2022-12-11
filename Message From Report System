@@ -49,7 +49,7 @@ VHubImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VHubImage.BackgroundTransparency = 1.000
 VHubImage.Position = UDim2.new(0.00999999978, 0, 0, 0)
 VHubImage.Size = UDim2.new(0, 30, 0, 30)
-VHubImage.Image = "rbxassetid://9408318893"
+VHubImage.Image = "rbxassetid://11782547157"
 
 VHubAndSection.Name = "VHubAndSection"
 VHubAndSection.Parent = InfoBar
@@ -76,7 +76,7 @@ VHubImage_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VHubImage_2.BackgroundTransparency = 1.000
 VHubImage_2.Position = UDim2.new(0.231428578, 5, 0.122592591, 0)
 VHubImage_2.Size = UDim2.new(0, 70, 0, 70)
-VHubImage_2.Image = "rbxassetid://9408318893"
+VHubImage_2.Image = "rbxassetid://11782547157"
 
 VHubText.Name = "VHubText"
 VHubText.Parent = MessageReportFrame
@@ -168,7 +168,7 @@ setclipboard("discord.gg/3NN5zTW7h2")
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "Copied Discord Link!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 end)
 
