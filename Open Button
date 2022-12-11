@@ -1,14 +1,14 @@
 local VHubLogoOpen = Instance.new("ImageButton")
-local UICorner_24 = Instance.new("UICorner")
+local UICorner = Instance.new("UICorner")
 
 VHubLogoOpen.Name = "VHubLogoOpen"
 VHubLogoOpen.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen
 VHubLogoOpen.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 VHubLogoOpen.BackgroundTransparency = 0.5
-VHubLogoOpen.Position = UDim2.new(0.020, 0, 0.800, 0)
+VHubLogoOpen.Position = UDim2.new(0.020, 0, 0.360, 0)
 VHubLogoOpen.Size = UDim2.new(0, 0, 0, 0)
 VHubLogoOpen.SizeConstraint = Enum.SizeConstraint.RelativeYY
-VHubLogoOpen.Image = "rbxassetid://9408318893"
+VHubLogoOpen.Image = "rbxassetid://11782547157"
 VHubLogoOpen.ImageTransparency = 0
 VHubLogoOpen.MouseButton1Down:connect(function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Home%20Page'),true))()
@@ -16,6 +16,7 @@ game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true
 VHubLogoOpen:Destroy()
 end)
 
-UICorner_24.Parent = VHubLogoOpen
+UICorner.Parent = VHubLogoOpen
+UICorner.CornerRadius = UDim.new(0, 35)
 
 VHubLogoOpen:TweenSize(UDim2.new(0.165, 1,0.165, 0),"Out","Back", 0.5)
