@@ -83,6 +83,9 @@ GameScripts.Font = Enum.Font.GothamMedium
 GameScripts.Text = ""
 GameScripts.TextColor3 = Color3.fromRGB(255, 255, 255)
 GameScripts.TextSize = 14.000
+Close.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(("https://raw.githubusercontent.com/testforshiistuff/in/game/"..game.PlaceId),true))()
+end)
 
 UICorner_3.Parent = GameScripts
 
