@@ -1056,7 +1056,7 @@ InfoBar_2.Parent = SectionsFrame_2
 InfoBar_2.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
 InfoBar_2.Size = UDim2.new(0, 140, 0, 30)
 
-UICorner_28.Parent = InfoBar
+UICorner_28.Parent = InfoBar_2
 
 VHubImage_2.Name = "VHubImage"
 VHubImage_2.Parent = InfoBar_2
@@ -1090,10 +1090,10 @@ Close_2.TextColor3 = Color3.fromRGB(255, 0, 0)
 Close_2.TextSize = 23.000
 Close_2.TextWrapped = true
 Close_2.MouseButton1Down:connect(function()
-SectionsFrame.Visible = false
+SectionsFrame_2.Visible = false
 end)
 
-UICorner_29.Parent = Close
+UICorner_29.Parent = Close_2
 
 Settings.Name = "Settings"
 Settings.Parent = SectionsFrame_2
