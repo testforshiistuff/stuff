@@ -415,7 +415,7 @@ VHubImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VHubImage.BackgroundTransparency = 1.000
 VHubImage.Position = UDim2.new(0.00999999978, 0, 0, 0)
 VHubImage.Size = UDim2.new(0, 30, 0, 30)
-VHubImage.Image = "rbxassetid://9408318893"
+VHubImage.Image = "rbxassetid://11782547157"
 
 VHubAndSection.Name = "VHubAndSection"
 VHubAndSection.Parent = InfoBar
@@ -956,13 +956,13 @@ loadstring(game:HttpGet("https://pastebin.com/raw/b696qpem", true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Fist Animation!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 elseif not R6() then
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "This Script Only Works On R6 Games!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 end
 end)
@@ -975,20 +975,20 @@ loadstring(game:HttpGet("https://pastebin.com/raw/0QfjMKrF", true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Joy!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 wait(3)
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice!";
 	Text = "If You Cant Move, You May Need A Keyboard.";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 elseif not R6() then
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "This Script Only Works On R6 Games!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 end
 end)
@@ -1001,20 +1001,20 @@ loadstring(game:HttpGet('https://pastebin.com/raw/RD0NSNR2'))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed SkinWalker!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 wait(3)
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice!";
 	Text = "If You Cant Move, You May Need A Keyboard.";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 elseif not R6() then
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "This Script Only Works On R6 Games!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 end
 end)
@@ -1027,20 +1027,20 @@ loadstring(game:HttpGet('https://gist.githubusercontent.com/1BlueCat/e5252ed1f6a
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Golden Freddy!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 wait(3)
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice!";
 	Text = "If You Cant Move, You May Need A Keyboard.";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 elseif not R6() then
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "This Script Only Works On R6 Games!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 end
 end)
@@ -1053,20 +1053,20 @@ loadstring(game:HttpGet('https://pastebin.com/raw/NJ6K0Td7'))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Head Dancer!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 wait(3)
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice!";
 	Text = "If You Cant Move, You May Need A Keyboard.";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 elseif not R6() then
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "This Script Only Works On R6 Games!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 end
 end)
@@ -1079,13 +1079,13 @@ loadstring(game:HttpGet('https://pastebin.com/raw/LGhrc95w'))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Vape Animation!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 elseif not R6() then
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "This Script Only Works On R6 Games!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 end
 end)
@@ -1098,20 +1098,20 @@ loadstring(game:HttpGet('https://gist.githubusercontent.com/1BlueCat/8b9b759a86e
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Curse 64!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 wait(3)
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice!";
 	Text = "If You Cant Move, You May Need A Keyboard.";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 elseif not R6() then
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "This Script Only Works On R6 Games!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 end
 end)
@@ -1124,20 +1124,20 @@ loadstring(game:HttpGetAsync("https://pastebin.com/raw/2MSTmKBa"))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Memeus!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 wait(3)
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice!";
 	Text = "If You Cant Move, You May Need A Keyboard.";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 elseif not R6() then
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "This Script Only Works On R6 Games!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 end
 end)
