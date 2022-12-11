@@ -419,7 +419,7 @@ VHubImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VHubImage.BackgroundTransparency = 1.000
 VHubImage.Position = UDim2.new(0.00999999978, 0, 0, 0)
 VHubImage.Size = UDim2.new(0, 30, 0, 30)
-VHubImage.Image = "rbxassetid://9408318893"
+VHubImage.Image = "rbxassetid://11782547157"
 
 VHubAndSection.Name = "VHubAndSection"
 VHubAndSection.Parent = InfoBar
@@ -951,13 +951,13 @@ loadstring(game:HttpGet('https://raw.githubusercontent.com/martinelcrac/cryptoni
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed CryptonicHub!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 else
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "This Script Only Works In Ragdoll Engine!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 end
 end)
@@ -969,13 +969,13 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/IceMael7/NewIceHub/ma
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Ice Hub!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 else
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "This Script Only Works In Brookhaven!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 end
 end)
