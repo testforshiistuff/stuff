@@ -509,7 +509,7 @@ if Sender_LOADED and not _G.Sender_DEBUG == true then
 	game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "You Can Only Report A Problem One's!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 	return
 end
@@ -538,7 +538,7 @@ request(abcdef)
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Report Sent";
 	Text = "Report Successfully Sent!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 end)
 
