@@ -946,7 +946,7 @@ ClickToExe_8.TextYAlignment = Enum.TextYAlignment.Bottom
 
 -- Instances:
 
-local SectionsFrame = Instance.new("Frame")
+local SectionsFrame_2 = Instance.new("Frame")
 local OtherHubs = Instance.new("TextButton")
 local UICorner_25 = Instance.new("UICorner")
 local OtherHubsText = Instance.new("TextLabel")
@@ -970,16 +970,16 @@ local Line1_2 = Instance.new("Frame")
 
 --Properties:
 
-SectionsFrame.Name = "SectionsFrame"
-SectionsFrame.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.MainFrame
-SectionsFrame.BackgroundColor3 = Color3.fromRGB(31, 32, 34)
-SectionsFrame.BorderSizePixel = 0
-SectionsFrame.Position = UDim2.new(0.353333324, 0, 0.259259254, 0)
-SectionsFrame.Size = UDim2.new(0, 140, 0, 130)
-SectionsFrame.Visible = false
+SectionsFrame_2.Name = "SectionsFrame"
+SectionsFrame_2.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.MainFrame
+SectionsFrame_2.BackgroundColor3 = Color3.fromRGB(31, 32, 34)
+SectionsFrame_2.BorderSizePixel = 0
+SectionsFrame_2.Position = UDim2.new(0.353333324, 0, 0.259259254, 0)
+SectionsFrame_2.Size = UDim2.new(0, 140, 0, 130)
+SectionsFrame_2.Visible = false
 
 OtherHubs.Name = "OtherHubs"
-OtherHubs.Parent = SectionsFrame
+OtherHubs.Parent = SectionsFrame_2
 OtherHubs.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
 OtherHubs.Position = UDim2.new(0.00700000022, 5, 0.25, 0)
 OtherHubs.Size = UDim2.new(0, 129, 0, 27)
@@ -1017,7 +1017,7 @@ TwoGuiImage.Image = "http://www.roblox.com/asset/?id=11592850267"
 UICorner_26.Parent = SectionsFrame
 
 GameScripts.Name = "GameScripts"
-GameScripts.Parent = SectionsFrame
+GameScripts.Parent = SectionsFrame_2
 GameScripts.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
 GameScripts.Position = UDim2.new(0.00700000022, 5, 0.5, 0)
 GameScripts.Size = UDim2.new(0, 129, 0, 27)
@@ -1052,7 +1052,7 @@ ControllerImage.Size = UDim2.new(0, 25, 0, 25)
 ControllerImage.Image = "http://www.roblox.com/asset/?id=11738451231"
 
 InfoBar_2.Name = "InfoBar"
-InfoBar_2.Parent = SectionsFrame
+InfoBar_2.Parent = SectionsFrame_2
 InfoBar_2.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
 InfoBar_2.Size = UDim2.new(0, 140, 0, 30)
 
@@ -1096,7 +1096,7 @@ end)
 UICorner_29.Parent = Close
 
 Settings.Name = "Settings"
-Settings.Parent = SectionsFrame
+Settings.Parent = SectionsFrame_2
 Settings.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
 Settings.Position = UDim2.new(0.00700000022, 5, 0.75, 0)
 Settings.Size = UDim2.new(0, 129, 0, 27)
@@ -1132,7 +1132,7 @@ SettingImage.Size = UDim2.new(0, 25, 0, 25)
 SettingImage.Image = "http://www.roblox.com/asset/?id=11592827868"
 
 Line1_2.Name = "Line1"
-Line1_2.Parent = SectionsFrame
+Line1_2.Parent = SectionsFrame_2
 Line1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Line1_2.BorderSizePixel = 0
 Line1_2.Position = UDim2.new(0, 0, 0.218803406, 0)
