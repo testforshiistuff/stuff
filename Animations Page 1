@@ -356,9 +356,6 @@ OtherSections.TextColor3 = Color3.fromRGB(255, 255, 255)
 OtherSections.TextScaled = true
 OtherSections.TextSize = 14.000
 OtherSections.TextWrapped = true
-OtherSections.MouseButton1Down:connect(function()
-SectionsFrame_2.Visible = true
-end)
 
 UICorner_8.Parent = OtherSections
 
@@ -1105,7 +1102,7 @@ Settings.Text = ""
 Settings.TextColor3 = Color3.fromRGB(255, 255, 255)
 Settings.TextSize = 14.000
 Settings.MouseButton1Down:connect(function()
-SectionsFrame:Destroy()
+SectionsFrame_2.Visible = false
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.SettingsFrame.Visible = true
 end)
 
@@ -1137,6 +1134,11 @@ Line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Line.BorderSizePixel = 0
 Line.Position = UDim2.new(0, 0, 0.218803406, 0)
 Line.Size = UDim2.new(0, 140, 0, 1)
+
+--OtherSectionButton Function:
+OtherSections.MouseButton1Down:connect(function()
+SectionsFrame_2.Visible = true
+end)
 
 --Scripts Configuration:
 
