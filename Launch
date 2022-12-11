@@ -182,6 +182,7 @@ wait()
 wait(1)
 	ScreenGui:Destroy()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Settings%20Page'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Open%20Button'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Error%20Page'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Https%20Updater'),true))()
@@ -195,8 +196,6 @@ game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.ScreenshotOverlay.Experi
 game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.ScreenshotOverlay.ExperienceName.Font = Enum.Font.GothamBold
 
 game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.Visible = true
-
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Settings%20Page'),true))()
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Executed!";
