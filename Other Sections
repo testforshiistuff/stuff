@@ -91,6 +91,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Text = "VHub Doesn't Have Scripts In This Game.";
 	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
 Duration = 16;
+end
 end)
 
 UICorner_3.Parent = GameScripts
