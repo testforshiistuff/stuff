@@ -966,12 +966,12 @@ local Settings = Instance.new("TextButton")
 local UICorner_30 = Instance.new("UICorner")
 local SettingsText = Instance.new("TextLabel")
 local SettingImage = Instance.new("ImageLabel")
-local Line1_2 = Instance.new("Frame")
+local Line = Instance.new("Frame")
 
 --Properties:
 
 SectionsFrame_2.Name = "SectionsFrame"
-SectionsFrame_2.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.MainFrame
+SectionsFrame_2.Parent = MainFrame
 SectionsFrame_2.BackgroundColor3 = Color3.fromRGB(31, 32, 34)
 SectionsFrame_2.BorderSizePixel = 0
 SectionsFrame_2.Position = UDim2.new(0.353333324, 0, 0.259259254, 0)
@@ -1059,7 +1059,7 @@ InfoBar_2.Size = UDim2.new(0, 140, 0, 30)
 UICorner_28.Parent = InfoBar
 
 VHubImage_2.Name = "VHubImage"
-VHubImage_2.Parent = InfoBar
+VHubImage_2.Parent = InfoBar_2
 VHubImage_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VHubImage_2.BackgroundTransparency = 1.000
 VHubImage_2.Position = UDim2.new(0.00999999978, 0, 0, 0)
@@ -1067,7 +1067,7 @@ VHubImage_2.Size = UDim2.new(0, 30, 0, 30)
 VHubImage_2.Image = "rbxassetid://11782547157"
 
 VHubAndSection_2.Name = "VHubAndSection"
-VHubAndSection_2.Parent = InfoBar
+VHubAndSection_2.Parent = InfoBar_2
 VHubAndSection_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VHubAndSection_2.BackgroundTransparency = 1.000
 VHubAndSection_2.Position = UDim2.new(0.217714369, 0, 0, 0)
@@ -1079,7 +1079,7 @@ VHubAndSection_2.TextSize = 14.000
 VHubAndSection_2.TextXAlignment = Enum.TextXAlignment.Left
 
 Close_2.Name = "Close"
-Close_2.Parent = InfoBar
+Close_2.Parent = InfoBar_2
 Close_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 Close_2.BackgroundTransparency = 1.000
 Close_2.Position = UDim2.new(0.790476203, 0, 3.17891448e-07, 0)
@@ -1131,12 +1131,12 @@ SettingImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
 SettingImage.Size = UDim2.new(0, 25, 0, 25)
 SettingImage.Image = "http://www.roblox.com/asset/?id=11592827868"
 
-Line1_2.Name = "Line1"
-Line1_2.Parent = SectionsFrame_2
-Line1_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Line1_2.BorderSizePixel = 0
-Line1_2.Position = UDim2.new(0, 0, 0.218803406, 0)
-Line1_2.Size = UDim2.new(0, 140, 0, 1)
+Line.Name = "Line"
+Line.Parent = SectionsFrame_2
+Line.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Line.BorderSizePixel = 0
+Line.Position = UDim2.new(0, 0, 0.218803406, 0)
+Line.Size = UDim2.new(0, 140, 0, 1)
 
 --Scripts Configuration:
 
