@@ -357,7 +357,7 @@ OtherSections.TextScaled = true
 OtherSections.TextSize = 14.000
 OtherSections.TextWrapped = true
 OtherSections.MouseButton1Down:connect(function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Other%20Sections'),true))()
+SectionsFrame.Visible = true
 end)
 
 UICorner_8.Parent = OtherSections
@@ -948,22 +948,22 @@ ClickToExe_8.TextYAlignment = Enum.TextYAlignment.Bottom
 
 local SectionsFrame = Instance.new("Frame")
 local OtherHubs = Instance.new("TextButton")
-local UICorner_24 = Instance.new("UICorner")
+local UICorner_25 = Instance.new("UICorner")
 local OtherHubsText = Instance.new("TextLabel")
 local TwoGuiImage = Instance.new("ImageLabel")
-local UICorner_25 = Instance.new("UICorner")
-local GameScripts = Instance.new("TextButton")
 local UICorner_26 = Instance.new("UICorner")
+local GameScripts = Instance.new("TextButton")
+local UICorner_27 = Instance.new("UICorner")
 local GameScriptsText = Instance.new("TextLabel")
 local ControllerImage = Instance.new("ImageLabel")
-local InfoBar = Instance.new("Frame")
-local UICorner_27 = Instance.new("UICorner")
-local VHubImage = Instance.new("ImageLabel")
-local VHubAndSection = Instance.new("TextLabel")
-local Close = Instance.new("TextButton")
+local InfoBar_2 = Instance.new("Frame")
 local UICorner_28 = Instance.new("UICorner")
-local Settings = Instance.new("TextButton")
+local VHubImage_2 = Instance.new("ImageLabel")
+local VHubAndSection_2 = Instance.new("TextLabel")
+local Close_2 = Instance.new("TextButton")
 local UICorner_29 = Instance.new("UICorner")
+local Settings = Instance.new("TextButton")
+local UICorner_30 = Instance.new("UICorner")
 local SettingsText = Instance.new("TextLabel")
 local SettingImage = Instance.new("ImageLabel")
 local Line1_2 = Instance.new("Frame")
@@ -992,7 +992,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stu
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.MainFrame:Destroy()
 end)
 
-UICorner_24.Parent = OtherHubs
+UICorner_25.Parent = OtherHubs
 
 OtherHubsText.Name = "OtherHubsText"
 OtherHubsText.Parent = OtherHubs
@@ -1014,7 +1014,7 @@ TwoGuiImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
 TwoGuiImage.Size = UDim2.new(0, 25, 0, 25)
 TwoGuiImage.Image = "http://www.roblox.com/asset/?id=11592850267"
 
-UICorner_25.Parent = SectionsFrame
+UICorner_26.Parent = SectionsFrame
 
 GameScripts.Name = "GameScripts"
 GameScripts.Parent = SectionsFrame
@@ -1029,7 +1029,7 @@ GameScripts.MouseButton1Down:connect(function()
 loadstring(game:HttpGet(("https://raw.githubusercontent.com/testforshiistuff/in/game/"..game.PlaceId),true))()
 end)
 
-UICorner_26.Parent = GameScripts
+UICorner_27.Parent = GameScripts
 
 GameScriptsText.Name = "GameScriptsText"
 GameScriptsText.Parent = GameScripts
@@ -1051,49 +1051,49 @@ ControllerImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
 ControllerImage.Size = UDim2.new(0, 25, 0, 25)
 ControllerImage.Image = "http://www.roblox.com/asset/?id=11738451231"
 
-InfoBar.Name = "InfoBar"
-InfoBar.Parent = SectionsFrame
-InfoBar.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
-InfoBar.Size = UDim2.new(0, 140, 0, 30)
+InfoBar_2.Name = "InfoBar"
+InfoBar_2.Parent = SectionsFrame
+InfoBar_2.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+InfoBar_2.Size = UDim2.new(0, 140, 0, 30)
 
-UICorner_27.Parent = InfoBar
+UICorner_28.Parent = InfoBar
 
-VHubImage.Name = "VHubImage"
-VHubImage.Parent = InfoBar
-VHubImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-VHubImage.BackgroundTransparency = 1.000
-VHubImage.Position = UDim2.new(0.00999999978, 0, 0, 0)
-VHubImage.Size = UDim2.new(0, 30, 0, 30)
-VHubImage.Image = "rbxassetid://11782547157"
+VHubImage_2.Name = "VHubImage"
+VHubImage_2.Parent = InfoBar
+VHubImage_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubImage_2.BackgroundTransparency = 1.000
+VHubImage_2.Position = UDim2.new(0.00999999978, 0, 0, 0)
+VHubImage_2.Size = UDim2.new(0, 30, 0, 30)
+VHubImage_2.Image = "rbxassetid://11782547157"
 
-VHubAndSection.Name = "VHubAndSection"
-VHubAndSection.Parent = InfoBar
-VHubAndSection.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-VHubAndSection.BackgroundTransparency = 1.000
-VHubAndSection.Position = UDim2.new(0.217714369, 0, 0, 0)
-VHubAndSection.Size = UDim2.new(0, 81, 0, 30)
-VHubAndSection.Font = Enum.Font.GothamBold
-VHubAndSection.Text = "VHub"
-VHubAndSection.TextColor3 = Color3.fromRGB(255, 255, 255)
-VHubAndSection.TextSize = 14.000
-VHubAndSection.TextXAlignment = Enum.TextXAlignment.Left
+VHubAndSection_2.Name = "VHubAndSection"
+VHubAndSection_2.Parent = InfoBar
+VHubAndSection_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubAndSection_2.BackgroundTransparency = 1.000
+VHubAndSection_2.Position = UDim2.new(0.217714369, 0, 0, 0)
+VHubAndSection_2.Size = UDim2.new(0, 81, 0, 30)
+VHubAndSection_2.Font = Enum.Font.GothamBold
+VHubAndSection_2.Text = "VHub"
+VHubAndSection_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+VHubAndSection_2.TextSize = 14.000
+VHubAndSection_2.TextXAlignment = Enum.TextXAlignment.Left
 
-Close.Name = "Close"
-Close.Parent = InfoBar
-Close.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
-Close.BackgroundTransparency = 1.000
-Close.Position = UDim2.new(0.790476203, 0, 3.17891448e-07, 0)
-Close.Size = UDim2.new(0, 30, 0, 30)
-Close.Font = Enum.Font.FredokaOne
-Close.Text = "X"
-Close.TextColor3 = Color3.fromRGB(255, 0, 0)
-Close.TextSize = 23.000
-Close.TextWrapped = true
-Close.MouseButton1Down:connect(function()
+Close_2.Name = "Close"
+Close_2.Parent = InfoBar
+Close_2.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
+Close_2.BackgroundTransparency = 1.000
+Close_2.Position = UDim2.new(0.790476203, 0, 3.17891448e-07, 0)
+Close_2.Size = UDim2.new(0, 30, 0, 30)
+Close_2.Font = Enum.Font.FredokaOne
+Close_2.Text = "X"
+Close_2.TextColor3 = Color3.fromRGB(255, 0, 0)
+Close_2.TextSize = 23.000
+Close_2.TextWrapped = true
+Close_2.MouseButton1Down:connect(function()
 SectionsFrame.Visible = false
 end)
 
-UICorner_28.Parent = Close
+UICorner_29.Parent = Close
 
 Settings.Name = "Settings"
 Settings.Parent = SectionsFrame
@@ -1109,7 +1109,7 @@ SectionsFrame:Destroy()
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.SettingsFrame.Visible = true
 end)
 
-UICorner_29.Parent = Settings
+UICorner_30.Parent = Settings
 
 SettingsText.Name = "SettingsText"
 SettingsText.Parent = Settings
