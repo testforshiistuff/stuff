@@ -16,7 +16,7 @@ game:GetService("CoreGui").VHubCoreScreen.Name = "MainCore"
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Hey!";
 	Text = "VHub Is Gonna Update Https To Function VHub Properly! (Might Lag A Bit)";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 
 wait(2)
@@ -54,7 +54,7 @@ game:GetService("CoreGui").VHubCoreScreen.DragScreen.Enabled = true
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Https Updated!";
 	Text = "Successfully Updated Https!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 end
 end)()
