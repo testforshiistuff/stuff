@@ -73,7 +73,7 @@ VHubImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VHubImage.BackgroundTransparency = 1.000
 VHubImage.Position = UDim2.new(0.103333324, 0, 0.245000005, 0)
 VHubImage.Size = UDim2.new(0, 100, 0, 100)
-VHubImage.Image = "rbxassetid://9408318893"
+VHubImage.Image = "rbxassetid://11782547157"
 
 SimpleEditionText.Name = "SimpleEditionText"
 SimpleEditionText.Parent = LaunchFrame
