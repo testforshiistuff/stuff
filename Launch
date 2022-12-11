@@ -201,35 +201,35 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stu
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Executed!";
 	Text = "Successfully Executed VHub With No Errors!";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 wait(3)
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Credits:";
 	Text = "Veincx#5315 And Script Owner Thats In This Hub";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 wait(3)
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Latest Version";
 	Text = "You're Using The Latest Version Of VHub (V1.26)";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 wait(3)
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Hey!";
 	Text = "You Should Probably Join Our Discord Server! discord.gg/3NN5zTW7h2";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 wait(3)
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Also,";
 	Text = "Some Scripts Are Buggy Or Broken.";
-	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 end
 coroutine.wrap(RWPXMT_fake_script)()
