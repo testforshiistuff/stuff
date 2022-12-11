@@ -174,11 +174,7 @@ end)
 
 UICorner_5.Parent = DiscordButton
 
-if LP.LocalPlayer.Name == "Diner2310" then
-MessageReportFrame.Visible = true
-Message.Text = "Hello Diner2310, Very Sorry For Inconvenience But We Suggest You To Slow Down Changing A Page Or A Section. Going Too Fast Changing Pages Is Bugging The Gui."
-
-elseif LP.LocalPlayer.Name == "zoeveider" then
+if LP.LocalPlayer.Name == "zoeveider" then
 MessageReportFrame.Visible = true
 Message.Text = "Hello zoeveider, Very Sorry For Inconvenience But We Suggest You To Slow Down Changing A Page Or A Section. Going Too Fast Changing Pages Is Bugging The Gui."
 
