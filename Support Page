@@ -399,7 +399,7 @@ Close.MouseButton1Down:connect(function()
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = false
 
 local VHubLogoOpen = Instance.new("ImageButton")
-local UICorner_24 = Instance.new("UICorner")
+local UICorner_16 = Instance.new("UICorner")
 
 VHubLogoOpen.Name = "VHubLogoOpen"
 VHubLogoOpen.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen
@@ -415,8 +415,8 @@ game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true
 VHubLogoOpen:Destroy()
 end)
 
-UICorner_24.Parent = VHubLogoOpen
-UICorner_24.CornerRadius = UDim.new(0, 35)
+UICorner_16.Parent = VHubLogoOpen
+UICorner_16.CornerRadius = UDim.new(0, 35)
 end)
 
 UICorner_16.Parent = Close
@@ -581,7 +581,7 @@ local GameScriptsText = Instance.new("TextLabel")
 local ControllerImage = Instance.new("ImageLabel")
 local InfoBar_2 = Instance.new("Frame")
 local UICorner_20 = Instance.new("UICorner")
-local VHubImage_2 = Instance.new("ImageLabel")
+local VHubImage_3 = Instance.new("ImageLabel")
 local VHubAndSection_2 = Instance.new("TextLabel")
 local Close_2 = Instance.new("TextButton")
 local UICorner_21 = Instance.new("UICorner")
@@ -681,13 +681,13 @@ InfoBar_2.Size = UDim2.new(0, 140, 0, 30)
 
 UICorner_20.Parent = InfoBar_2
 
-VHubImage_2.Name = "VHubImage"
-VHubImage_2.Parent = InfoBar_2
-VHubImage_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-VHubImage_2.BackgroundTransparency = 1.000
-VHubImage_2.Position = UDim2.new(0.00999999978, 0, 0, 0)
-VHubImage_2.Size = UDim2.new(0, 30, 0, 30)
-VHubImage_2.Image = "rbxassetid://11782547157"
+VHubImage_3.Name = "VHubImage"
+VHubImage_3.Parent = InfoBar_2
+VHubImage_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubImage_3.BackgroundTransparency = 1.000
+VHubImage_3.Position = UDim2.new(0.00999999978, 0, 0, 0)
+VHubImage_3.Size = UDim2.new(0, 30, 0, 30)
+VHubImage_3.Image = "rbxassetid://11782547157"
 
 VHubAndSection_2.Name = "VHubAndSection"
 VHubAndSection_2.Parent = InfoBar_2
