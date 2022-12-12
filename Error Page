@@ -2,7 +2,7 @@ local exploits = identifyexecutor()
 local LP = game:GetService("Players")
 
 local url =
-   "https://discord.com/api/webhooks/1050951036816347166/S0d6OqWbtSfdbaR2IL8_i3lNg_MvKEN47rhjzKugMVYNCpZfFfPeCeno8mJ1UddryPWl"
+   "https://discord.com/api/webhooks/1051758617772175440/Jz7xYAzuRZqp1WveLiiyXRminzWUINdn9pOzB3kcP8UNNVY4O0kRwVLqAzT50B8SplTN"
 local data = {
    ["content"] = "🧾: "..LP.LocalPlayer.Name.." Executed VHub Simple In https://roblox.com/games/"..game.PlaceId.." With "..exploits.."!",
 }
