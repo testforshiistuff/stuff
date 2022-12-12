@@ -33,7 +33,7 @@ local CommandImage = Instance.new("ImageLabel")
 local OtherSections = Instance.new("TextButton")
 local UICorner_8 = Instance.new("UICorner")
 local OtherSectionsText = Instance.new("TextLabel")
-local DotImage = Instance.new("ImageLabel")
+local StackImage = Instance.new("ImageLabel")
 local FPS = Instance.new("TextLabel")
 local UICorner_9 = Instance.new("UICorner")
 local InfoBar = Instance.new("Frame")
@@ -373,13 +373,13 @@ OtherSectionsText.TextSize = 15.000
 OtherSectionsText.TextWrapped = true
 OtherSectionsText.TextXAlignment = Enum.TextXAlignment.Left
 
-DotImage.Name = "DotImage"
-DotImage.Parent = OtherSections
-DotImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-DotImage.BackgroundTransparency = 1.000
-DotImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
-DotImage.Size = UDim2.new(0, 25, 0, 25)
-DotImage.Image = "http://www.roblox.com/asset/?id=11493398062"
+StackImage.Name = "StackImage"
+StackImage.Parent = OtherSections
+StackImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+StackImage.BackgroundTransparency = 1.000
+StackImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
+StackImage.Size = UDim2.new(0, 25, 0, 25)
+StackImage.Image = "http://www.roblox.com/asset/?id=11797138310"
 
 FPS.Name = "FPS"
 FPS.Parent = SectionsFrame
