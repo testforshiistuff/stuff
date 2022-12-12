@@ -419,7 +419,7 @@ UICorner_16.Parent = VHubLogoOpen
 UICorner_16.CornerRadius = UDim.new(0, 35)
 end)
 
-UICorner_16.Parent = Close
+UICorner_11.Parent = Close
 
 SimpleEditionText.Name = "SimpleEditionText"
 SimpleEditionText.Parent = InfoBar
