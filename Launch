@@ -34,10 +34,10 @@ Resizer.Name = "Resizer"
 Resizer.Parent = ScreenGui
 Resizer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Resizer.BackgroundTransparency = 1.000
-Resizer.Size = UDim2.new(1, 0, 1, 0)
+Resizer.Size = UDim2.new(0.5, 0, 0.5, 0)
 
 UIStroke.Name = "UIStroke"
-UIStroke.Parent = Resizer
+UIStroke.Parent = ScreenGui
 UIStroke.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 UIStroke.BorderSizePixel = 0
 UIStroke.Position = UDim2.new(0.310, 0, 0.99, 0)
