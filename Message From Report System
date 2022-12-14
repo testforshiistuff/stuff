@@ -168,6 +168,10 @@ elseif LP.LocalPlayer.Name == "ivcho1720" then
 MessageReportFrame.Visible = true
 Message.Text = "Hello ivcho1720, Very Sorry For Inconvenience But I Suggest You To Not Use Animations If Your FPS Is Bad (Lagging). Bad FPS/Lagging Are Making Body Parts Fall."
 
+elseif LP.LocalPlayer.Name == "danger_troller" then
+MessageReportFrame.Visible = true
+Message.Text = "Hello danger_troller, Very Sorry For Inconvenience But Game Scripts Section Is Yet Not Done. You Have To Find What Script Does The Game Have."
+
 else
 MessageReportFrame:Destroy()
 end
