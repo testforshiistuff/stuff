@@ -1198,7 +1198,7 @@ if game.PlaceId == 155615604 then
 loadstring(game:HttpGet(('https://pastebin.com/raw/yDfbU0b2'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
-	Text = "Successfully Executed Slayer GUI!";
+	Text = "Successfully Executed Slayer Gui!";
 	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 else
