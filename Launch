@@ -15,142 +15,32 @@ pcall(function() getgenv().VHub_LOADED = true end)
 -- Instances:
 
 local ScreenGui = Instance.new("ScreenGui")
-local Resizer = Instance.new("Frame")
-local UIStroke = Instance.new("Frame")
+local VHubLogo = Instance.new("ImageLabel")
 local UICorner = Instance.new("UICorner")
-local LaunchFrame = Instance.new("Frame")
-local UICorner_2 = Instance.new("UICorner")
-local VHubText = Instance.new("TextLabel")
-local VHubImage = Instance.new("ImageLabel")
-local SimpleEditionText = Instance.new("TextLabel")
-local LoadingText = Instance.new("TextLabel")
-
---Properties:
 
 ScreenGui.Parent = game:GetService("CoreGui")
 ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
 
-Resizer.Name = "Resizer"
-Resizer.Parent = ScreenGui
-Resizer.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Resizer.BackgroundTransparency = 1.000
-Resizer.Size = UDim2.new(1, 0, 1, 0)
+VHubLogo.Name = "VHubLogo"
+VHubLogo.Parent = ScreenGui
+VHubLogo.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
+VHubLogo.BackgroundTransparency = 0.5
+VHubLogo.Position = UDim2.new(0, 0, 0.360, 0)
+VHubLogo.Size = UDim2.new(0, 1, 0.165, 0)
+VHubLogo.SizeConstraint = Enum.SizeConstraint.RelativeYY
+VHubLogo.Image = "rbxassetid://11782547157"
+VHubLogo.ImageTransparency = 0
+VHubLogo.BorderSizePixel = 0
+VHubLogo.ScaleType = Enum.ScaleType.Fit
 
-UIStroke.Name = "UIStroke"
-UIStroke.Parent = ScreenGui
-UIStroke.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-UIStroke.BorderSizePixel = 0
-UIStroke.Position = UDim2.new(0.31, 0, 0.99, 0)
-UIStroke.Size = UDim2.new(0.375, 0, 0.575, 0)
-
-UICorner.Parent = UIStroke
-
-LaunchFrame.Name = "LaunchFrame"
-LaunchFrame.Parent = UIStroke
-LaunchFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
-LaunchFrame.BorderSizePixel = 0
-LaunchFrame.Position = UDim2.new(0.0145387948, 0, 0.0207039714, 0)
-LaunchFrame.Size = UDim2.new(0.97, 0, 0.96, 0)
-
-UICorner_2.Parent = LaunchFrame
-
-VHubText.Name = "VHubText"
-VHubText.Parent = LaunchFrame
-VHubText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-VHubText.BackgroundTransparency = 1.000
-VHubText.BorderColor3 = Color3.fromRGB(27, 42, 53)
-VHubText.Position = UDim2.new(0.269999981, 0, 0.375, 0)
-VHubText.Size = UDim2.new(0, 168, 0, 50)
-VHubText.Font = Enum.Font.FredokaOne
-VHubText.Text = "VHub"
-VHubText.TextColor3 = Color3.fromRGB(255, 255, 255)
-VHubText.TextSize = 50.000
-VHubText.TextXAlignment = Enum.TextXAlignment.Left
-
-VHubImage.Name = "VHubImage"
-VHubImage.Parent = LaunchFrame
-VHubImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-VHubImage.BackgroundTransparency = 1.000
-VHubImage.Position = UDim2.new(0.103333324, 0, 0.245000005, 0)
-VHubImage.Size = UDim2.new(0, 100, 0, 100)
-VHubImage.Image = "rbxassetid://11782547157"
-
-SimpleEditionText.Name = "SimpleEditionText"
-SimpleEditionText.Parent = LaunchFrame
-SimpleEditionText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-SimpleEditionText.BackgroundTransparency = 1.000
-SimpleEditionText.Position = UDim2.new(0.436666667, 0, 0.664999962, 0)
-SimpleEditionText.Size = UDim2.new(0, 143, 0, 25)
-SimpleEditionText.Font = Enum.Font.FredokaOne
-SimpleEditionText.Text = "Simple Edition"
-SimpleEditionText.TextColor3 = Color3.fromRGB(255, 255, 255)
-SimpleEditionText.TextSize = 20.000
-SimpleEditionText.TextXAlignment = Enum.TextXAlignment.Left
-SimpleEditionText.TextYAlignment = Enum.TextYAlignment.Top
-
-LoadingText.Name = "LoadingText"
-LoadingText.Parent = LaunchFrame
-LoadingText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-LoadingText.BackgroundTransparency = 1.000
-LoadingText.Position = UDim2.new(0.170000002, 0, 0.665000021, 0)
-LoadingText.Size = UDim2.new(0, 200, 0, 50)
-LoadingText.Font = Enum.Font.Gotham
-LoadingText.Text = "Loading Gui..."
-LoadingText.TextColor3 = Color3.fromRGB(255, 255, 255)
-LoadingText.TextSize = 14.000
-LoadingText.TextTransparency = 1.000
+UICorner.Parent = VHubLogo
 
 -- Scripts:
 
-local function SXYZLW_fake_script() -- VHubText.VHubTextScript 
-	local script = Instance.new('LocalScript', VHubText)
+local function RWPXMT_fake_script() -- VHubLogo.VHubLogoScript 
+	local script = Instance.new('LocalScript', VHubLogo)
 
-	script.Parent:TweenPosition(UDim2.new(0.437, 0,0.37, 0),"Out","Quint",1)
-	
-	local frame = script.Parent
-	
-end
-coroutine.wrap(SXYZLW_fake_script)()
-local function HXDAMH_fake_script() -- VHubImage.VHubImageScript 
-	local script = Instance.new('LocalScript', VHubImage)
-
-	local frame = script.Parent
-	
-end
-coroutine.wrap(HXDAMH_fake_script)()
-local function LYXAJV_fake_script() -- SimpleEditionText.SimpleEditionTextScript 
-	local script = Instance.new('LocalScript', SimpleEditionText)
-
-	script.Parent:TweenPosition(UDim2.new(0.437, 0,0.59, 0),"Out","Quint",1)
-	
-	local frame = script.Parent
-	
-end
-coroutine.wrap(LYXAJV_fake_script)()
-local function BZPU_fake_script() -- LaunchFrame.LaunchFrameScript 
-	local script = Instance.new('LocalScript', LaunchFrame)
-
-	local frame = script.Parent
-	
-end
-coroutine.wrap(BZPU_fake_script)()
-local function QGFYZH_fake_script() -- LoadingText.LoadingTextScript 
-	local script = Instance.new('LocalScript', LoadingText)
-
-	wait(1)
-	local frame = script.Parent
-	
-	for i = 1 , 100 do
-		frame.TextTransparency -= 0.05
-		wait(0.01)
-	end
-	
-end
-coroutine.wrap(QGFYZH_fake_script)()
-local function RWPXMT_fake_script() -- UIStroke.UIStrokeScript 
-	local script = Instance.new('LocalScript', UIStroke)
-
-	script.Parent:TweenPosition(UDim2.new(0.310, 0,0.200, 0),"Out","Back",1)
+	script.Parent:TweenSize(UDim2.new(2.270, 1, 0.165, 0),"Out","Back",1)
 	
 	local frame = script.Parent
         loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
@@ -178,7 +68,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stu
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Scripts%20Page%205'),true))()
 game:GetService("CoreGui").VHubCoreScreen:Destroy()	
 wait()
-	script.Parent:TweenPosition(UDim2.new(0.310, 0,0.99, 0),"Out","Back",1)
+	script.Parent:TweenSize(UDim2.new(0, 1, 0.165, 0),"Out","Back",1)
 wait(1)
 	ScreenGui:Destroy()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
