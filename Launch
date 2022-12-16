@@ -232,4 +232,3 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end
 coroutine.wrap(RWPXMT_fake_script)()
-pcall(function() getgenv().VHub_LOADED = false end)
