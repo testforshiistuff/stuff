@@ -1148,7 +1148,7 @@ end)
 
 NameScript.Text = "Tower Of Hell Gui"
 Script1.MouseButton1Down:connect(function()
-if game.PlaceId == 1962086868 then
+if game.PlaceId == 1962086868 or 7227293156 then
 loadstring(game:HttpGet(('https://pastebin.com/raw/zphaw4sM'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
