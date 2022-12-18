@@ -1202,9 +1202,37 @@ Duration = 16;
 end
 end)
 
-NameScript_4.Text = "Script Soon"
+NameScript_4.Text = "Gorilla"
+Script4.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+loadstring(game:HttpGet(('https://pastefy.ga/osEThPw1/raw'),true))()
 
-NameScript_5.Text = "Script Soon"
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Gorilla!";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+end
+end)
+
+NameScript_5.Text = "Among Us Animation"
+Script5.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+loadstring(game:HttpGet(('https://pastefy.ga/7xEZRqfH/raw'),true))()
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Among Us Animation!";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+end)
 
 NameScript_6.Text = "Script Soon"
 
