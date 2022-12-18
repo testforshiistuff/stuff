@@ -1295,7 +1295,6 @@ end)
 
 NameScript_8.Text = "Nameless Animations"
 Script8.MouseButton1Down:connect(function()
-if R6() then
 loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
 loadstring(game:HttpGet("https://pastebin.com/raw/CsKA3L8Z"))()
 
@@ -1311,11 +1310,4 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Text = "For More Animations, You May Need A Keyboard.";
 	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
-elseif not R6() then
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "Notice:";
-	Text = "This Script Only Works On R6 Games!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
-Duration = 16;
-end
 end)
