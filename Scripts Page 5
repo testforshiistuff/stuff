@@ -1241,8 +1241,22 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end)
 
-NameScript_7.Text = "Script Soon"
+NameScript_7.Text = "Fling Tool"
 Script7.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://pastefy.ga/xBdd9GId/raw'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Chat Bypass!";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end
 end)
 
 NameScript_8.Text = "Script Soon"
