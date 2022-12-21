@@ -11,7 +11,6 @@ VHubLogoOpen.SizeConstraint = Enum.SizeConstraint.RelativeYY
 VHubLogoOpen.Image = "rbxassetid://11782547157"
 VHubLogoOpen.ImageTransparency = 0
 VHubLogoOpen.MouseButton1Down:connect(function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Home%20Page'),true))()
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true
 VHubLogoOpen:Destroy()
 end)
