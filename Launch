@@ -68,12 +68,13 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stu
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Scripts%20Page%204'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Scripts%20Page%205'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Settings%20Page'),true))()
+wait()
+	script.Parent:TweenSize(UDim2.new(0, 1, 0.165, 0),"Out","Back",1)
+wait(1)
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Support%20Page'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Open%20Button'),true))()
 loadstring(game:HttpGet(('https://pastebin.com/raw/nJtd59bc'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Message%20From%20Report%20System'),true))()
-wait()
-	script.Parent:TweenSize(UDim2.new(0, 1, 0.165, 0),"Out","Back",1)
 ScreenGui:Destroy()
 game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.ScreenshotOverlay.ImageLabel.Image = "rbxassetid://11794614522"
 
