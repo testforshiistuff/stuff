@@ -105,11 +105,12 @@ end
 
 --Properties:
 
-MainFrame.Name = "MainFrame"
+MainFrame.Name = "RequiredAccessories1"
 MainFrame.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame
 MainFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
 MainFrame.Position = UDim2.new(0, 0, 0, 0)
 MainFrame.Size = UDim2.new(0, 450, 0, 270)
+MainFrame.Visible = false
 
 UICorner.CornerRadius = UDim.new(0, 20)
 UICorner.Parent = MainFrame
@@ -131,8 +132,8 @@ Home.Text = ""
 Home.TextColor3 = Color3.fromRGB(255, 255, 255)
 Home.TextSize = 14.000
 Home.MouseButton1Down:connect(function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Home%20Page'),true))()
-MainFrame:Destroy()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Home.Visible = true
+MainFrame.Visible = false
 end)
 
 UICorner_2.Parent = Home
@@ -167,8 +168,8 @@ Scripts.Text = ""
 Scripts.TextColor3 = Color3.fromRGB(255, 255, 255)
 Scripts.TextSize = 14.000
 Scripts.MouseButton1Down:connect(function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Scripts%20Page%201'),true))()
-MainFrame:Destroy()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Scripts1.Visible = true
+MainFrame.Visible = false
 end)
 
 UICorner_3.Parent = Scripts
@@ -240,8 +241,8 @@ GUIS.TextColor3 = Color3.fromRGB(255, 255, 255)
 GUIS.TextSize = 14.000
 GUIS.TextWrapped = true
 GUIS.MouseButton1Down:connect(function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Guis%20Page%201'),true))()
-MainFrame:Destroy()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Guis1.Visible = true
+MainFrame.Visible = false
 end)
 
 UICorner_5.Parent = GUIS
@@ -277,8 +278,8 @@ Animations.TextColor3 = Color3.fromRGB(255, 255, 255)
 Animations.TextSize = 14.000
 Animations.TextWrapped = true
 Animations.MouseButton1Down:connect(function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Animations%20Page%201'),true))()
-MainFrame:Destroy()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Animations1.Visible = true
+MainFrame.Visible = false
 end)
 
 UICorner_6.Parent = Animations
@@ -316,8 +317,8 @@ Commands.TextColor3 = Color3.fromRGB(255, 255, 255)
 Commands.TextSize = 14.000
 Commands.TextWrapped = true
 Commands.MouseButton1Down:connect(function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Commands%20Page%201'),true))()
-MainFrame:Destroy()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Commands1.Visible = true
+MainFrame.Visible = false
 end)
 
 UICorner_7.Parent = Commands
@@ -523,8 +524,8 @@ NextPage.TextSize = 14.000
 NextPage.TextStrokeColor3 = Color3.fromRGB(0, 150, 0)
 NextPage.TextWrapped = true
 NextPage.MouseButton1Down:connect(function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Req%20Acc%20Page%202'),true))()
-MainFrame:Destroy()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.RequiredAccessories2.Visible = true
+MainFrame.Visible = false
 end)
 
 UICorner_13.CornerRadius = UDim.new(0, 20)
@@ -984,8 +985,8 @@ OtherHubs.Text = ""
 OtherHubs.TextColor3 = Color3.fromRGB(255, 255, 255)
 OtherHubs.TextSize = 14.000
 OtherHubs.MouseButton1Down:connect(function()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Hubs%20Page%201'),true))()
-game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.MainFrame:Destroy()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.OtherHubs1.Visible = true
+MainFrame.Visible = false
 end)
 
 UICorner_25.Parent = OtherHubs
