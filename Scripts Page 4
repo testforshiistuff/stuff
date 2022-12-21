@@ -545,7 +545,7 @@ PreviousPage.TextSize = 14.000
 PreviousPage.TextStrokeColor3 = Color3.fromRGB(150, 0, 0)
 PreviousPage.TextWrapped = true
 PreviousPage.MouseButton1Down:connect(function()
-game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Scripts4.Visible = true
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Scripts3.Visible = true
 MainFrame.Visible = false
 end)
 
