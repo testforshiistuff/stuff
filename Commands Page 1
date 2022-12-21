@@ -282,6 +282,10 @@ Animations.Text = ""
 Animations.TextColor3 = Color3.fromRGB(255, 255, 255)
 Animations.TextSize = 14.000
 Animations.TextWrapped = true
+Animations.MouseButton1Down:connect(function()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Animations1.Visible = true
+MainFrame.Visible = false
+end)
 
 UICorner_6.Parent = Animations
 
@@ -317,10 +321,6 @@ Commands.Text = ""
 Commands.TextColor3 = Color3.fromRGB(255, 255, 255)
 Commands.TextSize = 14.000
 Commands.TextWrapped = true
-Commands.MouseButton1Down:connect(function()
-game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Commands1.Visible = true
-MainFrame.Visible = false
-end)
 
 UICorner_7.Parent = Commands
 
