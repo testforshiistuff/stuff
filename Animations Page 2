@@ -111,6 +111,7 @@ MainFrame.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFram
 MainFrame.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
 MainFrame.Position = UDim2.new(0, 0, 0, 0)
 MainFrame.Size = UDim2.new(0, 450, 0, 270)
+MainFrame.Visible = false
 
 UICorner.CornerRadius = UDim.new(0, 20)
 UICorner.Parent = MainFrame
