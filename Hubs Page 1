@@ -1139,6 +1139,10 @@ NameScript.Text = "CryptonicHub"
 Script1.MouseButton1Down:connect(function()
 if game.PlaceId == 9848789324 then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua'))()
+wait()
+game:GetService("CoreGui").nightmarefun.Shadow.Active = true
+game:GetService("CoreGui").nightmarefun.Shadow.Draggable = true
+
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed CryptonicHub!";
