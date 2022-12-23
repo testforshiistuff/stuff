@@ -245,6 +245,10 @@ GUIS.Text = ""
 GUIS.TextColor3 = Color3.fromRGB(255, 255, 255)
 GUIS.TextSize = 14.000
 GUIS.TextWrapped = true
+GUIS.MouseButton1Down:connect(function()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Guis1.Visible = true
+MainFrame.Visible = false
+end)
 
 UICorner_5.Parent = GUIS
 
