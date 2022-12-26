@@ -1235,8 +1235,44 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end)
 
-NameScript_6.Text = "Script Soon"
+NameScript_6.Text = "BOM"
+Script6.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+loadstring(game:HttpGet(('https://gist.githubusercontent.com/BackScriptHubs/5e9304ea3c2f82baf0f021d977fe0cce/raw/33c218527d8d7c4bd98754662ea577d09ad9b210/FE%2520Bom%2520by%2520BackScript'),true))()
 
-NameScript_7.Text = "Script Soon"
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed BOM!";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+end
+end)
+
+NameScript_7.Text = "Lazer Arms"
+Script7.MouseButton1Down:connect(function()
+if R6() then
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+loadstring(game:HttpGet(('https://pastefy.ga/Gjlleuea/raw'),true))()
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Lazer Arms!";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+end
+end)
 
 NameScript_8.Text = "Script Soon"
