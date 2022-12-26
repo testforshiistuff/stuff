@@ -25,13 +25,11 @@ VHubLogo.Name = "VHubLogo"
 VHubLogo.Parent = ScreenGui
 VHubLogo.BackgroundColor3 = Color3.fromRGB(30, 30, 30)
 VHubLogo.BackgroundTransparency = 0.5
-VHubLogo.Position = UDim2.new(0, 0, 0.360, 0)
-VHubLogo.Size = UDim2.new(0, 1, 0.165, 0)
+VHubLogo.Position = UDim2.new(0.449, 0,0.378, 0)
+VHubLogo.Size = UDim2.new(0, 0, 0, 0)
 VHubLogo.SizeConstraint = Enum.SizeConstraint.RelativeYY
 VHubLogo.Image = "rbxassetid://11782547157"
 VHubLogo.ImageTransparency = 0
-VHubLogo.BorderSizePixel = 0
-VHubLogo.ScaleType = Enum.ScaleType.Fit
 
 UICorner.Parent = VHubLogo
 
@@ -40,7 +38,7 @@ UICorner.Parent = VHubLogo
 local function RWPXMT_fake_script() -- VHubLogo.VHubLogoScript 
 	local script = Instance.new('LocalScript', VHubLogo)
 
-	script.Parent:TweenSize(UDim2.new(2.270, 1, 0.165, 0),"Out","Back",1)
+	script.Parent:TweenSize(UDim2.new(0.225128335, 1, 0.22508539, 0),"Out","Back",1)
 	wait(1)
 	local frame = script.Parent
 
@@ -69,7 +67,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stu
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Scripts%20Page%205'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Settings%20Page'),true))()
 wait()
-	script.Parent:TweenSize(UDim2.new(0, 1, 0.165, 0),"Out","Back",1)
+	script.Parent:TweenSize(UDim2.new(0, 0, 0, 0),"Out","Back",1)
 wait(1)
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Support%20Page'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Open%20Button'),true))()
