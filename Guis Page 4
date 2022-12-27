@@ -524,6 +524,10 @@ NextPage.TextScaled = true
 NextPage.TextSize = 14.000
 NextPage.TextStrokeColor3 = Color3.fromRGB(0, 150, 0)
 NextPage.TextWrapped = true
+NextPage.MouseButton1Down:connect(function()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Guis5.Visible = true
+MainFrame.Visible = false
+end)
 
 UICorner_13.CornerRadius = UDim.new(0, 20)
 UICorner_13.Parent = NextPage
@@ -1230,4 +1234,20 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end)
 
-NameScript_8.Text = "Script Soon"
+NameScript_8.Text = "Prison Life Gui"
+Script8.MouseButton1Down:connect(function()
+if game.PlaceId == 155615604 then
+loadstring(game:HttpGet(('https://pastebin.com/raw/W1Nwht1L'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Prison Life Gui!";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+else
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works In Prison Life!";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+end
+end)
