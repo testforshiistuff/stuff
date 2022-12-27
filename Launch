@@ -9,8 +9,6 @@ end
 
 pcall(function() getgenv().VHub_LOADED = true end)
 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Run'),true))()
-
 -- Gui to Lua
 -- Version: 3.2
 
