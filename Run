@@ -105,7 +105,7 @@ loadstring(game:HttpGet(('https://github.com/testforshiistuff/stuff/blob/main/Ht
 
 elseif TextBox.Text:match("execute VHub v1.23") then
 game:GetService("CoreGui").VHubCoreScreen:Destroy()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/VHub-Source/main/VHub%20Page%20Authenticator'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/Vhubs/main/Vhub%20v1.23'),true))()
 
 elseif TextBox.Text:match("close VHub") then
