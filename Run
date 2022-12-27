@@ -1,0 +1,146 @@
+local Player = game:GetService("CoreGui").LocalPlayer
+
+Player.Chatted:connect(function(cht)
+	if cht:match("/run") then
+
+if Run_LOADED and not _G.Run_DEBUG == true then
+	game:GetService("CoreGui").RunScreen.Enabled = true
+	return
+end
+
+pcall(function() getgenv().Run_LOADED = true end)
+
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local RunScreen = Instance.new("ScreenGui")
+local RunFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local Run = Instance.new("TextLabel")
+local RunImage = Instance.new("ImageLabel")
+local TextBox = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local RunButton = Instance.new("TextButton")
+local UICorner_3 = Instance.new("UICorner")
+local Info = Instance.new("TextLabel")
+local RunImage_2 = Instance.new("ImageLabel")
+
+--Properties:
+
+RunScreen.Name = "RunScreen"
+RunScreen.Parent = game:GetService("CoreGui")
+RunScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+RunScreen.ResetOnSpawn = false
+
+RunFrame.Name = "RunFrame"
+RunFrame.Parent = RunScreen
+RunFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+RunFrame.Position = UDim2.new(0.323446333, 0, 0.336956531, 0)
+RunFrame.Size = UDim2.new(0, 250, 0, 150)
+RunFrame.Active = true
+RunFrame.Draggable = true
+
+UICorner.Parent = RunFrame
+
+Run.Name = "Run"
+Run.Parent = RunFrame
+Run.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Run.BackgroundTransparency = 1.000
+Run.Position = UDim2.new(0.119999997, 0, 0, 0)
+Run.Size = UDim2.new(0, 170, 0, 30)
+Run.Font = Enum.Font.Gotham
+Run.Text = "Run"
+Run.TextColor3 = Color3.fromRGB(255, 255, 255)
+Run.TextSize = 14.000
+Run.TextXAlignment = Enum.TextXAlignment.Left
+
+RunImage.Name = "RunImage"
+RunImage.Parent = RunFrame
+RunImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RunImage.BackgroundTransparency = 1.000
+RunImage.Size = UDim2.new(0, 30, 0, 30)
+RunImage.Image = "http://www.roblox.com/asset/?id=11939278503"
+
+TextBox.Parent = RunFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.BorderColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.Position = UDim2.new(0.0399999991, 0, 0.613333344, 0)
+TextBox.Size = UDim2.new(0, 230, 0, 20)
+TextBox.Font = Enum.Font.Gotham
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.TextSize = 14.000
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextWrapped = true
+
+UICorner_2.Parent = TextBox
+
+RunButton.Name = "RunButton"
+RunButton.Parent = RunFrame
+RunButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RunButton.Position = UDim2.new(0.300000012, 0, 0.813333333, 0)
+RunButton.Size = UDim2.new(0, 100, 0, 20)
+RunButton.Font = Enum.Font.Gotham
+RunButton.Text = "Run"
+RunButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+RunButton.TextSize = 14.000
+RunButton.MouseButton1Down:connect(function()
+if TextBox.Text:match("reload VHub") then
+print("Reloading VHub...")
+pcall(function() getgenv().Settings_LOADED = false end)
+pcall(function() getgenv().VHub_LOADED = false end)
+game:GetService("CoreGui").VHubCoreScreen:Destroy()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Launch'),true))()
+
+elseif TextBox.Text:match("close Run") then
+RunScreen.Enabled = false
+
+elseif TextBox.Text:match("open Settings") then
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.SettingsFrame.Visible = true
+
+elseif TextBox.Text:match("update VHub") then
+loadstring(game:HttpGet(('https://github.com/testforshiistuff/stuff/blob/main/Https%20Updater'),true))()
+
+elseif TextBox.Text:match("execute VHub v1.23") then
+game:GetService("CoreGui").VHubCoreScreen:Destroy()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/Vhubs/main/Vhub%20v1.23'),true))()
+
+elseif TextBox.Text:match("close VHub") then
+pcall(function() getgenv().VHub_LOADED = false end)
+pcall(function() getgenv().Settings_LOADED = false end)
+game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.Visible = false
+game:GetService("CoreGui").VHubCoreScreen:Destroy()
+
+else
+TextBox.Text = "Not A Command"
+wait(1)
+TextBox.Text = ""
+end
+end)
+
+UICorner_3.Parent = RunButton
+
+Info.Name = "Info"
+Info.Parent = RunFrame
+Info.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info.BackgroundTransparency = 1.000
+Info.Position = UDim2.new(0.268000007, 0, 0.239999995, 0)
+Info.Size = UDim2.new(0, 173, 0, 50)
+Info.Font = Enum.Font.Gotham
+Info.Text = "Type A Avalable Command That Configure The Gui."
+Info.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info.TextSize = 10.000
+Info.TextWrapped = true
+
+RunImage_2.Name = "RunImage"
+RunImage_2.Parent = RunFrame
+RunImage_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RunImage_2.BackgroundTransparency = 1.000
+RunImage_2.Position = UDim2.new(0.0399999991, 0, 0.24000001, 0)
+RunImage_2.Size = UDim2.new(0, 50, 0, 50)
+RunImage_2.Image = "http://www.roblox.com/asset/?id=11939278503"
+end
+end)
