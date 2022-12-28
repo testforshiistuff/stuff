@@ -1163,11 +1163,42 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end)
 
-NameScript_3.Text = "Script Soon"
+NameScript_3.Text = "Hitbox Toggle Size Gui"
+Script3.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://pastebin.com/raw/W3HhJPmW"))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Hitbox Toggle Size Gui!";
+	Icon = "rbxthumb://type=Asset&id=9408318893&w=150&h=150"})
+Duration = 16;
+end)
 
-NameScript_4.Text = "Script Soon"
+NameScript_4.Text = "PrisonWare"
+Script4.MouseButton1Down:connect(function()
+if game.PlaceId == 155615604 then
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Denverrz/scripts/master/PRISONWARE_v1.3.txt"))();
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed PrisonWare!";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+else
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works In Prison Life!";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+end)
 
-NameScript_5.Text = "Script Soon"
+NameScript_5.Text = "Project Bullshit"
+Script5.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/MbQqeRy9'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Project Bullshit!";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+end)
 
 NameScript_6.Text = "Script Soon"
 
