@@ -1,0 +1,215 @@
+_G.settingsTable = {
+KeySystem = true;
+}
+
+for i,v in pairs(_G.settingsTable) do 
+end
+
+local Place = game.PlaceId
+local filename = Place..".txt";
+
+function loadSettings()
+local HttpService = game:GetService("HttpService")
+if (readfile and isfile and isfile(filename)) then
+_G.settingsTable = HttpService:JSONDecode(readfile(filename));
+for i,v in pairs(_G.settingsTable) do 
+end
+end
+end
+
+function saveSettings()
+local json;
+local HttpService = game:GetService("HttpService"); 
+if (writefile) then
+json = HttpService:JSONEncode(_G.settingsTable);
+writefile(filename, json);
+end
+end
+
+loadSettings()
+wait()
+
+local KeyScreen = Instance.new("ScreenGui")
+local KeyFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local InfoBar = Instance.new("Frame")
+local UICorner_2 = Instance.new("UICorner")
+local KeyImage = Instance.new("ImageLabel")
+local KeySystemText = Instance.new("TextLabel")
+local Please = Instance.new("TextLabel")
+local KeyImage_2 = Instance.new("ImageLabel")
+local Code = Instance.new("TextLabel")
+local TextBox = Instance.new("TextBox")
+local UICorner_3 = Instance.new("UICorner")
+local ApplyButton = Instance.new("TextButton")
+local UICorner_4 = Instance.new("UICorner")
+local Info1 = Instance.new("TextLabel")
+local Example1 = Instance.new("TextLabel")
+local randomN = math.random(1000, 9999)
+
+KeyScreen.Name = "KeyScreen"
+KeyScreen.Parent = game:GetService("CoreGui")
+KeyScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+KeyScreen.DisplayOrder = 999999999
+KeyScreen.ResetOnSpawn = false
+
+if _G.settingsTable.KeySystem == false then
+KeyScreen:Destroy()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Veincx5315/Created/VHub/Simple'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Key System:";
+	Text = "User Authorized!";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+end
+
+if (writefile) then
+print("Writefile Supported")
+else
+KeyScreen:Destroy()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Veincx5315/Created/VHub/Simple'),true))()
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Failed:";
+	Text = "Failed To Do Key System : writefile Is Not Supported On Executor";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+end
+
+KeyFrame.Name = "KeyFrame"
+KeyFrame.Parent = KeyScreen
+KeyFrame.Active = true
+KeyFrame.BackgroundColor3 = Color3.fromRGB(10, 10, 10)
+KeyFrame.LayoutOrder = 999999999
+KeyFrame.Position = UDim2.new(0.358471274, 0, 0.205154419, 0)
+KeyFrame.Size = UDim2.new(0, 200, 0, 270)
+KeyFrame.Draggable = true
+
+UICorner.CornerRadius = UDim.new(0, 20)
+UICorner.Parent = KeyFrame
+
+InfoBar.Name = "InfoBar"
+InfoBar.Parent = KeyFrame
+InfoBar.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+InfoBar.Size = UDim2.new(0, 200, 0, 30)
+
+UICorner_2.Parent = InfoBar
+
+KeyImage.Name = "KeyImage"
+KeyImage.Parent = InfoBar
+KeyImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KeyImage.BackgroundTransparency = 1.000
+KeyImage.Position = UDim2.new(0.00999999978, 0, 0, 0)
+KeyImage.Size = UDim2.new(0, 30, 0, 30)
+KeyImage.Image = "http://www.roblox.com/asset/?id=11947931309"
+
+KeySystemText.Name = "KeySystemText"
+KeySystemText.Parent = InfoBar
+KeySystemText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KeySystemText.BackgroundTransparency = 1.000
+KeySystemText.Position = UDim2.new(0.157000005, 0, 0, 0)
+KeySystemText.Size = UDim2.new(0, 164, 0, 30)
+KeySystemText.Font = Enum.Font.GothamBold
+KeySystemText.Text = "Key System"
+KeySystemText.TextColor3 = Color3.fromRGB(255, 255, 255)
+KeySystemText.TextSize = 14.000
+KeySystemText.TextXAlignment = Enum.TextXAlignment.Left
+
+Please.Name = "Please"
+Please.Parent = KeyFrame
+Please.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Please.BackgroundTransparency = 1.000
+Please.Position = UDim2.new(0.375, 0, 0.144444451, 0)
+Please.Size = UDim2.new(0, 100, 0, 50)
+Please.Font = Enum.Font.Gotham
+Please.Text = "Please Do The Key System."
+Please.TextColor3 = Color3.fromRGB(255, 255, 255)
+Please.TextSize = 14.000
+Please.TextWrapped = true
+
+KeyImage_2.Name = "KeyImage"
+KeyImage_2.Parent = KeyFrame
+KeyImage_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+KeyImage_2.BackgroundTransparency = 1.000
+KeyImage_2.Position = UDim2.new(0.0850000009, 0, 0.144444451, 0)
+KeyImage_2.Size = UDim2.new(0, 50, 0, 50)
+KeyImage_2.Image = "http://www.roblox.com/asset/?id=11947931309"
+
+Code.Name = "Code"
+Code.Parent = KeyFrame
+Code.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Code.BackgroundTransparency = 1.000
+Code.Position = UDim2.new(0.25, 0, 0.32962963, 0)
+Code.Size = UDim2.new(0, 100, 0, 50)
+Code.Font = Enum.Font.GothamBold
+Code.Text = randomN
+Code.TextColor3 = Color3.fromRGB(255, 255, 255)
+Code.TextSize = 40.000
+Code.TextWrapped = true
+
+TextBox.Parent = KeyFrame
+TextBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
+TextBox.Position = UDim2.new(0.112499997, 0, 0.548148155, 0)
+TextBox.Size = UDim2.new(0, 155, 0, 25)
+TextBox.Font = Enum.Font.Gotham
+TextBox.PlaceholderText = "Type The Code"
+TextBox.Text = ""
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 20.000
+TextBox.TextWrapped = true
+
+UICorner_3.Parent = TextBox
+
+ApplyButton.Name = "ApplyButton"
+ApplyButton.Parent = KeyFrame
+ApplyButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ApplyButton.Position = UDim2.new(0.112499997, 0, 0.666666687, 0)
+ApplyButton.Size = UDim2.new(0, 155, 0, 25)
+ApplyButton.Font = Enum.Font.GothamMedium
+ApplyButton.Text = "Apply"
+ApplyButton.TextColor3 = Color3.fromRGB(0, 0, 0)
+ApplyButton.TextSize = 14.000
+ApplyButton.MouseButton1Down:connect(function()
+if TextBox.Text == Code.Text then
+KeyScreen:Destroy()
+_G.settingsTable.KeySystem = false
+saveSettings()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Veincx5315/Created/VHub/Simple'),true))()
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Key System:";
+	Text = "User Authorized!";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+else
+TextBox.Text = "Wrong Key"
+end
+end)
+
+UICorner_4.Parent = ApplyButton
+
+Info1.Name = "Info1"
+Info1.Parent = KeyFrame
+Info1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info1.BackgroundTransparency = 1.000
+Info1.Position = UDim2.new(0.0250000004, 0, 0.778999984, 0)
+Info1.Size = UDim2.new(0, 190, 0, 21)
+Info1.Font = Enum.Font.Gotham
+Info1.Text = "You're Not Gonna Do The Key System Again In This Game"
+Info1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Info1.TextSize = 10.000
+Info1.TextWrapped = true
+Info1.TextYAlignment = Enum.TextYAlignment.Top
+
+Example1.Name = "Example1"
+Example1.Parent = KeyFrame
+Example1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Example1.BackgroundTransparency = 1.000
+Example1.Position = UDim2.new(0.0250000004, 0, 0.866999984, 0)
+Example1.Size = UDim2.new(0, 190, 0, 35)
+Example1.Font = Enum.Font.Gotham
+Example1.Text = "Example: you executed vhub in fencing and did the key system, you wont have to do the key system again in fencing"
+Example1.TextColor3 = Color3.fromRGB(255, 255, 255)
+Example1.TextSize = 10.000
+Example1.TextWrapped = true
+Example1.TextYAlignment = Enum.TextYAlignment.Top
