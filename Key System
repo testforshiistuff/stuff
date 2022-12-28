@@ -11,8 +11,7 @@ KeySystem = true;
 for i,v in pairs(_G.settingsTable) do 
 end
 
-local Place = game.PlaceId
-local filename = Place..".txt";
+local filename = "KeySV(1).txt";
 
 function loadSettings()
 local HttpService = game:GetService("HttpService")
@@ -44,14 +43,16 @@ local KeyImage = Instance.new("ImageLabel")
 local KeySystemText = Instance.new("TextLabel")
 local Please = Instance.new("TextLabel")
 local KeyImage_2 = Instance.new("ImageLabel")
-local Code = Instance.new("TextLabel")
+local DiscordInfo = Instance.new("TextLabel")
 local TextBox = Instance.new("TextBox")
 local UICorner_3 = Instance.new("UICorner")
-local ApplyButton = Instance.new("TextButton")
+local VerifyButton = Instance.new("TextButton")
 local UICorner_4 = Instance.new("UICorner")
-local Info1 = Instance.new("TextLabel")
-local Example1 = Instance.new("TextLabel")
-local randomN = math.random(1000, 9999)
+local CopyDiscordLink = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local ChangeKeyInfo = Instance.new("TextLabel")
+
+--Properties:
 
 KeyScreen.Name = "KeyScreen"
 KeyScreen.Parent = game:GetService("CoreGui")
@@ -64,7 +65,7 @@ KeyScreen:Destroy()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Launch'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Key System:";
-	Text = "User Authorized!";
+	Text = "User Already Is Authorized!";
 	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 end
@@ -114,7 +115,7 @@ Please.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 Please.BackgroundTransparency = 1.000
 Please.Position = UDim2.new(0.375, 0, 0.144444451, 0)
 Please.Size = UDim2.new(0, 100, 0, 50)
-Please.Font = Enum.Font.Gotham
+Please.Font = Enum.Font.GothamBold
 Please.Text = "Please Do The Key System."
 Please.TextColor3 = Color3.fromRGB(255, 255, 255)
 Please.TextSize = 14.000
@@ -128,42 +129,43 @@ KeyImage_2.Position = UDim2.new(0.0850000009, 0, 0.144444451, 0)
 KeyImage_2.Size = UDim2.new(0, 50, 0, 50)
 KeyImage_2.Image = "http://www.roblox.com/asset/?id=11947931309"
 
-Code.Name = "Code"
-Code.Parent = KeyFrame
-Code.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Code.BackgroundTransparency = 1.000
-Code.Position = UDim2.new(0.25, 0, 0.32962963, 0)
-Code.Size = UDim2.new(0, 100, 0, 50)
-Code.Font = Enum.Font.GothamBold
-Code.Text = randomN
-Code.TextColor3 = Color3.fromRGB(255, 255, 255)
-Code.TextSize = 40.000
-Code.TextWrapped = true
+DiscordInfo.Name = "DiscordInfo"
+DiscordInfo.Parent = KeyFrame
+DiscordInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DiscordInfo.BackgroundTransparency = 1.000
+DiscordInfo.Position = UDim2.new(0.0749999955, 0, 0.32962963, 0)
+DiscordInfo.Size = UDim2.new(0, 170, 0, 50)
+DiscordInfo.Font = Enum.Font.GothamBold
+DiscordInfo.Text = "Join Our Discord Server To Get The Key"
+DiscordInfo.TextColor3 = Color3.fromRGB(255, 255, 255)
+DiscordInfo.TextSize = 16.000
+DiscordInfo.TextWrapped = true
 
 TextBox.Parent = KeyFrame
 TextBox.BackgroundColor3 = Color3.fromRGB(50, 50, 50)
-TextBox.Position = UDim2.new(0.112499997, 0, 0.548148155, 0)
-TextBox.Size = UDim2.new(0, 155, 0, 25)
+TextBox.Position = UDim2.new(0.112499997, 0, 0.514814794, 0)
+TextBox.Size = UDim2.new(0, 155, 0, 32)
 TextBox.Font = Enum.Font.Gotham
-TextBox.PlaceholderText = "Type The Code"
+TextBox.MultiLine = true
+TextBox.PlaceholderText = "Paste The Key Here"
 TextBox.Text = ""
 TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
-TextBox.TextSize = 20.000
+TextBox.TextSize = 14.000
 TextBox.TextWrapped = true
 
 UICorner_3.Parent = TextBox
 
-ApplyButton.Name = "ApplyButton"
-ApplyButton.Parent = KeyFrame
-ApplyButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-ApplyButton.Position = UDim2.new(0.112499997, 0, 0.666666687, 0)
-ApplyButton.Size = UDim2.new(0, 155, 0, 25)
-ApplyButton.Font = Enum.Font.GothamMedium
-ApplyButton.Text = "Apply"
-ApplyButton.TextColor3 = Color3.fromRGB(0, 0, 0)
-ApplyButton.TextSize = 14.000
-ApplyButton.MouseButton1Down:connect(function()
-if TextBox.Text == Code.Text then
+VerifyButton.Name = "VerifyButton"
+VerifyButton.Parent = KeyFrame
+VerifyButton.BackgroundColor3 = Color3.fromRGB(0, 255, 0)
+VerifyButton.Position = UDim2.new(0.112499997, 0, 0.65925926, 0)
+VerifyButton.Size = UDim2.new(0, 155, 0, 25)
+VerifyButton.Font = Enum.Font.GothamMedium
+VerifyButton.Text = "Verify"
+VerifyButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+VerifyButton.TextSize = 14.000
+VerifyButton.MouseButton1Down:connect(function()
+if TextBox.Text == "GoFuckYourselfGetTheKeyInTheirDiscord" then
 KeyScreen:Destroy()
 _G.settingsTable.KeySystem = false
 saveSettings()
@@ -171,7 +173,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stu
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Key System:";
-	Text = "User Authorized!";
+	Text = "Youre Now Authorized!";
 	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 else
@@ -179,33 +181,36 @@ TextBox.Text = "Wrong Key"
 end
 end)
 
-UICorner_4.Parent = ApplyButton
+UICorner_4.Parent = VerifyButton
 
-Info1.Name = "Info1"
-Info1.Parent = KeyFrame
-Info1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Info1.BackgroundTransparency = 1.000
-Info1.Position = UDim2.new(0.0250000004, 0, 0.778999984, 0)
-Info1.Size = UDim2.new(0, 190, 0, 21)
-Info1.Font = Enum.Font.Gotham
-Info1.Text = "You're Not Gonna Do The Key System Again In This Game"
-Info1.TextColor3 = Color3.fromRGB(255, 255, 255)
-Info1.TextSize = 10.000
-Info1.TextWrapped = true
-Info1.TextYAlignment = Enum.TextYAlignment.Top
+CopyDiscordLink.Name = "CopyDiscordLink"
+CopyDiscordLink.Parent = KeyFrame
+CopyDiscordLink.BackgroundColor3 = Color3.fromRGB(0, 100, 255)
+CopyDiscordLink.Position = UDim2.new(0.112499997, 0, 0.777777791, 0)
+CopyDiscordLink.Size = UDim2.new(0, 155, 0, 25)
+CopyDiscordLink.Font = Enum.Font.GothamMedium
+CopyDiscordLink.Text = "Copy Discord Link"
+CopyDiscordLink.TextColor3 = Color3.fromRGB(255, 255, 255)
+CopyDiscordLink.TextSize = 14.000
+CopyDiscordLink.MouseButton1Down:connect(function()
+setclipboard("discord.gg/3NN5zTW7h2")
+TextBox.Text = "Link Copied"
+end)
 
-Example1.Name = "Example1"
-Example1.Parent = KeyFrame
-Example1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-Example1.BackgroundTransparency = 1.000
-Example1.Position = UDim2.new(0.0250000004, 0, 0.866999984, 0)
-Example1.Size = UDim2.new(0, 190, 0, 35)
-Example1.Font = Enum.Font.Gotham
-Example1.Text = "Example: you executed vhub in fencing and did the key system, you wont have to do the key system again in fencing"
-Example1.TextColor3 = Color3.fromRGB(255, 255, 255)
-Example1.TextSize = 10.000
-Example1.TextWrapped = true
-Example1.TextYAlignment = Enum.TextYAlignment.Top
+UICorner_5.Parent = CopyDiscordLink
+
+ChangeKeyInfo.Name = "ChangeKeyInfo"
+ChangeKeyInfo.Parent = KeyFrame
+ChangeKeyInfo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ChangeKeyInfo.BackgroundTransparency = 1.000
+ChangeKeyInfo.Position = UDim2.new(0, 0, 0.896296263, 0)
+ChangeKeyInfo.Size = UDim2.new(0, 200, 0, 21)
+ChangeKeyInfo.Font = Enum.Font.Gotham
+ChangeKeyInfo.Text = "This Is A One Time Key System. You Wont Have To Do It Again Until 1/5/23"
+ChangeKeyInfo.TextColor3 = Color3.fromRGB(255, 255, 255)
+ChangeKeyInfo.TextSize = 10.000
+ChangeKeyInfo.TextWrapped = true
+ChangeKeyInfo.TextYAlignment = Enum.TextYAlignment.Top
 
 else
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Launch'),true))()
