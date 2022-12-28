@@ -63,11 +63,6 @@ KeyScreen.ResetOnSpawn = false
 if _G.settingsTable.KeySystem == false then
 KeyScreen:Destroy()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Launch'),true))()
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "Key System:";
-	Text = "User Already Is Authorized!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
-Duration = 16;
 end
 
 KeyFrame.Name = "KeyFrame"
