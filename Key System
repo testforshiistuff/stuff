@@ -1,5 +1,8 @@
 if (writefile) then
 
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/Scripts/main/Displayname%20To%20Username'),true))()
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Run'),true))()
 _G.settingsTable = {
 KeySystem = true;
 }
