@@ -55,7 +55,7 @@ KeyScreen.ResetOnSpawn = false
 
 if _G.settingsTable.KeySystem == false then
 KeyScreen:Destroy()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Veincx5315/Created/VHub/Simple'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Launch'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Key System:";
 	Text = "User Authorized!";
@@ -67,7 +67,7 @@ if (writefile) then
 print("Writefile Supported")
 else
 KeyScreen:Destroy()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Veincx5315/Created/VHub/Simple'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Launch'),true))()
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Failed:";
@@ -174,7 +174,7 @@ if TextBox.Text == Code.Text then
 KeyScreen:Destroy()
 _G.settingsTable.KeySystem = false
 saveSettings()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/Veincx5315/Created/VHub/Simple'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Launch'),true))()
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Key System:";
