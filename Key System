@@ -1,3 +1,4 @@
+if (writefile) then
 _G.settingsTable = {
 KeySystem = true;
 }
@@ -59,19 +60,6 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stu
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Key System:";
 	Text = "User Authorized!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
-Duration = 16;
-end
-
-if (writefile) then
-print("Writefile Supported")
-else
-KeyScreen:Destroy()
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Launch'),true))()
-
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "Failed:";
-	Text = "Failed To Do Key System : writefile Is Not Supported On Executor";
 	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 end
@@ -213,3 +201,13 @@ Example1.TextColor3 = Color3.fromRGB(255, 255, 255)
 Example1.TextSize = 10.000
 Example1.TextWrapped = true
 Example1.TextYAlignment = Enum.TextYAlignment.Top
+
+else
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Launch'),true))()
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Failed:";
+	Text = "Failed To Do Key System : writefile Is Not Supported On Executor";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+end
