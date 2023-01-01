@@ -1260,6 +1260,20 @@ Duration = 16;
 end
 end)
 
-NameScript_8.Text = "Script Soon"
+NameScript_8.Text = "Koss Gust Horn Spammer"
 Script8.MouseButton1Down:connect(function()
+if game.PlaceId == 4522347649 then
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/Scripts/main/Koss%20Gust%20Horn%20Spammer'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Koss Gust Horn Spammer!";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+else
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works In Free Admin!";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+end
 end)
