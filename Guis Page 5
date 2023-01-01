@@ -1201,7 +1201,15 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end)
 
-NameScript_6.Text = "Script Soon"
+NameScript_6.Text = "Server Browser"
+Script6.MouseButton1Down:connect(function()
+loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))();
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Server Browser!";
+	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+Duration = 16;
+end)
 
 NameScript_7.Text = "Script Soon"
 
