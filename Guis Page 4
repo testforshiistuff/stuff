@@ -1177,7 +1177,7 @@ end)
 
 NameScript_3.Text = "Arceus X Aimbot"
 Script3.MouseButton1Down:connect(function()
-loadstring(game:HttpGet(('https://pastebin.com/raw/1Gp9c57U'),true))()
+loadstring(game:HttpGet(('https://github.com/testforshiistuff/Scripts/blob/main/Arceus%20X%20Aimbot'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Arceus X Aimbot!";
