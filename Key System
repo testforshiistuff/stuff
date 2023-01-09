@@ -207,13 +207,92 @@ ChangeKeyInfo.TextWrapped = true
 ChangeKeyInfo.TextYAlignment = Enum.TextYAlignment.Top
 
 else
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Launch'),true))()
+-- (VOID) : Gui to Lua
+-- Version: 1.4
 
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Run'),true))()
+-- Instances:
 
-game:GetService("StarterGui"):SetCore("SendNotification", { 
-	Title = "Failed:";
-	Text = "Failed To Do Key System : writefile Is Not Supported On Executor";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
-Duration = 16;
+local ScreenGui = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local NotSupText = Instance.new("TextLabel")
+local Info1 = Instance.new("TextLabel")
+local Description = Instance.new("TextLabel")
+local Info2 = Instance.new("TextLabel")
+local UIStroke = Instance.new("UIStroke")
+
+--Properties:
+
+ScreenGui.Parent = game:GetService("CoreGui")
+ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Frame.Parent = ScreenGui
+Frame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Frame.Position = UDim2.new(0.286993384, 0, 0.336956531, 0)
+Frame.Size = UDim2.new(0, 300, 0, 150)
+Frame.Active = true
+Frame.Draggable = true
+
+UICorner.Parent = Frame
+
+TextLabel.Name = ":("
+TextLabel.Parent = Frame
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.Position = UDim2.new(0, 0, 0.333333343, 0)
+TextLabel.Size = UDim2.new(0, 73, 0, 50)
+TextLabel.Font = Enum.Font.GothamBlack
+TextLabel.Text = ":("
+TextLabel.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.TextSize = 50.000
+TextLabel.TextWrapped = true
+
+NotSupText.Name = "NotSupText"
+NotSupText.Parent = Frame
+NotSupText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+NotSupText.BackgroundTransparency = 1.000
+NotSupText.Size = UDim2.new(0, 300, 0, 14)
+NotSupText.Font = Enum.Font.GothamBold
+NotSupText.Text = "VHub / Exploit Not Supported"
+NotSupText.TextColor3 = Color3.fromRGB(0, 0, 0)
+NotSupText.TextSize = 14.000
+
+Info1.Name = "Info1"
+Info1.Parent = Frame
+Info1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info1.BackgroundTransparency = 1.000
+Info1.Position = UDim2.new(0.24333334, 0, 0.146666676, 0)
+Info1.Size = UDim2.new(0, 227, 0, 50)
+Info1.Font = Enum.Font.GothamMedium
+Info1.Text = "Your Exploit No Longer Support VHub."
+Info1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Info1.TextSize = 14.000
+Info1.TextWrapped = true
+
+Description.Name = "Description"
+Description.Parent = Frame
+Description.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Description.BackgroundTransparency = 1.000
+Description.Position = UDim2.new(0.24333334, 0, 0.333333343, 0)
+Description.Size = UDim2.new(0, 227, 0, 50)
+Description.Font = Enum.Font.Gotham
+Description.Text = "Description: Your Exploit Doesnt Have A \"writefile\" Function."
+Description.TextColor3 = Color3.fromRGB(0, 0, 0)
+Description.TextSize = 14.000
+Description.TextWrapped = true
+
+Info2.Name = "Info2"
+Info2.Parent = Frame
+Info2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Info2.BackgroundTransparency = 1.000
+Info2.Position = UDim2.new(0.166666672, 0, 0.666666687, 0)
+Info2.Size = UDim2.new(0, 200, 0, 50)
+Info2.Font = Enum.Font.Gotham
+Info2.Text = "Join dsc.gg/vhub For More Information"
+Info2.TextColor3 = Color3.fromRGB(0, 100, 255)
+Info2.TextSize = 14.000
+
+UIStroke.Thickness = 2.000
+UIStroke.Parent = Frame
 end
