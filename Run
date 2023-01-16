@@ -94,6 +94,13 @@ pcall(function() getgenv().VHub_LOADED = false end)
 game:GetService("CoreGui").VHubCoreScreen:Destroy()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Launch'),true))()
 
+elseif TextBox.Text:match("reload Launch") then
+ScreenGui:Destroy()
+pcall(function() getgenv().Settings_LOADED = false end)
+pcall(function() getgenv().VHub_LOADED = false end)
+game:GetService("CoreGui").VHubCoreScreen:Destroy()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Launch'),true))()
+
 elseif TextBox.Text:match("close Run") then
 RunScreen.Enabled = false
 
