@@ -9,62 +9,125 @@ end
 
 pcall(function() getgenv().VHub_LOADED = true end)
 
--- Gui to Lua
--- Version: 3.2
+wait()
+-- (VOID) : Gui to Lua
+-- Version: 1.4
 
 -- Instances:
 
-local ScreenGui = Instance.new("ScreenGui")
-local Frame = Instance.new("Frame")
+local LaunchScreen = Instance.new("ScreenGui")
+local ImageLabel = Instance.new("ImageLabel")
+local Infos = Instance.new("TextLabel")
+local ErrorText = Instance.new("TextLabel")
+local Leave = Instance.new("TextButton")
 local UICorner = Instance.new("UICorner")
-local VHubImage = Instance.new("ImageLabel")
 local VHubText = Instance.new("TextLabel")
+local LoadingText = Instance.new("TextLabel")
 
 --Properties:
 
-ScreenGui.Parent = game:GetService("CoreGui")
-ScreenGui.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
-ScreenGui.ResetOnSpawn = false
-ScreenGui.DisplayOrder = 999999999
+LaunchScreen.Name = "LaunchScreen"
+LaunchScreen.Parent = game:GetService("CoreGui")
+LaunchScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+LaunchScreen.ResetOnSpawn = false
+LaunchScreen.IgnoreGuiInset = true
+LaunchScreen.DisplayOrder = 999999999
 
-Frame.Parent = ScreenGui
-Frame.BackgroundColor3 = Color3.fromRGB(31, 32, 34)
-Frame.BorderSizePixel = 0
-Frame.Position = UDim2.new(0.358757079, 0, 0.391304344, 0)
-Frame.Size = UDim2.new(0, 0, 0.200000003, 0)
+ImageLabel.Parent = LaunchScreen
+ImageLabel.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+ImageLabel.Size = UDim2.new(0, 0, 0, 0)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=12173217681"
+ImageLabel.ScaleType = Enum.ScaleType.Tile
+ImageLabel.TileSize = UDim2.new(0, 100, 0, 100)
+ImageLabel.LayoutOrder = 999999999
 
-UICorner.Parent = Frame
+Infos.Name = "Infos"
+Infos.Parent = ImageLabel
+Infos.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Infos.BackgroundTransparency = 1.000
+Infos.Position = UDim2.new(0.291234642, 0, 0.519565165, 0)
+Infos.Size = UDim2.new(0.416305393, 0, 0.0430000015, 0)
+Infos.Visible = false
+Infos.Font = Enum.Font.Gotham
+Infos.Text = "VHub Might Be Having Script Errors. dsc.gg/vhub"
+Infos.TextColor3 = Color3.fromRGB(255, 0, 0)
+Infos.TextScaled = true
+Infos.TextSize = 14.000
+Infos.TextWrapped = true
 
-VHubImage.Name = "VHubImage"
-VHubImage.Parent = Frame
-VHubImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
-VHubImage.BackgroundTransparency = 1.000
-VHubImage.Position = UDim2.new(0.39, 0, 0, 0)
-VHubImage.Size = UDim2.new(0, 0, 0.649999976, 0)
-VHubImage.SizeConstraint = Enum.SizeConstraint.RelativeYY
-VHubImage.Image = "http://www.roblox.com/asset/?id=11782547157"
+ErrorText.Name = "ErrorText"
+ErrorText.Parent = ImageLabel
+ErrorText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ErrorText.BackgroundTransparency = 1.000
+ErrorText.Position = UDim2.new(0.398680449, 0, 0.478260815, 0)
+ErrorText.Size = UDim2.new(0.200000003, 0, 0.0430000015, 0)
+ErrorText.Visible = false
+ErrorText.Font = Enum.Font.Gotham
+ErrorText.Text = "VHub Failed To Load"
+ErrorText.TextColor3 = Color3.fromRGB(255, 0, 0)
+ErrorText.TextScaled = true
+ErrorText.TextSize = 14.000
+ErrorText.TextWrapped = true
+
+Leave.Name = "Leave"
+Leave.Parent = ImageLabel
+Leave.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Leave.Visible = false
+Leave.Position = UDim2.new(0.398680449, 0, 0.578260815, 0)
+Leave.Size = UDim2.new(0.2, 0, 0.06, 0)
+Leave.Font = Enum.Font.GothamMedium
+Leave.Text = "Leave"
+Leave.TextColor3 = Color3.fromRGB(0, 0, 0)
+Leave.TextSize = 14.000
+Leave.MouseButton1Down:connect(function()
+game:Shutdown()
+end)
+
+UICorner.Parent = Leave
 
 VHubText.Name = "VHubText"
-VHubText.Parent = Frame
+VHubText.Parent = ImageLabel
+VHubText.Visible = false
 VHubText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VHubText.BackgroundTransparency = 1.000
-VHubText.Position = UDim2.new(0.275000006, 0, 0.520000041, 0)
-VHubText.Size = UDim2.new(0.449999988, 0, 0.449999988, 0)
+VHubText.Position = UDim2.new(0.028, 0, 0.999, 0)
+VHubText.Size = UDim2.new(0.200000003, 0, 0.200000003, 0)
 VHubText.Font = Enum.Font.GothamBold
 VHubText.Text = "VHub"
 VHubText.TextColor3 = Color3.fromRGB(255, 255, 255)
 VHubText.TextScaled = true
 VHubText.TextSize = 14.000
+VHubText.TextTransparency = 0
 VHubText.TextWrapped = true
 
+LoadingText.Name = "LoadingText"
+LoadingText.Parent = ImageLabel
+LoadingText.Visible = false
+LoadingText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+LoadingText.BackgroundTransparency = 1.000
+LoadingText.Position = UDim2.new(0.770, 0, 0.999, 0)
+LoadingText.Size = UDim2.new(0.200000003, 0, 0.0430000015, 0)
+LoadingText.Font = Enum.Font.Gotham
+LoadingText.Text = "Loading Guis..."
+LoadingText.TextColor3 = Color3.fromRGB(255, 255, 255)
+LoadingText.TextScaled = true
+LoadingText.TextSize = 14.000
+LoadingText.TextWrapped = true
+
 -- Scripts:
+local function VFHQ_fake_script() -- ImageLabel.LocalScript 
+	local script = Instance.new('LocalScript', ImageLabel)
 
-local function YTFFB_fake_script() -- VHubImage.LocalScript 
-	local script = Instance.new('LocalScript', VHubImage)
+	local frame = script.Parent
+ImageLabel:TweenSize(UDim2.new(1, 0, 1, 0),"Out","Back",1)
+wait(1)
+LoadingText.Visible = true
+VHubText.Visible = true
+VHubText:TweenPosition(UDim2.new(0.028, 0, 0.799, 0),"Out","Quint",1,true)
+wait(0.5)
+LoadingText:TweenPosition(UDim2.new(0.770, 0, 0.913, 0),"Out","Quint",1,true)
+wait(1)
 
-	script.Parent:TweenSize(UDim2.new(0.65, 1, 0.65, 0),"Out","Back",1)
-        Frame:TweenSize(UDim2.new(0.29, 1, 0.2, 0),"Out","Back",1)
-	wait(1)
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Page%20Author'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Animations%20Page%201'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Animations%20Page%202'),true))()
@@ -92,10 +155,19 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stu
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Scripts%20Page%205'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Settings%20Page'),true))()
 wait()
-	script.Parent:TweenSize(UDim2.new(0, 0, 0.65, 0),"Out","Back",1)
-        Frame:TweenSize(UDim2.new(0, 0, 0.2, 0),"Out","Back",1)
-	wait(1)
-	ScreenGui:Destroy()
+LoadingText.Text = "Loaded!"
+
+VHubText:TweenPosition(UDim2.new(0.028, 0, 0.999, 0),"Out","Quint",1,true)
+wait(0.5)
+LoadingText:TweenPosition(UDim2.new(0.770, 0, 0.999, 0),"Out","Quint",1,true)
+wait(1)
+
+	for i = 1,100 do
+		frame.BackgroundTransparency += 0.1
+     frame.ImageTransparency += 0.1
+		wait (0.01)
+	end
+LaunchScreen:Destroy()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Support%20Page'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/Open%20Button'),true))()
 loadstring(game:HttpGet(('https://pastebin.com/raw/nJtd59bc'),true))()
@@ -145,4 +217,13 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
 Duration = 16;
 end
-coroutine.wrap(YTFFB_fake_script)()
+coroutine.wrap(VFHQ_fake_script)()
+
+coroutine.wrap(function()
+while wait() do
+wait(40)
+ErrorText.Visible = true
+Infos.Visible = true
+Leave.Visible = true
+end
+end)()
