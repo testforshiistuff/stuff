@@ -221,7 +221,7 @@ coroutine.wrap(VFHQ_fake_script)()
 
 coroutine.wrap(function()
 while wait() do
-wait(40)
+wait(60)
 ErrorText.Visible = true
 Infos.Visible = true
 Leave.Visible = true
