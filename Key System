@@ -169,7 +169,7 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stu
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Key System:";
 	Text = "Youre Now Authorized!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 else
 TextBox.Text = "Wrong Key"
