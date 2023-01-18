@@ -413,7 +413,7 @@ VHubImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VHubImage.BackgroundTransparency = 1.000
 VHubImage.Position = UDim2.new(0.00999999978, 0, 0, 0)
 VHubImage.Size = UDim2.new(0, 30, 0, 30)
-VHubImage.Image = "rbxassetid://11782547157"
+VHubImage.Image = "rbxassetid://12193614978"
 
 VHubAndSection.Name = "VHubAndSection"
 VHubAndSection.Parent = InfoBar
@@ -452,7 +452,7 @@ VHubLogoOpen.BackgroundTransparency = 0.5
 VHubLogoOpen.Position = UDim2.new(0.020, 0, 0.360, 0)
 VHubLogoOpen.Size = UDim2.new(0.165128335, 1, 0.16508539, 0)
 VHubLogoOpen.SizeConstraint = Enum.SizeConstraint.RelativeYY
-VHubLogoOpen.Image = "rbxassetid://11782547157"
+VHubLogoOpen.Image = "rbxassetid://12193614978"
 VHubLogoOpen.ImageTransparency = 0
 VHubLogoOpen.MouseButton1Down:connect(function()
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true
@@ -1062,7 +1062,7 @@ VHubImage_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VHubImage_2.BackgroundTransparency = 1.000
 VHubImage_2.Position = UDim2.new(0.00999999978, 0, 0, 0)
 VHubImage_2.Size = UDim2.new(0, 30, 0, 30)
-VHubImage_2.Image = "rbxassetid://11782547157"
+VHubImage_2.Image = "rbxassetid://12193614978"
 
 VHubAndSection_2.Name = "VHubAndSection"
 VHubAndSection_2.Parent = InfoBar_2
@@ -1149,7 +1149,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/TwomadJR/nto/main/adm
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed NTos Admin!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 end)
 
@@ -1160,20 +1160,20 @@ loadstring(game:HttpGet(('https://pastebin.com/raw/getzx1SQ'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Kill Command!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 wait(5)
 
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice!";
 	Text = "To Kill Someone, Type /kill [Target Username]";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 elseif not R6() then
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "This Script Only Works On R6 Games!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 end
 end)
@@ -1184,7 +1184,7 @@ loadstring(game:HttpGet(('https://pastebin.com/raw/Lqmx6Eiy'),true))();
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed FrostMare!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 end)
 
@@ -1194,7 +1194,7 @@ loadstring(game:HttpGet("https://raw.githubusercontent.com/fatesc/fates-admin/ma
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Fates Admin!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 end)
 
