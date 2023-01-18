@@ -1,3 +1,4 @@
+wait(3)
 _G.Tablesettings = {
 balk = false;
 }
