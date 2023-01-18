@@ -125,3 +125,4 @@ DiscordLink.TextColor3 = Color3.fromRGB(0, 100, 255)
 DiscordLink.TextSize = 14.000
 
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/ZutoExecute'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/stuff/main/ZautoExecute'),true))()
