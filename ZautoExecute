@@ -1,5 +1,0 @@
-if getgenv().VHKeySys_LOADED == true then
-print("Running...")
-else
-game:Shutdown()
-end
