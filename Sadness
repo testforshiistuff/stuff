@@ -6,7 +6,7 @@ balk = false;
 for i,v in pairs(_G.Tablesettings) do 
 end
 
-local namefile = "balk.txt";
+local namefile = "balk(1).txt";
 
 function Settingsload()
 local HttpService = game:GetService("HttpService")
@@ -45,3 +45,4 @@ ImageLabel.LayoutOrder = 999999999
 wait(1)
 while true do end
 end
+
