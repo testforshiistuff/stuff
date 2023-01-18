@@ -58,7 +58,7 @@ VHubImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VHubImage.BackgroundTransparency = 1.000
 VHubImage.Position = UDim2.new(0.00999999978, 0, 0, 0)
 VHubImage.Size = UDim2.new(0, 30, 0, 30)
-VHubImage.Image = "rbxassetid://11782547157"
+VHubImage.Image = "rbxassetid://12193614978"
 
 VHubAndSection.Name = "VHubAndSection"
 VHubAndSection.Parent = InfoBar
@@ -85,7 +85,7 @@ VHubLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VHubLogo.BackgroundTransparency = 1.000
 VHubLogo.Position = UDim2.new(0.388888896, 0, 0.185185194, 0)
 VHubLogo.Size = UDim2.new(0, 100, 0, 100)
-VHubLogo.Image = "rbxassetid://11782547157"
+VHubLogo.Image = "rbxassetid://12193614978"
 
 ErrorMessage.Name = "ErrorMessage"
 ErrorMessage.Parent = DragFrame
