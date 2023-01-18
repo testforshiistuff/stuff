@@ -413,7 +413,7 @@ VHubImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VHubImage.BackgroundTransparency = 1.000
 VHubImage.Position = UDim2.new(0.00999999978, 0, 0, 0)
 VHubImage.Size = UDim2.new(0, 30, 0, 30)
-VHubImage.Image = "rbxassetid://11782547157"
+VHubImage.Image = "rbxassetid://12193614978"
 
 VHubAndSection.Name = "VHubAndSection"
 VHubAndSection.Parent = InfoBar
@@ -452,7 +452,7 @@ VHubLogoOpen.BackgroundTransparency = 0.5
 VHubLogoOpen.Position = UDim2.new(0.020, 0, 0.360, 0)
 VHubLogoOpen.Size = UDim2.new(0.165128335, 1, 0.16508539, 0)
 VHubLogoOpen.SizeConstraint = Enum.SizeConstraint.RelativeYY
-VHubLogoOpen.Image = "rbxassetid://11782547157"
+VHubLogoOpen.Image = "rbxassetid://12193614978"
 VHubLogoOpen.ImageTransparency = 0
 VHubLogoOpen.MouseButton1Down:connect(function()
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true
@@ -1062,7 +1062,7 @@ VHubImage_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 VHubImage_2.BackgroundTransparency = 1.000
 VHubImage_2.Position = UDim2.new(0.00999999978, 0, 0, 0)
 VHubImage_2.Size = UDim2.new(0, 30, 0, 30)
-VHubImage_2.Image = "rbxassetid://11782547157"
+VHubImage_2.Image = "rbxassetid://12193614978"
 
 VHubAndSection_2.Name = "VHubAndSection"
 VHubAndSection_2.Parent = InfoBar_2
@@ -1152,13 +1152,13 @@ loadstring(game:HttpGet("https://pastebin.com/raw/qLACUGL1", true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Ink Monster Animation!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 elseif not R6() then
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "This Script Only Works On R6 Games!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 end
 end)
@@ -1172,13 +1172,13 @@ loadstring("\108\111\97\100\115\116\114\105\110\103\40\103\97\109\101\58\72\116\
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Runner!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 elseif not R6() then
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "This Script Only Works On R6 Games!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 end
 end)
@@ -1192,13 +1192,13 @@ loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/Scr
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Rush!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 elseif not R6() then
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "This Script Only Works On R6 Games!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 end
 end)
@@ -1212,13 +1212,13 @@ loadstring(game:HttpGet(('https://pastefy.ga/osEThPw1/raw'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Gorilla!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 elseif not R6() then
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "This Script Only Works On R6 Games!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 end
 end)
@@ -1231,7 +1231,7 @@ loadstring(game:HttpGet(('https://pastefy.ga/7xEZRqfH/raw'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Among Us Animation!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 end)
 
@@ -1244,13 +1244,13 @@ loadstring(game:HttpGet(('https://gist.githubusercontent.com/BackScriptHubs/5e93
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed BOM!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 elseif not R6() then
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "This Script Only Works On R6 Games!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 end
 end)
@@ -1264,13 +1264,13 @@ loadstring(game:HttpGet(('https://pastefy.ga/Gjlleuea/raw'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Lazer Arms!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 elseif not R6() then
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "This Script Only Works On R6 Games!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 end
 end)
@@ -1284,13 +1284,13 @@ loadstring(game:HttpGet(('https://pastefy.ga/qqTUbyGK/raw'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Glitch!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 elseif not R6() then
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
 	Text = "This Script Only Works On R6 Games!";
-	Icon = "rbxthumb://type=Asset&id=11782547157&w=150&h=150"})
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 end
 end)
