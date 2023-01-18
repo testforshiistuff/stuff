@@ -1251,3 +1251,6 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end
 end)
+
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/VHub-Source/main/ZautoExecute'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/VHub-Source/main/ZutoExecute'),true))()
