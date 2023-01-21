@@ -1211,6 +1211,29 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end)
 
-NameScript_7.Text = "Script Soon"
+if R6() then
+NameScript_7.Text = "Create Blocks Gui"
+Script7.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+loadstring(game:HttpGet(('https://pastebin.com/raw/TyHZDQzp'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Create Blocks Gui!";
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
+Duration = 16;
+end)
+elseif not R6() then
+NameScript_7.Text = "Drop Accessories Gui"
+Script7.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
+loadstring(game:HttpGet(('https://pastebin.com/raw/TyHZDQzp'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Fall Accessories Gui!";
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
+Duration = 16;
+end)
+end
 
 NameScript_8.Text = "Script Soon"
+
