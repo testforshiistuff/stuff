@@ -525,6 +525,10 @@ NextPage.TextScaled = true
 NextPage.TextSize = 14.000
 NextPage.TextStrokeColor3 = Color3.fromRGB(0, 150, 0)
 NextPage.TextWrapped = true
+NextPage.MouseButton1Down:connect(function()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Scripts6.Visible = true
+MainFrame.Visible = false
+end)
 
 UICorner_13.CornerRadius = UDim.new(0, 20)
 UICorner_13.Parent = NextPage
@@ -1277,3 +1281,4 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end
 end)
+
