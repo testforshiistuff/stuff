@@ -258,7 +258,7 @@ GuiImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 GuiImage.BackgroundTransparency = 1.000
 GuiImage.Position = UDim2.new(0.0222222228, 0, 0.0370370373, 0)
 GuiImage.Size = UDim2.new(0, 25, 0, 25)
-GuiImage.Image = "http://www.roblox.com/asset/?id=11592850267"
+GuiImage.Image = "http://www.roblox.com/asset/?id=11592848654"
 
 GuisText.Name = "GuisText"
 GuisText.Parent = GUIS
@@ -1144,14 +1144,15 @@ Script1.MouseButton1Down:connect(function()
 if game.PlaceId == 9848789324 then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua'))()
 
-game:GetService("CoreGui").nightmarefun.Shadow.Active = true
-game:GetService("CoreGui").nightmarefun.Shadow.Draggable = true
-
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed CryptonicHub!";
 	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
+
+wait(10)
+game:GetService("CoreGui").nightmarefun.Shadow.Active = true
+game:GetService("CoreGui").nightmarefun.Shadow.Draggable = true
 else
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
