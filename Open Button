@@ -13,7 +13,7 @@ ImageButton.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen
 ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
 ImageButton.BackgroundTransparency = 0.500
 ImageButton.Position = UDim2.new(0.0199999996, 1, 0.0199999996, 1)
-ImageButton.Size = UDim2.new(0, 30, 0, 30)
+ImageButton.Size = UDim2.new(0, 0, 0, 0)
 ImageButton.Image = "http://www.roblox.com/asset/?id=12193689334"
 ImageButton.MouseButton1Down:connect(function()
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Home.Visible = true
@@ -22,3 +22,5 @@ VHubLogoOpen:Destroy()
 end)
 
 UICorner.Parent = ImageButton
+
+ImageButton:TweenSize(UDim2.new(0, 30, 0, 30),"Out","Back", 0.5)
