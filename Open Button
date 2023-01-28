@@ -18,7 +18,7 @@ ImageButton.Image = "http://www.roblox.com/asset/?id=12193689334"
 ImageButton.MouseButton1Down:connect(function()
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Home.Visible = true
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true
-VHubLogoOpen:Destroy()
+ImageButton:Destroy()
 end)
 
 UICorner.Parent = ImageButton
