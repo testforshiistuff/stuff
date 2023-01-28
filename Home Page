@@ -414,10 +414,6 @@ game:GetService("CoreGui").VHubCoreScreen.DragScreen.OpenButton.Visible = true
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = false
 end)
 
-UICorner_19.Parent = VHubLogoOpen
-UICorner_19.CornerRadius = UDim.new(0, 35)
-end)
-
 UICorner_11.Parent = Close
 
 SimpleEditionText.Name = "SimpleEditionText"
