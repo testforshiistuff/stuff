@@ -16,6 +16,7 @@ ImageButton.Position = UDim2.new(0.0199999996, 1, 0.0199999996, 1)
 ImageButton.Size = UDim2.new(0, 30, 0, 30)
 ImageButton.Image = "http://www.roblox.com/asset/?id=12193689334"
 ImageButton.Visible = false
+ImageButton.Active = true
 ImageButton.MouseButton1Down:connect(function()
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true
 ImageButton.Visible = false
