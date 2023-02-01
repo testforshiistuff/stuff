@@ -1141,7 +1141,15 @@ Duration = 16;
 end
 end)
 
-NameScript_2.Text = "Script Soon"
+NameScript_2.Text = "Brainshop ChatBot"
+Script2.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/Scripts/main/ChatBot'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Brainshop ChatBot!";
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
+Duration = 16;
+end)
 
 NameScript_3.Text = "Script Soon"
 
