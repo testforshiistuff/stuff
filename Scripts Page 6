@@ -438,7 +438,8 @@ Close.Text = "X"
 Close.TextColor3 = Color3.fromRGB(255, 0, 0)
 Close.TextSize = 23.000
 Close.TextWrapped = true
-Close.MouseButton1Down:connect(function()game:GetService("CoreGui").VHubCoreScreen.DragScreen.OpenButton.Visible = true
+Close.MouseButton1Down:connect(function()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.OpenButton.Visible = true
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = false
 end)
 
