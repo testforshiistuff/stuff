@@ -1216,6 +1216,7 @@ end)
 end
 
 NameScript_8.Text = "Pet Hats Gui"
+if R6() then
 Script8.MouseButton1Down:connect(function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/rouxhaver/scripts/main/FE%20Simulator%20Pets.lua'))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
@@ -1223,4 +1224,11 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Text = "Successfully Executed Pet Hats Gui!";
 	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
+elseif not R6() then
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "This Script Only Works On R6 Games!";
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
+Duration = 16;
+end
 end)
