@@ -1216,8 +1216,8 @@ end)
 end
 
 NameScript_8.Text = "Pet Hats Gui"
-if R6() then
 Script8.MouseButton1Down:connect(function()
+if R6() then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/rouxhaver/scripts/main/FE%20Simulator%20Pets.lua'))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
