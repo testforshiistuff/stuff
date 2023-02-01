@@ -1178,8 +1178,14 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end)
 
-NameScript_5.Text = "Script Soon"
+NameScript_5.Text = "IV Admin"
 Script5.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/BloodyBurns/Hexx/main/Iv%20Admin/Admin%202.lua'))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed IV Admin!";
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
+Duration = 16;
 end)
 
 NameScript_6.Text = "Script Soon"
