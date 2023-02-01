@@ -1215,4 +1215,12 @@ Duration = 16;
 end)
 end
 
-NameScript_8.Text = "Script Soon"
+NameScript_8.Text = "Pet Hats Gui"
+Script8.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/rouxhaver/scripts/main/FE%20Simulator%20Pets.lua'))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Pet Hats Gui!";
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
+Duration = 16;
+end)
