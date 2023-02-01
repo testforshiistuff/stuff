@@ -1193,3 +1193,4 @@ end)
 NameScript_8.Text = "Script Soon"
 Script8.MouseButton1Down:connect(function()
 end)
+
