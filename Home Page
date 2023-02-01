@@ -888,3 +888,4 @@ local function ZERAT_fake_script() -- ProfilePicture.LocalScript
 	imageLabel.Image = content
 end
 coroutine.wrap(ZERAT_fake_script)()
+
