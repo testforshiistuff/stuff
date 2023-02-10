@@ -1,27 +1,76 @@
+local uis = game:GetService("UserInputService")
+local ismobile = uis.TouchEnabled
+
+if ismobile == true then
+local OpenButton = Instance.new("Frame")
+local VHubImage = Instance.new("ImageLabel")
+local Button = Instance.new("TextButton")
+
+--Properties:
+
+OpenButton.Name = "OpenButton"
+OpenButton.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen
+OpenButton.BackgroundColor3 = Color3.fromRGB(49, 49, 49)
+OpenButton.Position = UDim2.new(0.197183102, 0, 0, 0)
+OpenButton.Size = UDim2.new(0, 100, 0, 100)
+OpenButton.Active = true
+OpenButton.Transparency = 0.99
+
+VHubImage.Name = "VHubImage"
+VHubImage.Parent = OpenButton
+VHubImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubImage.BackgroundTransparency = 1
+VHubImage.ImageTransparency = 0.3
+VHubImage.Size = UDim2.new(0, 70, 0, 70)
+VHubImage.Image = "http://www.roblox.com/asset/?id=12193689334"
+
+Button.Name = "Button"
+Button.Parent = VHubImage
+Button.BackgroundColor3 = Color3.fromRGB(68, 68, 68)
+Button.Position = UDim2.new(0.380, 0, 0.390, 0)
+Button.Size = UDim2.new(0, 17, 0, 17)
+Button.Font = Enum.Font.Cartoon
+Button.Text = ""
+Button.TextColor3 = Color3.fromRGB(255, 255, 255)
+Button.Transparency = 1
+Button.TextScaled = true
+Button.TextSize = 14.000
+Button.TextWrapped = true
+Button.MouseButton1Down:connect(function()
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Home.Visible = true
+game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true
+OpenButton:Destroy()
+end)
+
+OpenButton:TweenPosition(UDim2.new(0.197183102, 0, 0.166739315, 0),"Out","Quint",1,true)
+
+else
+
 -- (VOID) : Gui to Lua
 -- Version: 1.4
 
 -- Instances:
 
-local ImageButton = Instance.new("ImageButton")
+local OpenButton = Instance.new("ImageButton")
 local UICorner = Instance.new("UICorner")
 
 --Properties:
 
-ImageButton.Name = "OpenButton"
-ImageButton.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen
-ImageButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-ImageButton.BackgroundTransparency = 0.500
-ImageButton.Position = UDim2.new(0.0199999996, 1, 0.0199999996, 1)
-ImageButton.Size = UDim2.new(0, 0, 0, 0)
-ImageButton.Image = "http://www.roblox.com/asset/?id=12193689334"
-ImageButton.Active = true
-ImageButton.MouseButton1Down:connect(function()
+OpenButton.Name = "OpenButton"
+OpenButton.Parent = game:GetService("CoreGui").VHubCoreScreen.DragScreen
+OpenButton.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+OpenButton.BackgroundTransparency = 0.500
+OpenButton.Position = UDim2.new(0.0199999996, 1, 0.0199999996, 1)
+OpenButton.Size = UDim2.new(0, 0, 0, 0)
+OpenButton.Image = "http://www.roblox.com/asset/?id=12193689334"
+OpenButton.Active = true
+OpenButton.MouseButton1Down:connect(function()
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Home.Visible = true
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true
-ImageButton:Destroy()
+OpenButton:Destroy()
 end)
 
-UICorner.Parent = ImageButton
+UICorner.Parent = OpenButton
 
-ImageButton:TweenSize(UDim2.new(0, 30, 0, 30),"Out","Back", 0.5)
+OpenButton:TweenSize(UDim2.new(0, 30, 0, 30),"Out","Back", 0.5)
+end
