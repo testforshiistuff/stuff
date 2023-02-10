@@ -64,7 +64,6 @@ OpenButton.Position = UDim2.new(0.0199999996, 1, 0.0199999996, 1)
 OpenButton.Size = UDim2.new(0, 0, 0, 0)
 OpenButton.Image = "http://www.roblox.com/asset/?id=12193689334"
 OpenButton.Active = true
-OpenButton.Visible = true
 OpenButton.MouseButton1Down:connect(function()
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Home.Visible = true
 game:GetService("CoreGui").VHubCoreScreen.DragScreen.DragFrame.Visible = true
