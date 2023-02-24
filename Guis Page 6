@@ -1130,7 +1130,7 @@ loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/Scripts/main/Hat%20Giver'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
-	Text = "Successfully Executed LuaC Emulator!";
+	Text = "Successfully Executed Accessory Giver Gui!";
 	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 elseif not R6() then
