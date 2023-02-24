@@ -1123,7 +1123,7 @@ end)
 
 --Scripts Configuration:
 
-NameScript.Text = "Hat Giver"
+NameScript.Text = "Accessory Giver Gui"
 Script1.MouseButton1Down:connect(function()
 if R6() then
 loadstring(game:HttpGet(('https://pastebin.com/raw/r0p74xjX'),true))()
