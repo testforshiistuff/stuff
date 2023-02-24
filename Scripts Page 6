@@ -1151,7 +1151,15 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 Duration = 16;
 end)
 
-NameScript_3.Text = "Script Soon"
+NameScript_3.Text = "Chat Translator"
+Script3.MouseButton1Down:connect(function()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/Scripts/main/Chat%20Translator'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Chat Translator!";
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
+Duration = 16;
+end)
 
 NameScript_4.Text = "Script Soon"
 
@@ -1162,3 +1170,4 @@ NameScript_6.Text = "Script Soon"
 NameScript_7.Text = "Script Soon"
 
 NameScript_8.Text = "Script Soon"
+
