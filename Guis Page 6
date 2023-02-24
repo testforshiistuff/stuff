@@ -1133,6 +1133,13 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Text = "Successfully Executed Accessory Giver Gui!";
 	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
+wait(3)
+
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Notice:";
+	Text = "Type /console To View Your Accessories Names.";
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
+Duration = 16;
 elseif not R6() then
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
