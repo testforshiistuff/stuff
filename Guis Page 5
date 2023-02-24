@@ -1139,7 +1139,7 @@ end)
 
 NameScript_2.Text = "Waypoint Gui"
 Script2.MouseButton1Down:connect(function()
-loadstring(game:HttpGet(('https://pastebin.com/raw/6G95njB9'),true))()
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/Scripts/main/Waypoint%20Gui'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
 	Text = "Successfully Executed Waypoint Gui!";
