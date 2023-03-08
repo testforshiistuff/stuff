@@ -1176,6 +1176,7 @@ Duration = 16;
 end)
 
 NameScript_5.Text = "Keyboard Keybinds"
+NameScript_5.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script5.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
@@ -1186,6 +1187,7 @@ Duration = 16;
 end)
 
 NameScript_6.Text = "Break In Gui"
+NameScript_6.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script6.MouseButton1Down:connect(function()
 if game.PlaceId == 3851622790 or 4620170611 then
 loadstring(game:HttpGet("https://pastebin.com/raw/Wg8pEW3Z", true))()
