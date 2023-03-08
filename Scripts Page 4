@@ -1128,6 +1128,7 @@ end)
 --Scripts Configuration:
 
 NameScript.Text = "Tower Of Misery Teleport To End"
+NameScript.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script1.MouseButton1Down:connect(function()
 if game.PlaceId == 4954752502 then
 loadstring(game:HttpGet(('https://pastebin.com/raw/zsyeyJZu'),true))()
@@ -1146,6 +1147,7 @@ end
 end)
 
 NameScript_2.Text = "Toh But There's Lava Rising Teleport To End"
+NameScript_2.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script2.MouseButton1Down:connect(function()
 if game.PlaceId == 6502546031 then
 loadstring(game:HttpGet(('https://pastebin.com/raw/6UbUN5Mv'),true))()
@@ -1164,6 +1166,7 @@ end
 end)
 
 NameScript_3.Text = "Anti Fling"
+NameScript_3.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script3.MouseButton1Down:connect(function()
 loadstring(game:HttpGet(('https://pastebin.com/raw/Vk7jQ9Ft'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
@@ -1184,6 +1187,7 @@ Duration = 16;
 end)
 
 NameScript_5.Text = "Walk On Walls"
+NameScript_5.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script5.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://pastebin.com/raw/zXk4Rq2r"))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
@@ -1194,6 +1198,7 @@ Duration = 16;
 end)
 
 NameScript_6.Text = "Carts Speeder (Works Only On Cart Ride Games)"
+NameScript_6.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script6.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://pastebin.com/raw/sWDcnTga"))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
