@@ -1134,6 +1134,7 @@ Duration = 16;
 end)
 
 NameScript_2.Text = "Kill Command"
+NameScript_2.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script2.MouseButton1Down:connect(function()
 if R6() then
 loadstring(game:HttpGet(('https://pastebin.com/raw/getzx1SQ'),true))()
