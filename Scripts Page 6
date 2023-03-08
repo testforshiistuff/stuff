@@ -1124,6 +1124,7 @@ end)
 --Scripts Configuration:
 
 NameScript.Text = "Fade Tiles"
+NameScript.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script1.MouseButton1Down:connect(function()
 if game.PlaceId == 6155643742 then
 loadstring(game:HttpGet(('https://pastebin.com/raw/e551b9PH'),true))()
@@ -1152,6 +1153,7 @@ Duration = 16;
 end)
 
 NameScript_3.Text = "Chat Translator"
+NameScript_3.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script3.MouseButton1Down:connect(function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/Scripts/main/Chat%20Translator'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
