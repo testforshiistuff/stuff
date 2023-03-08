@@ -1120,6 +1120,7 @@ end)
 --Scripts Configuration:
 
 NameScript.Text = "CryptonicHub"
+NameScript.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script1.MouseButton1Down:connect(function()
 if game.PlaceId == 9848789324 then
 loadstring(game:HttpGet('https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua'))()
