@@ -1138,6 +1138,7 @@ Duration = 16;
 end)
 
 NameScript_2.Text = "Waypoint Gui"
+NameScript_2.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script2.MouseButton1Down:connect(function()
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/Scripts/main/Waypoint%20Gui'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
@@ -1148,6 +1149,7 @@ Duration = 16;
 end)
 
 NameScript_3.Text = "Hitbox Toggle Size Gui"
+NameScript_3.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script3.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://pastebin.com/raw/W3HhJPmW"))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
@@ -1176,6 +1178,7 @@ end
 end)
 
 NameScript_5.Text = "Project Bullshit"
+NameScript_5.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script5.MouseButton1Down:connect(function()
 loadstring(game:HttpGet(('https://pastebin.com/raw/MbQqeRy9'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
@@ -1186,6 +1189,7 @@ Duration = 16;
 end)
 
 NameScript_6.Text = "Server Browser"
+NameScript_6.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script6.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://www.scriptblox.com/raw/Server-Browser_80", true))();
 game:GetService("StarterGui"):SetCore("SendNotification", { 
