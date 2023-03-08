@@ -1128,6 +1128,7 @@ end)
 --Scripts Configuration:
 
 NameScript.Text = "TP Gui"
+NameScript.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script1.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://gist.githubusercontent.com/DagerFild/b4776075a0d26ef04394133ee6bd2081/raw/0ed51ac94057d2d9a9f00e1b037b9011c76ca54a/tpGUI", true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
@@ -1173,6 +1174,7 @@ end
 end)
 
 NameScript_4.Text = "Vehicle Fly Gui"
+NameScript_4.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script4.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://pastebin.com/raw/qgEYL5UB"))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
@@ -1193,6 +1195,7 @@ Duration = 16;
 end)
 
 NameScript_6.Text = "Reach Gui (Supported On Some Gears)"
+NameScript_6.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script6.MouseButton1Down:connect(function()
 loadstring(game:HttpGet(('\104\116\116\112\115\58\47\47\112\97\115\116\101\98\105\110\46\99\111\109\47\114\97\119\47\54\112\85\105\83\85\77\55\10'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
