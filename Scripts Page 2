@@ -1128,6 +1128,7 @@ end)
 --Scripts Configuration:
 
 NameScript.Text = "Teleport Tool"
+NameScript.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script1.MouseButton1Down:connect(function()
 loadstring(game:HttpGet(('https://pastebin.com/raw/n7wqcH9D'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
@@ -1148,6 +1149,7 @@ Duration = 16;
 end)
 
 NameScript_3.Text = "Ballon Stealer"
+NameScript_3.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script3.MouseButton1Down:connect(function()
 if game.PlaceId == 189707 then
 loadstring(game:HttpGet(('https://pastebin.com/raw/BVbG4ei7'),true))()
@@ -1166,6 +1168,7 @@ end
 end)
 
 NameScript_4.Text = "Color Block Auto Play"
+NameScript_4.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script4.MouseButton1Down:connect(function()
 if game.PlaceId == 5926001758 then
 loadstring(game:HttpGet(('https://pastebin.com/raw/tKu2vZrb'),true))()
@@ -1184,6 +1187,7 @@ end
 end)
 
 NameScript_5.Text = "Tower Of Hell Invincibility"
+NameScript_5.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script5.MouseButton1Down:connect(function()
 if game.PlaceId == 1962086868 then
 loadstring(game:HttpGet(('https://pastebin.com/raw/X8cG57XV'),true))()
@@ -1202,6 +1206,7 @@ end
 end)
 
 NameScript_6.Text = "Set Spawn Point"
+NameScript_6.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script6.MouseButton1Down:connect(function()
 while wait() do
 loadstring(game:HttpGet("https://raw.githubusercontent.com/testforshiistuff/Scripts/main/Set%20Spawn%20Point"))()
@@ -1233,6 +1238,7 @@ end
 end)
 
 NameScript_8.Text = "Prison Life Aimbot"
+NameScript_8.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script8.MouseButton1Down:connect(function()
 if game.PlaceId == 155615604 then
 loadstring(game:HttpGet("https://pastebin.com/raw/6mu9gydS",true))()
