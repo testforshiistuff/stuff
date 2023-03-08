@@ -1128,6 +1128,7 @@ end)
 --Scripts Configuration:
 
 NameScript.Text = "Da Hood Rob A ATM"
+NameScript.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script1.MouseButton1Down:connect(function()
 if game.PlaceId == 2788229376 then
 loadstring(game:HttpGet("https://pastebin.com/raw/h1yHHMs6",true))()
@@ -1146,6 +1147,7 @@ end
 end)
 
 NameScript_2.Text = "Strongest Punch Simulator Auto Farm"
+NameScript_2.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script2.MouseButton1Down:connect(function()
 if game.PlaceId == 6875469709 then
 loadstring(game:HttpGet('https://pastebin.com/raw/9fhssXQd'))()
@@ -1164,6 +1166,7 @@ end
 end)
 
 NameScript_3.Text = "Knife Ability Test Aimbot"
+NameScript_3.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script3.MouseButton1Down:connect(function()
 if game.PlaceId == 621129760 then
 loadstring(game:HttpGet('https://pastebin.com/raw/nKSLSAeN'))()
@@ -1192,6 +1195,7 @@ Duration = 16;
 end)
 
 NameScript_5.Text = "Get Police Role"
+NameScript_5.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script5.MouseButton1Down:connect(function()
 if game.PlaceId == 3851622790 then
 loadstring(game:HttpGet("https://raw.githubusercontent.com/testforshiistuff/Scripts/main/Break%20In%20Police", true))()
@@ -1216,6 +1220,7 @@ end
 end)
 
 NameScript_6.Text = "Chat Bypass"
+NameScript_6.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script6.MouseButton1Down:connect(function()
 loadstring(game:HttpGet("https://raw.githubusercontent.com/x114/RobloxScripts/main/FullChatBypass"))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
@@ -1244,6 +1249,7 @@ end
 end)
 
 NameScript_8.Text = "Koss Gust Horn Spammer"
+NameScript_8.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script8.MouseButton1Down:connect(function()
 if game.PlaceId == 4522347649 then
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/Scripts/main/Koss%20Gust%20Horn%20Spammer'),true))()
