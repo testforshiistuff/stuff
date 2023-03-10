@@ -3,18 +3,18 @@ local exe = identifyexecutor()
 if exe == "Fluxus" then
 local function callback(Text)
  if Text == "Execute" then
-game:GetService("CoreGui").FluxusAndroidUI.Container.ToggleBtn.Visible = false
-game:GetService("CoreGui").FluxusAndroidUI.Container.MainUIImage.Visible = false
-game:GetService("CoreGui").FluxusAndroidUI.Container.Loader.Visible = true
+game:GetService("CoreGui").RobloxGui.FluxusAndroidUI.Container.ToggleBtn.Visible = false
+game:GetService("CoreGui").RobloxGui.FluxusAndroidUI.Container.MainUIImage.Visible = false
+game:GetService("CoreGui").RobloxGui.FluxusAndroidUI.Container.Loader.Visible = true
 wait(5)
-game:GetService("CoreGui").FluxusAndroidUI.Container.Loader.Icon.Image = "rbxassetid://12564267060"
-game:GetService("CoreGui").FluxusAndroidUI.Container.Loader.BackgroundColor3 = Color3.fromRGB(0,0,0)
-game:GetService("CoreGui").FluxusAndroidUI.Container.Loader.Transparency = 0.5
-game:GetService("CoreGui").FluxusAndroidUI.Container.Loader.Border.BackgroundColor3 = Color3.fromRGB(255,0,0)
-game:GetService("CoreGui").FluxusAndroidUI.Container.Loader.Border.Transparency = 0.5
+game:GetService("CoreGui").RobloxGui.FluxusAndroidUI.Container.Loader.Icon.Image = "rbxassetid://12564267060"
+game:GetService("CoreGui").RobloxGui.FluxusAndroidUI.Container.Loader.BackgroundColor3 = Color3.fromRGB(0,0,0)
+game:GetService("CoreGui").RobloxGui.FluxusAndroidUI.Container.Loader.Transparency = 0.5
+game:GetService("CoreGui").RobloxGui.FluxusAndroidUI.Container.Loader.Border.BackgroundColor3 = Color3.fromRGB(255,0,0)
+game:GetService("CoreGui").RobloxGui.FluxusAndroidUI.Container.Loader.Border.Transparency = 0.5
 wait(3)
 
-game:GetService("CoreGui").FluxusAndroidUI.Container.Loader.Visible = false
+game:GetService("CoreGui").RobloxGui.FluxusAndroidUI.Container.Loader.Visible = false
 loadstring(game:HttpGet("https://raw.githubusercontent.com/AZYsGithub/chillz-workshop/main/Arceus%20X%20V3"))()
  end
 end
