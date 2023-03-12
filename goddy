@@ -1,0 +1,685 @@
+-- (VOID) : Gui to Lua
+-- Version: 1.4
+
+-- Instances:
+
+local VHubCoreScreen = Instance.new("Folder")
+local DragScreen = Instance.new("ScreenGui")
+local DragFrame = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local MainFrame = Instance.new("Frame")
+local BarFrame = Instance.new("Frame")
+local VHubLogo = Instance.new("ImageLabel")
+local TabName = Instance.new("TextLabel")
+local Close = Instance.new("TextButton")
+local UICorner_2 = Instance.new("UICorner")
+local Version = Instance.new("TextLabel")
+local Settings = Instance.new("ImageButton")
+local TabsFrame = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local HomeTab = Instance.new("ImageButton")
+local UIListLayout = Instance.new("UIListLayout")
+local ScriptsTab = Instance.new("ImageButton")
+local RequiredAccessoriesTab = Instance.new("ImageButton")
+local GuisTab = Instance.new("ImageButton")
+local AnimationsTab = Instance.new("ImageButton")
+local CommandsTab = Instance.new("ImageButton")
+local OtherHubsTab = Instance.new("ImageButton")
+local TabDescription = Instance.new("Frame")
+local UICorner_4 = Instance.new("UICorner")
+local PreviousPage = Instance.new("TextButton")
+local UICorner_5 = Instance.new("UICorner")
+local TabImage = Instance.new("ImageLabel")
+local TabNameAndPage = Instance.new("TextLabel")
+local NextPage = Instance.new("TextButton")
+local UICorner_6 = Instance.new("UICorner")
+local ScriptDescription = Instance.new("Frame")
+local UICorner_7 = Instance.new("UICorner")
+local ScriptName = Instance.new("TextLabel")
+local Execute = Instance.new("TextButton")
+local UICorner_8 = Instance.new("UICorner")
+local ScriptCreator = Instance.new("TextLabel")
+local DiscordLogo = Instance.new("ImageLabel")
+local Execute1 = Instance.new("TextButton")
+local UICorner_9 = Instance.new("UICorner")
+local Execute2 = Instance.new("TextButton")
+local UICorner_10 = Instance.new("UICorner")
+local Execute3 = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local Execute4 = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Execute5 = Instance.new("TextButton")
+local UICorner_13 = Instance.new("UICorner")
+local Execute6 = Instance.new("TextButton")
+local UICorner_14 = Instance.new("UICorner")
+local Scripts = Instance.new("Frame")
+local UICorner_15 = Instance.new("UICorner")
+local ScriptButton1 = Instance.new("TextButton")
+local UICorner_16 = Instance.new("UICorner")
+local ScriptName1 = Instance.new("TextLabel")
+local ImageLabel = Instance.new("ImageLabel")
+local ClickToPickText = Instance.new("TextLabel")
+local ScriptButton2 = Instance.new("TextButton")
+local UICorner_17 = Instance.new("UICorner")
+local ScriptName2 = Instance.new("TextLabel")
+local ImageLabel_2 = Instance.new("ImageLabel")
+local ClickToPickText_2 = Instance.new("TextLabel")
+local ScriptButton3 = Instance.new("TextButton")
+local UICorner_18 = Instance.new("UICorner")
+local ScriptName3 = Instance.new("TextLabel")
+local ImageLabel_3 = Instance.new("ImageLabel")
+local ClickToPickText_3 = Instance.new("TextLabel")
+local ScriptButton4 = Instance.new("TextButton")
+local UICorner_19 = Instance.new("UICorner")
+local ScriptName4 = Instance.new("TextLabel")
+local ImageLabel_4 = Instance.new("ImageLabel")
+local ClickToPickText_4 = Instance.new("TextLabel")
+local ScriptButton5 = Instance.new("TextButton")
+local UICorner_20 = Instance.new("UICorner")
+local ScriptName5 = Instance.new("TextLabel")
+local ImageLabel_5 = Instance.new("ImageLabel")
+local ClickToPickText_5 = Instance.new("TextLabel")
+local ScriptButton6 = Instance.new("TextButton")
+local UICorner_21 = Instance.new("UICorner")
+local ScriptName6 = Instance.new("TextLabel")
+local ImageLabel_6 = Instance.new("ImageLabel")
+local ClickToPickText_6 = Instance.new("TextLabel")
+
+--Properties:
+
+VHubCoreScreen.Name = "VHubCoreScreen"
+VHubCoreScreen.Parent = (game:GetService("CoreGui") or gethui())
+
+DragScreen.Name = "DragScreen"
+DragScreen.Parent = VHubCoreScreen
+DragScreen.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+DragScreen.ResetOnSpawn = false
+
+DragFrame.Name = "DragFrame"
+DragFrame.Parent = DragScreen
+DragFrame.Active = true
+DragFrame.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+DragFrame.BackgroundTransparency = 0.500
+DragFrame.Position = UDim2.new(0.196224764, 0, 0.178353652, 0)
+DragFrame.Size = UDim2.new(0, 460, 0, 258)
+DragFrame.Draggable = true
+
+UICorner.Parent = DragFrame
+
+MainFrame.Name = "MainFrame"
+MainFrame.Parent = DragFrame
+MainFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+MainFrame.BackgroundTransparency = 1.000
+MainFrame.Size = UDim2.new(0, 459, 0, 258)
+
+BarFrame.Name = "BarFrame"
+BarFrame.Parent = MainFrame
+BarFrame.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+BarFrame.Size = UDim2.new(0, 460, 0, 30)
+
+VHubLogo.Name = "VHubLogo"
+VHubLogo.Parent = BarFrame
+VHubLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+VHubLogo.BackgroundTransparency = 1.000
+VHubLogo.Position = UDim2.new(0.00100000005, 0, -0.00999999978, 0)
+VHubLogo.Size = UDim2.new(0, 30, 0, 30)
+VHubLogo.Image = "rbxassetid://12193614978"
+
+TabName.Name = "TabName"
+TabName.Parent = BarFrame
+TabName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TabName.BackgroundTransparency = 1.000
+TabName.Position = UDim2.new(0.0652173907, 0, 0, 0)
+TabName.Size = UDim2.new(0, 300, 0, 30)
+TabName.Font = Enum.Font.GothamMedium
+TabName.Text = "VHub | Required Accessories"
+TabName.TextColor3 = Color3.fromRGB(255, 255, 255)
+TabName.TextSize = 14.000
+TabName.TextXAlignment = Enum.TextXAlignment.Left
+
+Close.Name = "Close"
+Close.Parent = BarFrame
+Close.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Close.BackgroundTransparency = 1.000
+Close.Position = UDim2.new(0.934782624, 0, -2.60770321e-08, 0)
+Close.Size = UDim2.new(0, 30, 0, 30)
+Close.Font = Enum.Font.FredokaOne
+Close.Text = "X"
+Close.TextColor3 = Color3.fromRGB(255, 255, 255)
+Close.TextSize = 20.000
+
+UICorner_2.Parent = BarFrame
+
+Version.Name = "Version"
+Version.Parent = BarFrame
+Version.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Version.BackgroundTransparency = 1.000
+Version.Position = UDim2.new(0, 0, 0.766666651, 0)
+Version.Size = UDim2.new(0, 90, 0, 6)
+Version.Font = Enum.Font.Gotham
+Version.Text = "V1.35"
+Version.TextColor3 = Color3.fromRGB(255, 255, 255)
+Version.TextSize = 9.000
+
+Settings.Name = "Settings"
+Settings.Parent = BarFrame
+Settings.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Settings.BackgroundTransparency = 1.000
+Settings.Position = UDim2.new(0.880434752, 0, 0.0666666701, 0)
+Settings.Size = UDim2.new(0, 25, 0, 25)
+Settings.Image = "http://www.roblox.com/asset/?id=11592827868"
+
+TabsFrame.Name = "TabsFrame"
+TabsFrame.Parent = MainFrame
+TabsFrame.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+TabsFrame.Position = UDim2.new(0.00999999978, 0, 0.128000006, 0)
+TabsFrame.Size = UDim2.new(0, 40, 0, 221)
+
+UICorner_3.Parent = TabsFrame
+
+HomeTab.Name = "HomeTab"
+HomeTab.Parent = TabsFrame
+HomeTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+HomeTab.BackgroundTransparency = 1.000
+HomeTab.Size = UDim2.new(0, 30, 0, 30)
+HomeTab.Image = "http://www.roblox.com/asset/?id=11592840951"
+
+UIListLayout.Parent = TabsFrame
+UIListLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
+UIListLayout.SortOrder = Enum.SortOrder.LayoutOrder
+UIListLayout.VerticalAlignment = Enum.VerticalAlignment.Center
+
+ScriptsTab.Name = "ScriptsTab"
+ScriptsTab.Parent = TabsFrame
+ScriptsTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptsTab.BackgroundTransparency = 1.000
+ScriptsTab.Size = UDim2.new(0, 30, 0, 30)
+ScriptsTab.Image = "http://www.roblox.com/asset/?id=11592851654"
+
+RequiredAccessoriesTab.Name = "RequiredAccessoriesTab"
+RequiredAccessoriesTab.Parent = TabsFrame
+RequiredAccessoriesTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+RequiredAccessoriesTab.BackgroundTransparency = 1.000
+RequiredAccessoriesTab.Size = UDim2.new(0, 30, 0, 30)
+RequiredAccessoriesTab.Image = "http://www.roblox.com/asset/?id=11592824883"
+
+GuisTab.Name = "GuisTab"
+GuisTab.Parent = TabsFrame
+GuisTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+GuisTab.BackgroundTransparency = 1.000
+GuisTab.Size = UDim2.new(0, 30, 0, 30)
+GuisTab.Image = "http://www.roblox.com/asset/?id=11592848654"
+
+AnimationsTab.Name = "AnimationsTab"
+AnimationsTab.Parent = TabsFrame
+AnimationsTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+AnimationsTab.BackgroundTransparency = 1.000
+AnimationsTab.Size = UDim2.new(0, 30, 0, 30)
+AnimationsTab.Image = "http://www.roblox.com/asset/?id=11592835705"
+
+CommandsTab.Name = "CommandsTab"
+CommandsTab.Parent = TabsFrame
+CommandsTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+CommandsTab.BackgroundTransparency = 1.000
+CommandsTab.Size = UDim2.new(0, 30, 0, 30)
+CommandsTab.Image = "http://www.roblox.com/asset/?id=11592837927"
+
+OtherHubsTab.Name = "OtherHubsTab"
+OtherHubsTab.Parent = TabsFrame
+OtherHubsTab.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+OtherHubsTab.BackgroundTransparency = 1.000
+OtherHubsTab.Size = UDim2.new(0, 30, 0, 30)
+OtherHubsTab.Image = "http://www.roblox.com/asset/?id=11592850267"
+
+TabDescription.Name = "TabDescription"
+TabDescription.Parent = MainFrame
+TabDescription.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+TabDescription.Position = UDim2.new(0.108039208, 0, 0.128000006, 0)
+TabDescription.Size = UDim2.new(0, 403, 0, 35)
+
+UICorner_4.Parent = TabDescription
+
+PreviousPage.Name = "PreviousPage"
+PreviousPage.Parent = TabDescription
+PreviousPage.BackgroundColor3 = Color3.fromRGB(31, 32, 34)
+PreviousPage.Position = UDim2.new(0.822779119, 0, 0.0571428575, 0)
+PreviousPage.Size = UDim2.new(0, 30, 0, 30)
+PreviousPage.Font = Enum.Font.GothamBold
+PreviousPage.Text = "<"
+PreviousPage.TextColor3 = Color3.fromRGB(255, 255, 255)
+PreviousPage.TextSize = 35.000
+
+UICorner_5.CornerRadius = UDim.new(0, 30)
+UICorner_5.Parent = PreviousPage
+
+TabImage.Name = "TabImage"
+TabImage.Parent = TabDescription
+TabImage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TabImage.BackgroundTransparency = 1.000
+TabImage.Position = UDim2.new(0.00499999989, 0, 0, 0)
+TabImage.Size = UDim2.new(0, 35, 0, 35)
+TabImage.Image = "http://www.roblox.com/asset/?id=11592824883"
+
+TabNameAndPage.Name = "TabNameAndPage"
+TabNameAndPage.Parent = TabDescription
+TabNameAndPage.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TabNameAndPage.BackgroundTransparency = 1.000
+TabNameAndPage.Position = UDim2.new(0.0992555842, 0, 0, 0)
+TabNameAndPage.Size = UDim2.new(0, 292, 0, 35)
+TabNameAndPage.Font = Enum.Font.GothamMedium
+TabNameAndPage.Text = "Required Accessories | Page 1"
+TabNameAndPage.TextColor3 = Color3.fromRGB(255, 255, 255)
+TabNameAndPage.TextSize = 16.000
+TabNameAndPage.TextXAlignment = Enum.TextXAlignment.Left
+
+NextPage.Name = "NextPage"
+NextPage.Parent = TabDescription
+NextPage.BackgroundColor3 = Color3.fromRGB(31, 32, 34)
+NextPage.Position = UDim2.new(0.907146394, 0, 0.0571428575, 0)
+NextPage.Size = UDim2.new(0, 30, 0, 30)
+NextPage.Font = Enum.Font.GothamBold
+NextPage.Text = ">"
+NextPage.TextColor3 = Color3.fromRGB(255, 255, 255)
+NextPage.TextSize = 35.000
+
+UICorner_6.CornerRadius = UDim.new(0, 30)
+UICorner_6.Parent = NextPage
+
+ScriptDescription.Name = "ScriptDescription"
+ScriptDescription.Parent = MainFrame
+ScriptDescription.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+ScriptDescription.Position = UDim2.new(0.665773332, 0, 0.290790707, 0)
+ScriptDescription.Size = UDim2.new(0, 146, 0, 173)
+
+UICorner_7.Parent = ScriptDescription
+
+ScriptName.Name = "ScriptName"
+ScriptName.Parent = ScriptDescription
+ScriptName.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName.BackgroundTransparency = 1.000
+ScriptName.Position = UDim2.new(0.0405407213, 0, 0.0268612895, 0)
+ScriptName.Size = UDim2.new(0, 134, 0, 126)
+ScriptName.Font = Enum.Font.GothamMedium
+ScriptName.Text = "Pick A Script."
+ScriptName.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName.TextSize = 18.000
+ScriptName.TextWrapped = true
+ScriptName.TextXAlignment = Enum.TextXAlignment.Left
+ScriptName.TextYAlignment = Enum.TextYAlignment.Top
+
+Execute.Name = "Execute"
+Execute.Parent = ScriptDescription
+Execute.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute.Position = UDim2.new(0.0405407213, 0, 0.85838145, 0)
+Execute.Size = UDim2.new(0, 134, 0, 19)
+Execute.Font = Enum.Font.GothamMedium
+Execute.Text = "Execute"
+Execute.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute.TextSize = 14.000
+
+UICorner_8.Parent = Execute
+
+ScriptCreator.Name = "ScriptCreator"
+ScriptCreator.Parent = ScriptDescription
+ScriptCreator.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptCreator.BackgroundTransparency = 1.000
+ScriptCreator.Position = UDim2.new(0.15000017, 0, 0.789999962, 0)
+ScriptCreator.Size = UDim2.new(0, 118, 0, 10)
+ScriptCreator.Font = Enum.Font.GothamMedium
+ScriptCreator.Text = "Veinc#0001"
+ScriptCreator.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptCreator.TextSize = 10.000
+ScriptCreator.TextWrapped = true
+ScriptCreator.TextXAlignment = Enum.TextXAlignment.Left
+
+DiscordLogo.Name = "DiscordLogo"
+DiscordLogo.Parent = ScriptDescription
+DiscordLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+DiscordLogo.BackgroundTransparency = 1.000
+DiscordLogo.Position = UDim2.new(0.0599999987, 0, 0.786000013, 0)
+DiscordLogo.Size = UDim2.new(0, 10, 0, 10)
+DiscordLogo.Image = "http://www.roblox.com/asset/?id=12763406713"
+
+Execute1.Name = "Execute1"
+Execute1.Parent = ScriptDescription
+Execute1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute1.Position = UDim2.new(0.0405407213, 0, 0.85838145, 0)
+Execute1.Size = UDim2.new(0, 134, 0, 19)
+Execute1.Visible = false
+Execute1.Font = Enum.Font.GothamMedium
+Execute1.Text = "Execute"
+Execute1.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute1.TextSize = 14.000
+
+UICorner_9.Parent = Execute1
+
+Execute2.Name = "Execute2"
+Execute2.Parent = ScriptDescription
+Execute2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute2.Position = UDim2.new(0.0405407213, 0, 0.85838145, 0)
+Execute2.Size = UDim2.new(0, 134, 0, 19)
+Execute2.Visible = false
+Execute2.Font = Enum.Font.GothamMedium
+Execute2.Text = "Execute"
+Execute2.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute2.TextSize = 14.000
+
+UICorner_10.Parent = Execute2
+
+Execute3.Name = "Execute3"
+Execute3.Parent = ScriptDescription
+Execute3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute3.Position = UDim2.new(0.0405407213, 0, 0.85838145, 0)
+Execute3.Size = UDim2.new(0, 134, 0, 19)
+Execute3.Visible = false
+Execute3.Font = Enum.Font.GothamMedium
+Execute3.Text = "Execute"
+Execute3.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute3.TextSize = 14.000
+
+UICorner_11.Parent = Execute3
+
+Execute4.Name = "Execute4"
+Execute4.Parent = ScriptDescription
+Execute4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute4.Position = UDim2.new(0.0405407213, 0, 0.85838145, 0)
+Execute4.Size = UDim2.new(0, 134, 0, 19)
+Execute4.Visible = false
+Execute4.Font = Enum.Font.GothamMedium
+Execute4.Text = "Execute"
+Execute4.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute4.TextSize = 14.000
+
+UICorner_12.Parent = Execute4
+
+Execute5.Name = "Execute5"
+Execute5.Parent = ScriptDescription
+Execute5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute5.Position = UDim2.new(0.0405407213, 0, 0.85838145, 0)
+Execute5.Size = UDim2.new(0, 134, 0, 19)
+Execute5.Visible = false
+Execute5.Font = Enum.Font.GothamMedium
+Execute5.Text = "Execute"
+Execute5.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute5.TextSize = 14.000
+
+UICorner_13.Parent = Execute5
+
+Execute6.Name = "Execute6"
+Execute6.Parent = ScriptDescription
+Execute6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Execute6.Position = UDim2.new(0.0405407213, 0, 0.85838145, 0)
+Execute6.Size = UDim2.new(0, 134, 0, 19)
+Execute6.Visible = false
+Execute6.Font = Enum.Font.GothamMedium
+Execute6.Text = "Execute"
+Execute6.TextColor3 = Color3.fromRGB(0, 0, 0)
+Execute6.TextSize = 14.000
+
+UICorner_14.Parent = Execute6
+
+Scripts.Name = "Scripts"
+Scripts.Parent = MainFrame
+Scripts.BackgroundColor3 = Color3.fromRGB(26, 27, 29)
+Scripts.Position = UDim2.new(0.111111112, 0, 0.290697664, 0)
+Scripts.Size = UDim2.new(0, 248, 0, 173)
+
+UICorner_15.Parent = Scripts
+
+ScriptButton1.Name = "ScriptButton1"
+ScriptButton1.Parent = Scripts
+ScriptButton1.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
+ScriptButton1.Position = UDim2.new(0.0480000004, 0, 0.0270000007, 0)
+ScriptButton1.Size = UDim2.new(0, 70, 0, 80)
+ScriptButton1.Font = Enum.Font.SourceSans
+ScriptButton1.Text = ""
+ScriptButton1.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptButton1.TextSize = 14.000
+
+UICorner_16.Parent = ScriptButton1
+
+ScriptName1.Name = "ScriptName1"
+ScriptName1.Parent = ScriptButton1
+ScriptName1.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName1.BackgroundTransparency = 1.000
+ScriptName1.Position = UDim2.new(0, 0, 0.23566246, 0)
+ScriptName1.Size = UDim2.new(0, 70, 0, 61)
+ScriptName1.Font = Enum.Font.Gotham
+ScriptName1.Text = "Coming Soon"
+ScriptName1.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName1.TextSize = 9.000
+ScriptName1.TextWrapped = true
+ScriptName1.TextYAlignment = Enum.TextYAlignment.Top
+
+ImageLabel.Parent = ScriptButton1
+ImageLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.Position = UDim2.new(0.350000024, 0, 0, 0)
+ImageLabel.Size = UDim2.new(0, 18, 0, 18)
+ImageLabel.Image = "http://www.roblox.com/asset/?id=11592824883"
+
+ClickToPickText.Name = "ClickToPickText"
+ClickToPickText.Parent = ScriptButton1
+ClickToPickText.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ClickToPickText.BackgroundTransparency = 1.000
+ClickToPickText.Position = UDim2.new(0, 0, 0.885662436, 0)
+ClickToPickText.Size = UDim2.new(0, 70, 0, 8)
+ClickToPickText.Font = Enum.Font.Gotham
+ClickToPickText.Text = "Click To Pick"
+ClickToPickText.TextColor3 = Color3.fromRGB(200, 200, 200)
+ClickToPickText.TextWrapped = true
+
+ScriptButton2.Name = "ScriptButton2"
+ScriptButton2.Parent = Scripts
+ScriptButton2.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
+ScriptButton2.Position = UDim2.new(0.35800001, 0, 0.0270000007, 0)
+ScriptButton2.Size = UDim2.new(0, 70, 0, 80)
+ScriptButton2.Font = Enum.Font.SourceSans
+ScriptButton2.Text = ""
+ScriptButton2.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptButton2.TextSize = 14.000
+
+UICorner_17.Parent = ScriptButton2
+
+ScriptName2.Name = "ScriptName2"
+ScriptName2.Parent = ScriptButton2
+ScriptName2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName2.BackgroundTransparency = 1.000
+ScriptName2.Position = UDim2.new(0, 0, 0.23566246, 0)
+ScriptName2.Size = UDim2.new(0, 70, 0, 61)
+ScriptName2.Font = Enum.Font.Gotham
+ScriptName2.Text = "Coming Soon"
+ScriptName2.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName2.TextSize = 9.000
+ScriptName2.TextWrapped = true
+ScriptName2.TextYAlignment = Enum.TextYAlignment.Top
+
+ImageLabel_2.Parent = ScriptButton2
+ImageLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_2.BackgroundTransparency = 1.000
+ImageLabel_2.Position = UDim2.new(0.350000024, 0, 0, 0)
+ImageLabel_2.Size = UDim2.new(0, 18, 0, 18)
+ImageLabel_2.Image = "http://www.roblox.com/asset/?id=11592824883"
+
+ClickToPickText_2.Name = "ClickToPickText"
+ClickToPickText_2.Parent = ScriptButton2
+ClickToPickText_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ClickToPickText_2.BackgroundTransparency = 1.000
+ClickToPickText_2.Position = UDim2.new(0, 0, 0.885662436, 0)
+ClickToPickText_2.Size = UDim2.new(0, 70, 0, 8)
+ClickToPickText_2.Font = Enum.Font.Gotham
+ClickToPickText_2.Text = "Click To Pick"
+ClickToPickText_2.TextColor3 = Color3.fromRGB(200, 200, 200)
+ClickToPickText_2.TextWrapped = true
+
+ScriptButton3.Name = "ScriptButton3"
+ScriptButton3.Parent = Scripts
+ScriptButton3.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
+ScriptButton3.Position = UDim2.new(0.665000021, 0, 0.0270000007, 0)
+ScriptButton3.Size = UDim2.new(0, 70, 0, 80)
+ScriptButton3.Font = Enum.Font.SourceSans
+ScriptButton3.Text = ""
+ScriptButton3.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptButton3.TextSize = 14.000
+
+UICorner_18.Parent = ScriptButton3
+
+ScriptName3.Name = "ScriptName3"
+ScriptName3.Parent = ScriptButton3
+ScriptName3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName3.BackgroundTransparency = 1.000
+ScriptName3.Position = UDim2.new(0, 0, 0.23566246, 0)
+ScriptName3.Size = UDim2.new(0, 70, 0, 61)
+ScriptName3.Font = Enum.Font.Gotham
+ScriptName3.Text = "Coming Soon"
+ScriptName3.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName3.TextSize = 9.000
+ScriptName3.TextWrapped = true
+ScriptName3.TextYAlignment = Enum.TextYAlignment.Top
+
+ImageLabel_3.Parent = ScriptButton3
+ImageLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_3.BackgroundTransparency = 1.000
+ImageLabel_3.Position = UDim2.new(0.350000024, 0, 0, 0)
+ImageLabel_3.Size = UDim2.new(0, 18, 0, 18)
+ImageLabel_3.Image = "http://www.roblox.com/asset/?id=11592824883"
+
+ClickToPickText_3.Name = "ClickToPickText"
+ClickToPickText_3.Parent = ScriptButton3
+ClickToPickText_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ClickToPickText_3.BackgroundTransparency = 1.000
+ClickToPickText_3.Position = UDim2.new(0, 0, 0.885662436, 0)
+ClickToPickText_3.Size = UDim2.new(0, 70, 0, 8)
+ClickToPickText_3.Font = Enum.Font.Gotham
+ClickToPickText_3.Text = "Click To Pick"
+ClickToPickText_3.TextColor3 = Color3.fromRGB(200, 200, 200)
+ClickToPickText_3.TextWrapped = true
+
+ScriptButton4.Name = "ScriptButton4"
+ScriptButton4.Parent = Scripts
+ScriptButton4.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
+ScriptButton4.Position = UDim2.new(0.0480000004, 0, 0.507000029, 0)
+ScriptButton4.Size = UDim2.new(0, 70, 0, 80)
+ScriptButton4.Font = Enum.Font.SourceSans
+ScriptButton4.Text = ""
+ScriptButton4.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptButton4.TextSize = 14.000
+
+UICorner_19.Parent = ScriptButton4
+
+ScriptName4.Name = "ScriptName4"
+ScriptName4.Parent = ScriptButton4
+ScriptName4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName4.BackgroundTransparency = 1.000
+ScriptName4.Position = UDim2.new(0, 0, 0.23566246, 0)
+ScriptName4.Size = UDim2.new(0, 70, 0, 61)
+ScriptName4.Font = Enum.Font.Gotham
+ScriptName4.Text = "Coming Soon"
+ScriptName4.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName4.TextSize = 9.000
+ScriptName4.TextWrapped = true
+ScriptName4.TextYAlignment = Enum.TextYAlignment.Top
+
+ImageLabel_4.Parent = ScriptButton4
+ImageLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_4.BackgroundTransparency = 1.000
+ImageLabel_4.Position = UDim2.new(0.350000024, 0, 0, 0)
+ImageLabel_4.Size = UDim2.new(0, 18, 0, 18)
+ImageLabel_4.Image = "http://www.roblox.com/asset/?id=11592824883"
+
+ClickToPickText_4.Name = "ClickToPickText"
+ClickToPickText_4.Parent = ScriptButton4
+ClickToPickText_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ClickToPickText_4.BackgroundTransparency = 1.000
+ClickToPickText_4.Position = UDim2.new(0, 0, 0.885662436, 0)
+ClickToPickText_4.Size = UDim2.new(0, 70, 0, 8)
+ClickToPickText_4.Font = Enum.Font.Gotham
+ClickToPickText_4.Text = "Click To Pick"
+ClickToPickText_4.TextColor3 = Color3.fromRGB(200, 200, 200)
+ClickToPickText_4.TextWrapped = true
+
+ScriptButton5.Name = "ScriptButton5"
+ScriptButton5.Parent = Scripts
+ScriptButton5.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
+ScriptButton5.Position = UDim2.new(0.358483881, 0, 0.507000029, 0)
+ScriptButton5.Size = UDim2.new(0, 70, 0, 80)
+ScriptButton5.Font = Enum.Font.SourceSans
+ScriptButton5.Text = ""
+ScriptButton5.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptButton5.TextSize = 14.000
+
+UICorner_20.Parent = ScriptButton5
+
+ScriptName5.Name = "ScriptName5"
+ScriptName5.Parent = ScriptButton5
+ScriptName5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName5.BackgroundTransparency = 1.000
+ScriptName5.Position = UDim2.new(0, 0, 0.23566246, 0)
+ScriptName5.Size = UDim2.new(0, 70, 0, 61)
+ScriptName5.Font = Enum.Font.Gotham
+ScriptName5.Text = "Coming Soon"
+ScriptName5.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName5.TextSize = 9.000
+ScriptName5.TextWrapped = true
+ScriptName5.TextYAlignment = Enum.TextYAlignment.Top
+
+ImageLabel_5.Parent = ScriptButton5
+ImageLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_5.BackgroundTransparency = 1.000
+ImageLabel_5.Position = UDim2.new(0.350000024, 0, 0, 0)
+ImageLabel_5.Size = UDim2.new(0, 18, 0, 18)
+ImageLabel_5.Image = "http://www.roblox.com/asset/?id=11592824883"
+
+ClickToPickText_5.Name = "ClickToPickText"
+ClickToPickText_5.Parent = ScriptButton5
+ClickToPickText_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ClickToPickText_5.BackgroundTransparency = 1.000
+ClickToPickText_5.Position = UDim2.new(0, 0, 0.885662436, 0)
+ClickToPickText_5.Size = UDim2.new(0, 70, 0, 8)
+ClickToPickText_5.Font = Enum.Font.Gotham
+ClickToPickText_5.Text = "Click To Pick"
+ClickToPickText_5.TextColor3 = Color3.fromRGB(200, 200, 200)
+ClickToPickText_5.TextWrapped = true
+
+ScriptButton6.Name = "ScriptButton6"
+ScriptButton6.Parent = Scripts
+ScriptButton6.BackgroundColor3 = Color3.fromRGB(36, 37, 39)
+ScriptButton6.Position = UDim2.new(0.66493547, 0, 0.507000029, 0)
+ScriptButton6.Size = UDim2.new(0, 70, 0, 80)
+ScriptButton6.Font = Enum.Font.SourceSans
+ScriptButton6.Text = ""
+ScriptButton6.TextColor3 = Color3.fromRGB(0, 0, 0)
+ScriptButton6.TextSize = 14.000
+
+UICorner_21.Parent = ScriptButton6
+
+ScriptName6.Name = "ScriptName6"
+ScriptName6.Parent = ScriptButton6
+ScriptName6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName6.BackgroundTransparency = 1.000
+ScriptName6.Position = UDim2.new(0, 0, 0.23566246, 0)
+ScriptName6.Size = UDim2.new(0, 70, 0, 61)
+ScriptName6.Font = Enum.Font.Gotham
+ScriptName6.Text = "Coming Soon"
+ScriptName6.TextColor3 = Color3.fromRGB(255, 255, 255)
+ScriptName6.TextSize = 9.000
+ScriptName6.TextWrapped = true
+ScriptName6.TextYAlignment = Enum.TextYAlignment.Top
+
+ImageLabel_6.Parent = ScriptButton6
+ImageLabel_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ImageLabel_6.BackgroundTransparency = 1.000
+ImageLabel_6.Position = UDim2.new(0.350000024, 0, 0, 0)
+ImageLabel_6.Size = UDim2.new(0, 18, 0, 18)
+ImageLabel_6.Image = "http://www.roblox.com/asset/?id=11592824883"
+
+ClickToPickText_6.Name = "ClickToPickText"
+ClickToPickText_6.Parent = ScriptButton6
+ClickToPickText_6.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+ClickToPickText_6.BackgroundTransparency = 1.000
+ClickToPickText_6.Position = UDim2.new(0, 0, 0.885662436, 0)
+ClickToPickText_6.Size = UDim2.new(0, 70, 0, 8)
+ClickToPickText_6.Font = Enum.Font.Gotham
+ClickToPickText_6.Text = "Click To Pick"
+ClickToPickText_6.TextColor3 = Color3.fromRGB(200, 200, 200)
+ClickToPickText_6.TextWrapped = true
