@@ -1149,7 +1149,15 @@ Duration = 16;
 end
 end)
 
-NameScript_2.Text = "Script Soon"
+NameScript_2.Text = "CCTV Camera Spawner"
+Script2.MouseButton1Down:connect(function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/GhostPlayer352/Test4/main/CCTV Camera'))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully CCTV Camera Spawner!";
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
+Duration = 16;
+end)
 
 NameScript_3.Text = "Script Soon"
 
