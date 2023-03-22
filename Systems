@@ -1,1 +1,7 @@
-print("currently not here")
+loadstring(game:HttpGet("https://raw.githubusercontent.com/rouxhaver/scripts-2/main/rejoin%20button%20for%20kick%20message.lua", true))()
+
+game:GetService("Players").LocalPlayer.DevCameraOcclusionMode = Enum.DevCameraOcclusionMode.Invisicam
+
+game:GetService("Players").LocalPlayer.NameDisplayDistance = "99999997952"
+
+game:GetService("Players").LocalPlayer.HealthDisplayDistance = "99999997952"
