@@ -1154,6 +1154,14 @@ end)
 NameScript_3.Text = "Fly Gui"
 NameScript_3.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script3.MouseButton1Down:connect(function()
+if game.PlaceId == 2788229376 then
+loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/Scripts/main/Fly%20Gui%20For%20Da%20Hood'),true))()
+game:GetService("StarterGui"):SetCore("SendNotification", { 
+	Title = "Script:";
+	Text = "Successfully Executed Fly Gui (Da Hood)!";
+	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
+Duration = 16;
+else
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/Scripts/main/Fly%20gui'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
@@ -1167,6 +1175,7 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Text = "If You Want To Fly With Noclip, Execute Infinite Yeild, Then Press The Command Bar And Say noclip!";
 	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
+end
 end)
 
 NameScript_4.Text = "Yeet Gui"
