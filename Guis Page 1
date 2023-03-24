@@ -1154,11 +1154,11 @@ end)
 NameScript_3.Text = "Fly Gui"
 NameScript_3.TextColor3 = Color3.fromRGB(255, 255, 0)
 Script3.MouseButton1Down:connect(function()
-if game.PlaceId == 2788229376 then
+if game.PlaceId == 2788229376 or game.PlaceId == 11729688377 then
 loadstring(game:HttpGet(('https://raw.githubusercontent.com/Obfuscatetestloluwu/Scripts/main/Fly%20Gui%20For%20Da%20Hood'),true))()
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Script:";
-	Text = "Successfully Executed Fly Gui (Da Hood)!";
+	Text = "Successfully Executed Fly Gui (Anti Kickable)!";
 	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
 else
