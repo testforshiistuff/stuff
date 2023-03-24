@@ -4,7 +4,7 @@ if exe == "Fluxus" then
 local function callback(Text)
  if Text == "Execute" then
 game:GetService("CoreGui").RobloxGui.FluxusAndroidUI.Container.ToggleBtn.Visible = false
-game:GetService("CoreGui").RobloxGui.FluxusAndroidUI.Container.MainUIImage.Visible = false
+game:GetService("CoreGui").RobloxGui.FluxusAndroidUI.Container.MainUI.Visible = false
 game:GetService("CoreGui").RobloxGui.FluxusAndroidUI.Container.Loader.Visible = true
 wait(5)
 game:GetService("CoreGui").RobloxGui.FluxusAndroidUI.Container.Loader.Icon.Image = "rbxassetid://12564267060"
@@ -23,7 +23,7 @@ local NotificationBindable = Instance.new("BindableFunction")
 NotificationBindable.OnInvoke = callback
 --
 game.StarterGui:SetCore("SendNotification",  {
- Title = "Psst!";
+ Title = "Psst! [FIXED]";
  Text = "Would You Like To Change Your Executor (Fluxus) To Arceus X?";
  Icon = "";
  Duration = 60;
