@@ -1,5 +1,3 @@
-loadstring(game:HttpGet(('https://raw.githubusercontent.com/testforshiistuff/Scripts/main/Word%20Changer'),true))()
-
 local exe = identifyexecutor()
 
 if exe == "Fluxus" then
