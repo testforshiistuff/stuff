@@ -1130,10 +1130,6 @@ game:GetService("StarterGui"):SetCore("SendNotification", {
 	Text = "Successfully Executed CryptonicHub!";
 	Icon = "rbxthumb://type=Asset&id=12193614978&w=150&h=150"})
 Duration = 16;
-
-wait(10)
-game:GetService("CoreGui").nightmarefun.Shadow.Active = true
-game:GetService("CoreGui").nightmarefun.Shadow.Draggable = true
 else
 game:GetService("StarterGui"):SetCore("SendNotification", { 
 	Title = "Notice:";
