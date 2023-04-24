@@ -1,0 +1,74 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Countdown = Instance.new("ScreenGui")
+local Frame = Instance.new("Frame")
+local TimeDesc = Instance.new("TextLabel")
+local Time = Instance.new("TextLabel")
+
+--Properties:
+
+Countdown.Name = "Countdown"
+Countdown.Parent = game:GetService("CoreGui")
+
+Frame.Parent = Countdown
+Frame.BackgroundColor3 = Color3.fromRGB(26, 103, 21)
+Frame.BorderColor3 = Color3.fromRGB(38, 103, 24)
+Frame.Position = UDim2.new(0.5, -200, 0, -10)
+Frame.Size = UDim2.new(0, 400, 0, 50)
+Frame.Style = Enum.FrameStyle.RobloxRound
+
+TimeDesc.Name = "TimeDesc"
+TimeDesc.Parent = Frame
+TimeDesc.BackgroundTransparency = 1.000
+TimeDesc.Size = UDim2.new(1, 0, 1.89999998, 0)
+TimeDesc.Text = "VHub (Simple Edition) Shutdown"
+TimeDesc.TextColor3 = Color3.fromRGB(255, 255, 255)
+TimeDesc.TextSize = 10.000
+TimeDesc.TextStrokeTransparency = 0.000
+
+Time.Name = "Time"
+Time.Parent = Frame
+Time.BackgroundTransparency = 1.000
+Time.Size = UDim2.new(1, 0, 1, 0)
+Time.Text = "0"
+Time.TextColor3 = Color3.fromRGB(255, 255, 255)
+Time.TextSize = 36.000
+Time.TextStrokeTransparency = 0.000
+Time.TextScaled = true
+
+-- Scripts:
+
+local function HLYS_fake_script() -- Frame.LocalScript 
+	local script = Instance.new('LocalScript', Frame)
+
+	wait()
+	
+	local mFloor = math.floor 
+	local Next = next 
+	local Tick = tick 
+	local Wait = wait 
+	local Stop = 0
+	
+	while true do Wait(1) 
+	wait()
+	local Time = 1682359200 - Tick() --Put Unix time here
+	local Days = mFloor((Time / 60 / 60 / 24) % (365 + 0.2425)) 
+	local Hours = mFloor((Time / 60 / 60) % 24) 
+	local Minutes = mFloor((Time / 60) % 60) 
+	local Seconds = mFloor(Time % 60) 
+	
+	if Stop == 0 then
+	
+	script.Parent.Time.Text = Hours.. "H "..Minutes.."M "..Seconds.."S"
+	end
+	
+	if Days==0 and Hours==0 and Minutes==0 and Seconds==0 then
+	Stop=1
+	script.Parent.Time.Text = "Please Wait Till Vincent Update VHub." --What it will say when countdown completes
+	end
+	end 
+end
+coroutine.wrap(HLYS_fake_script)()
