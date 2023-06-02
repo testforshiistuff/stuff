@@ -16,4 +16,3 @@ game.StarterGui:SetCore("SendNotification",  {
  Button2 = "Nah";
  Callback = NotificationBindable;
 })
-end
